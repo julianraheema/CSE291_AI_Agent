@@ -1,0 +1,29 @@
+{
+    "instruction": "Displays a live CPU heatmap",
+    "single-action": [
+        "'HOTKEY' ctrl-alt-t to open terminal",
+        "'CLICK' on terminal prompt line",
+        "'TYPING' 'sudo apt install sysstat htop -y'",
+        "'TYPING' 'sudo systemctl enable --now sysstat'",
+        "'TYPING' 'sar -u 1 10 > cpu_usage.log'",
+        "'TYPING' 'sar -u -f /var/log/sysstat/$(date +%d) > cpu_summary.txt'",
+        "'TYPING' 'awk '{if(NR>3) printf "%s %s %s %s %s %s %s\n", $1, $2, $3, $4, $5, $6, $8}' cpu_usage.log | column -t'",
+        "'TYPING' 'htop'"
+    ],
+    "grouped-action" : [
+        [
+            "'HOTKEY' ctrl-alt-t to open terminal"
+        ],
+        [
+            "'CLICK' on terminal prompt line"
+        ],
+        [
+            "'TYPING' 'sudo apt install sysstat htop -y'",
+            "'TYPING' 'sudo systemctl enable --now sysstat'",
+            "'TYPING' 'sar -u 1 10 > cpu_usage.log'",
+            "'TYPING' 'sar -u -f /var/log/sysstat/$(date +%d) > cpu_summary.txt'",
+            "'TYPING' 'awk '{if(NR>3) printf "%s %s %s %s %s %s %s\n", $1, $2, $3, $4, $5, $6, $8}' cpu_usage.log | column -t'",
+            "'TYPING' 'htop'"
+        ]
+    ]
+}
