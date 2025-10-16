@@ -1,7 +1,6 @@
-# 🚗🌦️ Traffic and Weather Data Automation Tasks
+# AI Agent Tasks
 
-This project includes a set of automation tasks written in JSON format. These task are used for the AI agent research.  
-Each task performs a specific action related to collecting, organizing, and saving visual data from online sources.
+This project includes a set of automation tasks written in JSON format. These task are used for the AI agent research. Each task performs a specific action related to collecting, organizing, and saving visual data from online sources.
 
 ---
 
@@ -68,7 +67,7 @@ Task details goes here..
 
 ---
 
-### 🧠 Notes
+### Notes
 - All tasks are designed for **Linux systems** using GNOME desktop environment.  
 - Screenshots are taken using `Alt+Print` screenshot commands and file management is handled via standard shell utilities.  
 - These automations are intended for **educational and research use** only.
