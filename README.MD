@@ -6,20 +6,23 @@ This project includes a set of automation tasks written in JSON format. These ta
 
 ## 1. cli1_task_details
 
-Task details goes here... 
+This task turns your microphone input into a visual display inside the terminal.  
+It uses the built in tool **arecord** and **sox** to live record, process, and generate spectrogram image.
 
 ---
 
 ## 2. cli2_task_details
 
-Taks details goes here...
+This task transforms your terminal into a live visualization of CPU activity.  
+It uses installable tools such as **sar**, **mpstat**, and **htop** to enable system statistics, capture CPU load, and display them as numeric columns in the terminal.
 
 ---
 
 ## 3. cli3
 
-This task opens Google Chrome and navigates to the **California QuickMap** website.  
-It enables road condition overlays (Fast, Lane Closures, Full Closures, CHP Incidents), zooms into **San Diego**, switches to full-screen mode, and uses `Alt+Print` to capture and save a live traffic snapshot in the user’s Documents directory.
+This CLI task is an image processing and manipulation pipeline.  
+It pulls any image (in this example a black square from wiki) and resizes, grayscales and blurs the image. Then it blends the desaturated and blurred image together for a final product.  
+It uses the **jp2a** tool to display the final product in your terminal.
 
 ---
 
