@@ -49,7 +49,7 @@ It ensures both the traffic and weather images are stored together in one organi
 
 ## 7. clone_trending_repo
 
-This task opens **Google Chrome** and navigates to GitHub's trending page, clones the #1 trending repository to the folder `~/Documents/trending_repos`, and then opens it in **VS Code**. 
+This task opens **Google Chrome**, navigates to GitHub's trending page, clones the #1 trending repository to the folder `~/Documents/trending_repos`, and then opens it in **VS Code**. 
 
 ---
 
@@ -61,7 +61,7 @@ This task automatically navigates to LeetCode's problem set page in **Google Chr
 
 ## 9. spotify_playlist
 
-This task opens the **Spotify** desktop application, creates a new playlist named after the current date (e.g., "October 20 2025").
+This task opens the **Spotify** desktop application and creates a new playlist named after the current date (e.g., "October 20 2025").
 
 ---
 
