@@ -49,7 +49,7 @@ It ensures both the traffic and weather images are stored together in one organi
 
 ## 7. clone_trending_repo
 
-This task opens **Google Chrome** and navigates to GitHub's trending page, clones the #1 trending repository to the folder `~/Documents/trending_repos, and then opens it in **VS Code**. 
+This task opens **Google Chrome** and navigates to GitHub's trending page, clones the #1 trending repository to the folder `~/Documents/trending_repos`, and then opens it in **VS Code**. 
 
 ---
 
