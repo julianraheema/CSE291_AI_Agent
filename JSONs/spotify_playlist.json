@@ -1,0 +1,31 @@
+{
+  "single-action": [
+    "`HOTKEY` 'Ctrl+Alt+T'",
+    "`TYPING` spotify",
+    "`PRESS` Enter",
+    "`WAIT` 5000",
+    "`CLICK` //button[contains(., 'Create playlist') or contains(@aria-label, 'Create playlist')]",
+    "`WAIT` 1000",
+    "`TYPING` $(date '+%B %d %Y')",
+    "`PRESS` Enter",
+    "`WAIT` 1500",
+    "`DONE`"
+  ],
+
+  "grouped-action": [
+    [
+      "`HOTKEY` 'Ctrl+Alt+T'",
+      "`TYPING` spotify",
+      "`PRESS` Enter",
+      "`WAIT` 5000"
+    ],
+    [
+      "`CLICK` //button[contains(., 'Create playlist') or contains(@aria-label, 'Create playlist')]",
+      "`WAIT` 1000",
+      "`TYPING` $(date '+%B %d %Y')",
+      "`PRESS` Enter",
+      "`WAIT` 1500",
+      "`DONE`"
+    ]
+  ]
+}

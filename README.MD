@@ -47,27 +47,27 @@ It ensures both the traffic and weather images are stored together in one organi
 
 ---
 
-## 7. Task_7
+## 7. clone_trending_repo
 
-Task details goes here..
-
----
-
-## 8. Task_8
-
-Task details goes here..
+This task opens **Google Chrome** and navigates to GitHub's trending page, clones the #1 trending repository to the folder `~/Documents/trending_repos, and then opens it in **VS Code**. 
 
 ---
 
-## 9. Task_9
+## 8. leetcode_daily_question
 
-Task details goes here..
+This task automatically navigates to LeetCode's problem set page in **Google Chrome**, identifies and opens the daily challenge question, and captures a screenshot of the problem using **GNOME Screenshot**. The screenshots are stored in `~/Documents/leetcode_daily_challenges`. 
 
 ---
 
-## 10. Task_10
+## 9. spotify_playlist
 
-Task details goes here..
+This task opens the **Spotify** desktop application, creates a new playlist named after the current date (e.g., "October 20 2025").
+
+---
+
+## 10. google_drive_folder
+
+This task automatically opens Google Drive in **Google Chrome**, creates a new folder with a date based name, and navigates into the newly created folder.
 
 ---
 
