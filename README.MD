@@ -4,21 +4,20 @@ This project includes a set of automation tasks written in JSON format. These ta
 
 ---
 
-## 1. cli1_task_details
-
+## 1. cli1_microphone_detection
 This task turns your microphone input into a visual display inside the terminal.  
 It uses the built in tool **arecord** and **sox** to live record, process, and generate spectrogram image.
 
 ---
 
-## 2. cli2_task_details
+## 2. cli2_CPU_visualizer
 
 This task transforms your terminal into a live visualization of CPU activity.  
 It uses installable tools such as **sar**, **mpstat**, and **htop** to enable system statistics, capture CPU load, and display them as numeric columns in the terminal.
 
 ---
 
-## 3. cli3
+## 3. cli3_image_manipulation
 
 This CLI task is an image processing and manipulation pipeline.  
 It pulls any image (in this example a black square from wiki) and resizes, grayscales and blurs the image. Then it blends the desaturated and blurred image together for a final product.  
