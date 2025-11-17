@@ -127,7 +127,6 @@ class ScreenParserCPU:
                         bbox=[int(x1), int(y1), int(w), int(h)],
                         conf=conf,
                         source="ocr",
-                        meta={}
                     )
                 )
             return elements
@@ -149,7 +148,6 @@ class ScreenParserCPU:
                         bbox=[int(x1), int(y1), int(w), int(h)],
                         conf=float(conf),
                         source="ocr",
-                        meta={}
                     )
                 )
             return elements
@@ -266,3 +264,7 @@ if __name__ == "__main__":
         "timing_ms": result["timing_ms"],
         "elements": result["elements"]
     }, indent=2, ensure_ascii=False))
+    
+    file = "cpu_vision_output.json"
+    with open(file, "w") as json_file:
+        json.dump(result, json_file, indent=3)
