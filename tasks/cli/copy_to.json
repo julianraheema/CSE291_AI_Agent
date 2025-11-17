@@ -1,4 +1,5 @@
 {
+  "instruction": "Create a folder named traffic_and_weather_data inside the Documents directory. Then find the two most recent PNG screenshots in the Pictures/Screenshots folder and copy them into the new traffic_and_weather_data folder.",
   "single-action": [
     "`HOTKEY` 'Ctrl+Alt+T'",
     "`WAIT` 500",

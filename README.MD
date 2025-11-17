@@ -76,3 +76,94 @@ This task automatically opens Google Drive in **Google Chrome**, creates a new f
 - These automations are intended for **educational and research use** only.
 
 ---
+## Installation on Linux and Using Docker
+sudo apt update && sudo apt -y upgrade
+egrep -c '(vmx|svm)' /proc/cpuinfo
+sudo apt -y install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils virt-manager
+sudo usermod -aG kvm,libvirt $USER
+
+## Docker if your system didn't already has Docker
+curl -fsSL https://get.docker.com | sudo sh
+sudo usermod -aG docker $USER
+
+## Python and Conda env
+# Optional but recommended: miniconda
+sudo apt -y install wget
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda.sh
+bash ~/miniconda.sh -b -p $HOME/miniconda
+echo 'export PATH="$HOME/miniconda/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+conda create -y -n osworld python=3.10
+conda activate osworld
+
+## Install OSWorld
+git clone https://github.com/xlang-ai/OSWorld
+cd OSWorld
+pip install -r requirements.txt
+
+## Chose Model:
+
+### Option1 Ollama:
+#### Install Ollama
+curl -fsSL https://ollama.com/install.sh | sh
+#### Example: pull a small model
+ollama pull llama3.2:1b
+#### Run the service (it autostarts on install, but you can ensure it’s up)
+ollama serve
+
+### Option2 VLLM inside osworld conda environment
+pip install --upgrade pip
+pip install vllm
+
+python -c "import vllm; print('vLLM OK')"
+
+## Running
+## run vllm text only
+python -m vllm.entrypoints.openai.api_server \
+  --model mistralai/Mistral-7B-Instruct-v0.3 \
+  --max-model-len 1024 \
+  --gpu-memory-utilization 0.9 \
+  --port 8000
+
+## run vllm text and image
+python -m vllm.entrypoints.openai.api_server \
+  --model Qwen/Qwen2-VL-7B-Instruct-AWQ \
+  --quantization awq \
+  --dtype float16 \
+  --max-model-len 8192 \
+  --gpu-memory-utilization 0.9 \
+  --port 8000
+
+export OPENAI_API_KEY="dummy"
+export OPENAI_BASE_URL="http://localhost:8000/v1"
+
+python run.py \
+  --provider_name docker \
+  --headless \
+  --observation_type screenshot \
+  --model llama3.2:8b \            
+  --sleep_after_execution 3 \
+  --max_steps 15 \
+  --result_dir ./results/ecua-2_agent \
+
+
+# Assuming this structure:
+# OSWorld/                       (git clone)
+# ecua-2_agent/
+#   agent/
+#     __init__.py
+#     agent.py
+#     planner.py
+#     controller.py
+#     vision.py
+#   scripts/
+#     run_one_task.sh
+#     run_10_tasks.sh
+# tasks/
+#   <task-folders>/<task.json>   (your task files)
+
+# Make both repos importable:
+export PYTHONPATH="$PWD/OSWorld:$PWD/ecua-2_agent:$PYTHONPATH"
+
+## Show Results
+

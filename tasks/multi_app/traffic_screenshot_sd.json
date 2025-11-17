@@ -1,4 +1,6 @@
 {
+  "instruction": "Open a web browser and navigate to https://quickmap.dot.ca.gov/. In the menu, open Options → Road Conditions. Enable the checkboxes: Fast, Lane Closures, Full Closures, and CHP Incidents. Then use the 'Zoom to' menu to select San Diego. Once the map loads, take a screenshot showing the map with all selected conditions visible.",
+  
   "single-action": [
     "`HOTKEY` 'Ctrl+Alt+T'",
     "`TYPING` google-chrome https://quickmap.dot.ca.gov/",
