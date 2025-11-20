@@ -10,7 +10,7 @@
    },
    "elements": [
       {
-         "id": "t_3d1766",
+         "id": "t_60f0bb",
          "role": "text",
          "text": "Activities",
          "bbox": [
@@ -26,103 +26,119 @@
          }
       },
       {
-         "id": "t_3234a0",
+         "id": "t_2c2dde",
          "role": "text",
-         "text": "A Visual Studio Code",
+         "text": "xI Visual Studio Code",
          "bbox": [
             128,
-            6,
-            182,
+            4,
+            181,
             20
          ],
-         "conf": 0.9391765594482422,
+         "conf": 0.9327095746994019,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_ceeb47",
+         "id": "t_03f022",
          "role": "text",
-         "text": "Nov 19 16:07",
+         "text": "Nov 19 17:56",
          "bbox": [
             902,
             4,
-            115,
+            116,
             20
          ],
-         "conf": 0.9962311387062073,
+         "conf": 0.9614303708076477,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_6301fc",
+         "id": "t_5b2301",
          "role": "text",
          "text": "File Edit Selection View",
          "bbox": [
             48,
             40,
-            232,
+            231,
             24
          ],
-         "conf": 0.9931595921516418,
+         "conf": 0.992152214050293,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_f18cd0",
+         "id": "t_da6b27",
          "role": "text",
          "text": "Go",
          "bbox": [
-            288,
+            289,
             44,
-            31,
+            30,
             18
          ],
-         "conf": 0.9998537302017212,
+         "conf": 0.9997697472572327,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_1318d4",
+         "id": "t_0c8b05",
          "role": "text",
          "text": "Run",
          "bbox": [
-            330,
+            331,
+            44,
+            38,
+            18
+         ],
+         "conf": 0.9989134669303894,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_359858",
+         "role": "text",
+         "text": "Terminal",
+         "bbox": [
+            379,
             43,
-            52,
+            75,
             20
          ],
-         "conf": 0.9097341895103455,
+         "conf": 0.9999780654907227,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_3a6544",
+         "id": "t_a2b5da",
          "role": "text",
-         "text": "Terminal Help",
+         "text": "Help",
          "bbox": [
-            376,
-            42,
-            128,
-            24
+            460,
+            43,
+            44,
+            21
          ],
-         "conf": 0.9554544687271118,
+         "conf": 0.9999475479125977,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_fb1754",
+         "id": "t_06dba0",
          "role": "text",
          "text": "<",
          "bbox": [
@@ -131,14 +147,14 @@
             13,
             10
          ],
-         "conf": 0.6840840578079224,
+         "conf": 0.684083878993988,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_b1ab8d",
+         "id": "t_ac7aa4",
          "role": "text",
          "text": "7",
          "bbox": [
@@ -154,7 +170,7 @@
          }
       },
       {
-         "id": "t_e7baf2",
+         "id": "t_299558",
          "role": "text",
          "text": "Repo",
          "bbox": [
@@ -170,7 +186,7 @@
          }
       },
       {
-         "id": "t_9ee1cb",
+         "id": "t_ee6073",
          "role": "text",
          "text": "EXPLORER",
          "bbox": [
@@ -179,14 +195,14 @@
             72,
             15
          ],
-         "conf": 0.999939501285553,
+         "conf": 0.9999213814735413,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_22c417",
+         "id": "t_7b6931",
          "role": "text",
          "text": "...",
          "bbox": [
@@ -202,87 +218,87 @@
          }
       },
       {
-         "id": "t_060313",
+         "id": "t_5e024b",
          "role": "text",
          "text": "2",
          "bbox": [
-            406,
-            90,
-            14,
-            15
+            408,
+            91,
+            10,
+            11
          ],
-         "conf": 0.9976674914360046,
+         "conf": 0.9970822930335999,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_07c339",
+         "id": "t_662f05",
          "role": "text",
-         "text": "vision_CPU.py 2, R",
+         "text": "planner.py 1, M",
          "bbox": [
             426,
-            88,
-            140,
-            20
+            85,
+            117,
+            25
          ],
-         "conf": 0.9958741664886475,
+         "conf": 0.998794436454773,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_2a9667",
+         "id": "t_44ce77",
          "role": "text",
-         "text": "epu_vision_output,json R X",
+         "text": "README.MD M",
          "bbox": [
-            633,
+            614,
+            88,
+            121,
+            19
+         ],
+         "conf": 0.9967129230499268,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_fbba02",
+         "role": "text",
+         "text": "2",
+         "bbox": [
+            784,
+            90,
+            15,
+            14
+         ],
+         "conf": 0.9931807518005371,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_c4a9f6",
+         "role": "text",
+         "text": "vision_CPU.py 2 \u00d7",
+         "bbox": [
+            805,
             86,
-            212,
-            20
+            148,
+            24
          ],
-         "conf": 0.9269046783447266,
+         "conf": 0.9761962890625,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_1071a8",
-         "role": "text",
-         "text": "README.MD R",
-         "bbox": [
-            892,
-            88,
-            116,
-            16
-         ],
-         "conf": 0.9981966018676758,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_5d09e8",
-         "role": "text",
-         "text": "V",
-         "bbox": [
-            64,
-            128,
-            18,
-            10
-         ],
-         "conf": 0.7814916372299194,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_e6601e",
+         "id": "t_c4c489",
          "role": "text",
          "text": "REPO",
          "bbox": [
@@ -298,23 +314,23 @@
          }
       },
       {
-         "id": "t_da57a8",
+         "id": "t_f1cc25",
          "role": "text",
-         "text": "CSE291_Al_Agent > vision_module > {} epu_vision_output.json >",
+         "text": "CSE291_Al_Agent > ecua-2_agent > vision_module > &vision_CPU.py >",
          "bbox": [
-            406,
+            404,
             122,
-            498,
+            553,
             24
          ],
-         "conf": 0.9714270234107971,
+         "conf": 0.9669134020805359,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_51eed9",
+         "id": "t_9140d8",
          "role": "text",
          "text": "> .vscode",
          "bbox": [
@@ -330,199 +346,375 @@
          }
       },
       {
-         "id": "t_2f3555",
+         "id": "t_d492a9",
+         "role": "text",
+         "text": "25",
+         "bbox": [
+            420,
+            146,
+            27,
+            24
+         ],
+         "conf": 0.9999796748161316,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_c299b8",
+         "role": "text",
+         "text": "class",
+         "bbox": [
+            475,
+            147,
+            58,
+            21
+         ],
+         "conf": 0.9999793767929077,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_c44535",
+         "role": "text",
+         "text": "ScreenParserCPU:",
+         "bbox": [
+            536,
+            147,
+            171,
+            20
+         ],
+         "conf": 0.9963479042053223,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_17c8bc",
          "role": "text",
          "text": "elements.append(",
          "bbox": [
-            1270,
-            153,
-            142,
+            1272,
+            154,
+            141,
             24
          ],
-         "conf": 0.9998307824134827,
+         "conf": 0.9754495620727539,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_afc6b8",
+         "id": "t_a66c99",
          "role": "text",
-         "text": "Aa ab",
+         "text": "Aa ab, .*",
          "bbox": [
             1461,
-            157,
-            56,
-            21
+            156,
+            79,
+            24
          ],
-         "conf": 0.9980045557022095,
+         "conf": 0.9417238235473633,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_10e32e",
+         "id": "t_404981",
          "role": "text",
-         "text": "?of 2",
+         "text": "def",
          "bbox": [
-            1545,
+            514,
+            168,
+            40,
+            26
+         ],
+         "conf": 0.9998626708984375,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_53a0c0",
+         "role": "text",
+         "text": "?of3",
+         "bbox": [
+            1544,
             157,
             45,
             21
          ],
-         "conf": 0.9626787900924683,
+         "conf": 0.998080849647522,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_40dfbb",
+         "id": "t_d6b8f5",
          "role": "text",
          "text": "> code",
          "bbox": [
-            80,
+            79,
             178,
-            60,
+            61,
             20
          ],
-         "conf": 0.9769245982170105,
+         "conf": 0.9852075576782227,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_bc5665",
+         "id": "t_33545b",
          "role": "text",
-         "text": "You, 8 seconds ago | 1 author (You)",
+         "text": "79",
          "bbox": [
-            487,
-            189,
-            238,
-            19
+            420,
+            170,
+            27,
+            23
          ],
-         "conf": 0.9838814735412598,
+         "conf": 0.9999752044677734,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_b76289",
+         "id": "t_b83b7d",
          "role": "text",
-         "text": ">code_sample_design_code_good_ref",
+         "text": "run_ocr(self,",
          "bbox": [
-            81,
-            206,
-            295,
-            19
+            555,
+            170,
+            139,
+            23
          ],
-         "conf": 0.9613581299781799,
+         "conf": 0.9996031522750854,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_b24077",
+         "id": "t_074e06",
          "role": "text",
-         "text": "1",
+         "text": "img_bgr: np.ndarray)",
          "bbox": [
-            445,
-            211,
-            9,
-            16
-         ],
-         "conf": 0.9429118633270264,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_4daf13",
-         "role": "text",
-         "text": "You, 2 minutes ago  fix meta bug.",
-         "bbox": [
-            559,
-            207,
-            360,
+            704,
+            171,
+            216,
             24
          ],
-         "conf": 0.9870539307594299,
+         "conf": 0.9781960248947144,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_8128f3",
+         "id": "t_d827d6",
          "role": "text",
-         "text": "92",
+         "text": "->",
          "bbox": [
-            30,
-            230,
-            16,
+            932,
+            175,
+            20,
             14
          ],
-         "conf": 0.9999545216560364,
+         "conf": 0.9985507130622864,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_17efa9",
+         "id": "t_5ca00e",
          "role": "text",
-         "text": "CSE291_AI_Agent",
+         "text": "List[Element]:",
          "bbox": [
-            97,
-            234,
-            138,
+            957,
+            169,
+            150,
+            24
+         ],
+         "conf": 0.9962824583053589,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_462e65",
+         "role": "text",
+         "text": "07",
+         "bbox": [
+            421,
+            194,
+            21,
+            14
+         ],
+         "conf": 0.8147448301315308,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_376f10",
+         "role": "text",
+         "text": ">_code_sample_design_code_good_ref",
+         "bbox": [
+            80,
+            206,
+            296,
             19
          ],
-         "conf": 0.9676953554153442,
+         "conf": 0.9690328240394592,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_28bb08",
+         "id": "t_bd5141",
          "role": "text",
-         "text": "2",
+         "text": "88",
          "bbox": [
-            445,
-            234,
-            9,
+            421,
+            211,
+            25,
             20
          ],
-         "conf": 0.9813889861106873,
+         "conf": 0.9999591112136841,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_cbcec6",
+         "id": "t_5bbe4e",
          "role": "text",
-         "text": "\"window\": {",
+         "text": "elements:",
          "bbox": [
-            517,
-            229,
-            122,
-            26
+            559,
+            211,
+            98,
+            20
          ],
-         "conf": 0.9758880138397217,
+         "conf": 0.9999434947967529,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_5d0613",
+         "id": "t_67ff3a",
+         "role": "text",
+         "text": "List[Element]",
+         "bbox": [
+            663,
+            212,
+            141,
+            20
+         ],
+         "conf": 0.9999234676361084,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_05db28",
+         "role": "text",
+         "text": "=",
+         "bbox": [
+            812,
+            216,
+            15,
+            14
+         ],
+         "conf": 0.9951425790786743,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_8061cc",
+         "role": "text",
+         "text": "v CSE291_Al_Agent",
+         "bbox": [
+            79,
+            234,
+            156,
+            20
+         ],
+         "conf": 0.9550654292106628,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_5c4cb1",
+         "role": "text",
+         "text": "89",
+         "bbox": [
+            418,
+            232,
+            28,
+            24
+         ],
+         "conf": 0.9999504089355469,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_5e70f9",
+         "role": "text",
+         "text": "if not result:",
+         "bbox": [
+            559,
+            232,
+            151,
+            24
+         ],
+         "conf": 0.9696225523948669,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_16c8e8",
+         "role": "text",
+         "text": "Rm",
+         "bbox": [
+            1801,
+            224,
+            54,
+            12
+         ],
+         "conf": 0.6822518706321716,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_c75321",
          "role": "text",
          "text": "> .vscode",
          "bbox": [
@@ -531,739 +723,643 @@
             80,
             22
          ],
-         "conf": 0.9743173122406006,
+         "conf": 0.9743172526359558,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_597ad4",
+         "id": "t_009568",
          "role": "text",
-         "text": "3",
+         "text": "90",
          "bbox": [
-            445,
+            416,
             254,
-            9,
-            20
+            31,
+            27
          ],
-         "conf": 0.9689842462539673,
+         "conf": 0.9995336532592773,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_7d8a48",
+         "id": "t_6c58cd",
          "role": "text",
-         "text": "\"bbox\":",
+         "text": "return",
          "bbox": [
-            549,
-            254,
-            87,
-            24
-         ],
-         "conf": 0.9435940980911255,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_c2c7ad",
-         "role": "text",
-         "text": "ecua-2_agent",
-         "bbox": [
-            106,
-            290,
-            104,
+            603,
+            260,
+            68,
             16
          ],
-         "conf": 0.9753397107124329,
+         "conf": 0.9999716877937317,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_c8031e",
+         "id": "t_d1203e",
          "role": "text",
-         "text": "4",
+         "text": "elements",
          "bbox": [
-            445,
-            282,
-            9,
-            16
-         ],
-         "conf": 0.9998694658279419,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_fd3c8d",
-         "role": "text",
-         "text": "3840,",
-         "bbox": [
-            580,
-            279,
-            54,
-            21
-         ],
-         "conf": 0.9997116327285767,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_0c8f82",
-         "role": "text",
-         "text": "5",
-         "bbox": [
-            442,
-            303,
-            13,
-            19
-         ],
-         "conf": 0.9998001456260681,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_035b6a",
-         "role": "text",
-         "text": "0,",
-         "bbox": [
-            580,
-            303,
-            24,
-            21
-         ],
-         "conf": 0.982657790184021,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_1497cb",
-         "role": "text",
-         "text": ">",
-         "bbox": [
-            93,
-            320,
-            10,
-            12
-         ],
-         "conf": 0.9946670532226562,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_4a4ef2",
-         "role": "text",
-         "text": "tasks",
-         "bbox": [
-            102,
-            313,
-            51,
-            25
-         ],
-         "conf": 0.9999292492866516,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_70ed12",
-         "role": "text",
-         "text": "6",
-         "bbox": [
-            444,
-            327,
-            13,
-            19
-         ],
-         "conf": 0.9999394416809082,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_e21e2c",
-         "role": "text",
-         "text": "1920,",
-         "bbox": [
-            580,
-            326,
-            55,
-            21
-         ],
-         "conf": 0.999774158000946,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_8b55a0",
-         "role": "text",
-         "text": "> vision_files_samples",
-         "bbox": [
-            91,
-            343,
-            171,
+            668,
+            259,
+            94,
             20
          ],
-         "conf": 0.9652025103569031,
+         "conf": 0.9999692440032959,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_4f23a0",
+         "id": "t_373053",
          "role": "text",
-         "text": "7",
-         "bbox": [
-            442,
-            351,
-            13,
-            18
-         ],
-         "conf": 0.9999605417251587,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_403f71",
-         "role": "text",
-         "text": "1080",
-         "bbox": [
-            580,
-            350,
-            48,
-            21
-         ],
-         "conf": 0.9999477863311768,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_0c7034",
-         "role": "text",
-         "text": ".gitignore",
-         "bbox": [
-            108,
-            367,
-            79,
-            28
-         ],
-         "conf": 0.999344527721405,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_fd5147",
-         "role": "text",
-         "text": "8",
-         "bbox": [
-            442,
-            375,
-            14,
-            19
-         ],
-         "conf": 0.9999568462371826,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_1223a3",
-         "role": "text",
-         "text": "README.MD",
-         "bbox": [
-            106,
-            396,
-            101,
-            24
-         ],
-         "conf": 0.9993374347686768,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_a3dd16",
-         "role": "text",
-         "text": "9",
-         "bbox": [
-            442,
-            398,
-            14,
-            20
-         ],
-         "conf": 0.9994872808456421,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_766f6c",
-         "role": "text",
-         "text": "'scale\": 1.0",
-         "bbox": [
-            558,
-            398,
-            122,
-            21
-         ],
-         "conf": 0.9962277412414551,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_99dfed",
-         "role": "text",
-         "text": "v for-dev-needed-for-projet",
-         "bbox": [
-            80,
-            426,
-            212,
-            19
-         ],
-         "conf": 0.9865821599960327,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_f501ed",
-         "role": "text",
-         "text": "10",
-         "bbox": [
-            432,
-            421,
-            27,
-            24
-         ],
-         "conf": 0.9993274807929993,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_b06f49",
-         "role": "text",
-         "text": "v ecua-2_agent",
+         "text": "vecua-2_agent",
          "bbox": [
             88,
-            454,
+            289,
             124,
             19
          ],
-         "conf": 0.9676875472068787,
+         "conf": 0.9829375743865967,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_a988a2",
+         "id": "t_acb877",
          "role": "text",
-         "text": "11",
+         "text": "91",
          "bbox": [
-            433,
-            446,
-            24,
-            21
-         ],
-         "conf": 0.9609734416007996,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_c75950",
-         "role": "text",
-         "text": "'elements\":",
-         "bbox": [
-            525,
-            445,
-            112,
-            24
-         ],
-         "conf": 0.9997431039810181,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_0aff2d",
-         "role": "text",
-         "text": "12",
-         "bbox": [
-            430,
-            469,
-            27,
-            24
-         ],
-         "conf": 0.9980876445770264,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_ef1952",
-         "role": "text",
-         "text": "> agent",
-         "bbox": [
-            99,
-            480,
-            68,
-            22
-         ],
-         "conf": 0.9797585606575012,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_c0e7b9",
-         "role": "text",
-         "text": "13",
-         "bbox": [
-            430,
-            492,
-            27,
-            24
-         ],
-         "conf": 0.9996944665908813,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_d3864a",
-         "role": "text",
-         "text": "7b6214\",",
-         "bbox": [
-            676,
-            493,
-            81,
-            20
-         ],
-         "conf": 0.9956371784210205,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_c48e5e",
-         "role": "text",
-         "text": "README.MD",
-         "bbox": [
-            97,
-            508,
-            122,
-            19
-         ],
-         "conf": 0.9994639158248901,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_9a76f9",
-         "role": "text",
-         "text": "14",
-         "bbox": [
-            432,
-            517,
+            420,
+            282,
             26,
             20
          ],
-         "conf": 0.9990628957748413,
+         "conf": 0.999794602394104,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_744830",
+         "id": "t_52b5b3",
          "role": "text",
-         "text": "\"role\":",
+         "text": "92",
          "bbox": [
-            579,
-            513,
-            76,
-            27
+            418,
+            304,
+            30,
+            24
          ],
-         "conf": 0.9431158900260925,
+         "conf": 0.9999557733535767,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_4da2d1",
+         "id": "t_6cc73b",
          "role": "text",
-         "text": "'text\",",
+         "text": "first",
          "bbox": [
-            673,
-            516,
-            62,
-            22
+            558,
+            302,
+            61,
+            28
          ],
-         "conf": 0.9793671369552612,
+         "conf": 0.9999933242797852,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_288c5b",
+         "id": "t_1b81a4",
          "role": "text",
-         "text": "> mm_agents",
+         "text": "v planner_module",
          "bbox": [
-            93,
-            537,
-            105,
-            16
+            97,
+            314,
+            146,
+            21
          ],
-         "conf": 0.9876402020454407,
+         "conf": 0.9397534728050232,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_0b671e",
+         "id": "t_7d5a98",
          "role": "text",
-         "text": "15",
+         "text": "=",
          "bbox": [
-            430,
-            540,
+            624,
+            310,
+            12,
+            12
+         ],
+         "conf": 0.9916491508483887,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_ebc5bc",
+         "role": "text",
+         "text": "result[0]",
+         "bbox": [
+            638,
+            304,
+            103,
+            24
+         ],
+         "conf": 0.9999404549598694,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_f59215",
+         "role": "text",
+         "text": "93",
+         "bbox": [
+            418,
+            327,
             28,
             24
          ],
-         "conf": 0.9998743534088135,
+         "conf": 0.9998437166213989,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_70137f",
+         "id": "t_75aa53",
          "role": "text",
-         "text": "\"text\":",
+         "text": "> models",
          "bbox": [
-            580,
-            538,
-            75,
-            24
+            109,
+            340,
+            79,
+            22
          ],
-         "conf": 0.9997795224189758,
+         "conf": 0.9716522097587585,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_19d675",
+         "id": "t_00d10e",
          "role": "text",
-         "text": "\"Activities",
+         "text": "94",
          "bbox": [
-            666,
-            538,
-            121,
-            24
-         ],
-         "conf": 0.9996954202651978,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_e5da03",
-         "role": "text",
-         "text": "> tasks",
-         "bbox": [
-            88,
-            562,
-            63,
-            20
-         ],
-         "conf": 0.9849194884300232,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_0ed126",
-         "role": "text",
-         "text": "16",
-         "bbox": [
-            432,
-            565,
+            420,
+            352,
             26,
             20
          ],
-         "conf": 0.9998008012771606,
+         "conf": 0.9999246001243591,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_b72b9c",
+         "id": "t_39e4ab",
          "role": "text",
-         "text": "\"bbox\":",
+         "text": "# ocr v3 style",
          "bbox": [
-            579,
-            561,
-            78,
+            555,
+            350,
+            158,
             27
          ],
-         "conf": 0.9981597661972046,
+         "conf": 0.9620729684829712,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_b153b1",
+         "id": "t_a065b8",
          "role": "text",
-         "text": "ecua-2_run.py",
+         "text": "planner.py",
          "bbox": [
-            106,
-            589,
-            109,
-            22
-         ],
-         "conf": 0.9998620748519897,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_5d3d41",
-         "role": "text",
-         "text": "17",
-         "bbox": [
-            432,
-            588,
-            25,
+            128,
+            370,
+            82,
             20
          ],
-         "conf": 0.999725341796875,
+         "conf": 0.9986488223075867,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_471495",
+         "id": "t_26197d",
          "role": "text",
-         "text": "14,",
+         "text": "1, M",
          "bbox": [
-            609,
-            585,
-            38,
-            26
+            336,
+            370,
+            36,
+            21
          ],
-         "conf": 0.9993507862091064,
+         "conf": 0.9202727675437927,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_3a6003",
+         "id": "t_989f9b",
          "role": "text",
-         "text": "V",
+         "text": "95",
          "bbox": [
-            81,
-            624,
-            14,
-            9
+            420,
+            376,
+            26,
+            20
          ],
-         "conf": 0.7179890871047974,
+         "conf": 0.9999574422836304,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_6535d6",
+         "id": "t_27b5c6",
          "role": "text",
-         "text": "OSWorld",
+         "text": "if isinstance(first, dict) and (\"rec_texts\" in first or \"rec_boxes\" in first):",
          "bbox": [
+            559,
+            375,
+            823,
+            22
+         ],
+         "conf": 0.9832538962364197,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_5763b0",
+         "role": "text",
+         "text": "README.MD",
+         "bbox": [
+            128,
+            399,
             99,
-            619,
-            69,
+            18
+         ],
+         "conf": 0.9994238615036011,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_b13f77",
+         "role": "text",
+         "text": "96",
+         "bbox": [
+            418,
+            399,
+            28,
+            25
+         ],
+         "conf": 0.9999033212661743,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_8789a4",
+         "role": "text",
+         "text": "rec",
+         "bbox": [
+            602,
+            403,
+            40,
+            19
+         ],
+         "conf": 0.9998838901519775,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_6f9e04",
+         "role": "text",
+         "text": "texts",
+         "bbox": [
+            640,
+            402,
+            61,
+            21
+         ],
+         "conf": 0.9999696612358093,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_edf483",
+         "role": "text",
+         "text": "=",
+         "bbox": [
+            717,
+            405,
+            19,
+            14
+         ],
+         "conf": 0.9939716458320618,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_005d24",
+         "role": "text",
+         "text": "first.get(\"rec_texts\")",
+         "bbox": [
+            738,
+            400,
+            234,
+            21
+         ],
+         "conf": 0.9958295822143555,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_1bb62d",
+         "role": "text",
+         "text": ">third_party",
+         "bbox": [
+            98,
+            421,
+            109,
+            27
+         ],
+         "conf": 0.9881613850593567,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_09358d",
+         "role": "text",
+         "text": "97",
+         "bbox": [
+            420,
+            424,
+            26,
+            20
+         ],
+         "conf": 0.999974250793457,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_83471b",
+         "role": "text",
+         "text": "rec_",
+         "bbox": [
+            602,
+            427,
+            46,
+            20
+         ],
+         "conf": 0.9810205101966858,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_428e35",
+         "role": "text",
+         "text": "_scores",
+         "bbox": [
+            639,
+            423,
+            73,
+            24
+         ],
+         "conf": 0.9904292821884155,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_a7c3ed",
+         "role": "text",
+         "text": "=",
+         "bbox": [
+            716,
+            428,
+            19,
+            14
+         ],
+         "conf": 0.9973217844963074,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_d6901d",
+         "role": "text",
+         "text": "first.get(\"rec_scores\")",
+         "bbox": [
+            736,
+            426,
+            246,
+            20
+         ],
+         "conf": 0.9968418478965759,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_bd6eba",
+         "role": "text",
+         "text": "v vision_module",
+         "bbox": [
+            98,
+            452,
+            130,
+            20
+         ],
+         "conf": 0.9436070919036865,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_b39003",
+         "role": "text",
+         "text": "98",
+         "bbox": [
+            420,
+            448,
+            28,
+            21
+         ],
+         "conf": 0.9999707937240601,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_1b1ef9",
+         "role": "text",
+         "text": "rec_boxes",
+         "bbox": [
+            602,
+            450,
+            99,
+            20
+         ],
+         "conf": 0.9991744160652161,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_b7f08f",
+         "role": "text",
+         "text": "=",
+         "bbox": [
+            716,
+            453,
+            25,
+            13
+         ],
+         "conf": 0.9976722598075867,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_541cf8",
+         "role": "text",
+         "text": "first.get(\"rec_boxes\")",
+         "bbox": [
+            736,
+            450,
+            234,
+            20
+         ],
+         "conf": 0.9950656890869141,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_76143b",
+         "role": "text",
+         "text": "cpu_vision_output.json",
+         "bbox": [
+            123,
+            481,
+            179,
+            20
+         ],
+         "conf": 0.9859920144081116,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_b281e4",
+         "role": "text",
+         "text": "99",
+         "bbox": [
+            418,
+            470,
+            28,
+            24
+         ],
+         "conf": 0.9999150633811951,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_2df06c",
+         "role": "text",
+         "text": "README.MD",
+         "bbox": [
+            128,
+            510,
+            99,
             16
          ],
-         "conf": 0.9883217215538025,
+         "conf": 0.9998307824134827,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_ceab86",
+         "id": "t_eb902e",
          "role": "text",
          "text": "PROBLEMS",
          "bbox": [
-            412,
-            621,
-            74,
+            411,
+            513,
+            75,
             16
          ],
-         "conf": 0.9998594522476196,
+         "conf": 0.9999189376831055,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_8115ec",
+         "id": "t_b7cb33",
          "role": "text",
          "text": "OUTPUT",
          "bbox": [
             535,
-            621,
+            513,
             57,
             16
          ],
@@ -1274,28 +1370,28 @@
          }
       },
       {
-         "id": "t_bc9757",
+         "id": "t_29e1eb",
          "role": "text",
          "text": "DEBUG CONSOLE",
          "bbox": [
             619,
-            621,
-            114,
+            514,
+            115,
             15
          ],
-         "conf": 0.9994407296180725,
+         "conf": 0.9793533086776733,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_cfd550",
+         "id": "t_abc696",
          "role": "text",
          "text": "TERMINAL",
          "bbox": [
             759,
-            621,
+            513,
             68,
             16
          ],
@@ -1306,28 +1402,28 @@
          }
       },
       {
-         "id": "t_ec7667",
+         "id": "t_efecfe",
          "role": "text",
          "text": "PORTS",
          "bbox": [
-            855,
-            621,
-            46,
+            854,
+            513,
+            49,
             16
          ],
-         "conf": 0.9997751116752625,
+         "conf": 0.9997845888137817,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_168ad4",
+         "id": "t_02e94b",
          "role": "text",
          "text": "GITLENS",
          "bbox": [
             928,
-            621,
+            513,
             56,
             16
          ],
@@ -1338,1742 +1434,430 @@
          }
       },
       {
-         "id": "t_30ebad",
+         "id": "t_5ae485",
          "role": "text",
-         "text": ">",
+         "text": "python - vision_module+vB",
          "bbox": [
-            1479,
-            625,
-            18,
-            13
+            1498,
+            513,
+            256,
+            20
          ],
-         "conf": 0.9954571723937988,
+         "conf": 0.9259447455406189,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_70583d",
+         "id": "t_a45cb6",
          "role": "text",
-         "text": "python - vision_module",
+         "text": "vision_CPU.py",
          "bbox": [
-            1500,
-            621,
-            175,
-            19
+            126,
+            534,
+            110,
+            22
          ],
-         "conf": 0.9709123373031616,
+         "conf": 0.9673627614974976,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_e06855",
+         "id": "t_2dae83",
          "role": "text",
-         "text": "+ v",
+         "text": "2",
          "bbox": [
-            1686,
-            624,
-            40,
-            13
-         ],
-         "conf": 0.7601844668388367,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_ed7686",
-         "role": "text",
-         "text": "^",
-         "bbox": [
-            93,
-            649,
+            358,
+            541,
             9,
-            14
+            12
          ],
-         "conf": 0.9906486868858337,
+         "conf": 0.9999302625656128,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_ff5455",
+         "id": "t_167827",
          "role": "text",
-         "text": "_pycache",
-         "bbox": [
-            122,
-            644,
-            67,
-            24
-         ],
-         "conf": 0.9948197603225708,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_7de2e4",
-         "role": "text",
-         "text": "(osworld)",
-         "bbox": [
-            415,
-            661,
-            92,
-            21
-         ],
-         "conf": 0.9996885657310486,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_3b1db6",
-         "role": "text",
-         "text": "jraheema@lportal:~/CSE291A_AI_Agents_and_Systems/Repo/CSE291_AI_Agent/ecua-2_ag",
-         "bbox": [
-            508,
-            657,
-            798,
-            27
-         ],
-         "conf": 0.9951227903366089,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_2218d6",
-         "role": "text",
-         "text": ": 0 reqs,",
-         "bbox": [
-            1353,
-            661,
-            94,
-            25
-         ],
-         "conf": 0.9599633812904358,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_5c7cc4",
-         "role": "text",
-         "text": "Waiting:",
-         "bbox": [
-            1450,
-            661,
-            91,
-            25
-         ],
-         "conf": 0.9998580813407898,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_00d263",
-         "role": "text",
-         "text": "0",
-         "bbox": [
-            1544,
-            664,
-            14,
-            16
-         ],
-         "conf": 0.9838500022888184,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_5b5a99",
-         "role": "text",
-         "text": "reqs,",
-         "bbox": [
-            1562,
-            662,
-            54,
-            22
-         ],
-         "conf": 0.9993160367012024,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_962bba",
-         "role": "text",
-         "text": "GPU",
-         "bbox": [
-            1622,
-            662,
-            39,
-            22
-         ],
-         "conf": 0.9999392032623291,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_d2653c",
-         "role": "text",
-         "text": "KV cache",
-         "bbox": [
-            1659,
-            662,
-            90,
-            21
-         ],
-         "conf": 0.999150812625885,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_b2eb49",
-         "role": "text",
-         "text": "pyth...",
-         "bbox": [
-            1818,
-            655,
-            54,
-            21
-         ],
-         "conf": 0.9541221261024475,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_f04c20",
-         "role": "text",
-         "text": "assets",
-         "bbox": [
-            108,
-            676,
-            51,
-            16
-         ],
-         "conf": 0.9999234080314636,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_c8193b",
-         "role": "text",
-         "text": "ent/vision_module(osworld_integration)$",
+         "text": "(osworld)_jraheema@lportal:-/CSE291A_AI_Agents_and_Systems/Repo/CSE291_AI_Agent/ecua-2_agent/vision_module(osworld_integration)$pyt",
          "bbox": [
             412,
-            684,
-            397,
+            552,
+            1324,
+            22
+         ],
+         "conf": 0.9913631677627563,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_51df60",
+         "role": "text",
+         "text": "python",
+         "bbox": [
+            1794,
+            548,
+            58,
             20
          ],
-         "conf": 0.9995856881141663,
+         "conf": 0.999793291091919,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_9f66d7",
+         "id": "t_021b48",
          "role": "text",
-         "text": "python vision_CPU.py",
-         "bbox": [
-            807,
-            682,
-            208,
-            24
-         ],
-         "conf": 0.9776291847229004,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_af5c0e",
-         "role": "text",
-         "text": "usage:",
-         "bbox": [
-            1363,
-            684,
-            64,
-            25
-         ],
-         "conf": 0.9997146725654602,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_21e4b6",
-         "role": "text",
-         "text": "0.0%,",
-         "bbox": [
-            1431,
-            685,
-            55,
-            21
-         ],
-         "conf": 0.9975725412368774,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_10c3ab",
-         "role": "text",
-         "text": "Prefix",
-         "bbox": [
-            1492,
-            685,
-            67,
-            20
-         ],
-         "conf": 0.9999756813049316,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_df7123",
-         "role": "text",
-         "text": "cache",
-         "bbox": [
-            1562,
-            685,
-            56,
-            20
-         ],
-         "conf": 0.9999491572380066,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_1026ae",
-         "role": "text",
-         "text": "hit",
-         "bbox": [
-            1623,
-            685,
-            34,
-            21
-         ],
-         "conf": 0.9999740719795227,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_7ea92d",
-         "role": "text",
-         "text": "rate:",
-         "bbox": [
-            1665,
-            687,
-            51,
-            16
-         ],
-         "conf": 0.999909520149231,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_8865e6",
-         "role": "text",
-         "text": "43",
-         "bbox": [
-            1723,
-            686,
-            25,
-            18
-         ],
-         "conf": 0.9998935461044312,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_5c65a4",
-         "role": "text",
-         "text": "bash.",
-         "bbox": [
-            1820,
-            686,
-            42,
-            16
-         ],
-         "conf": 0.9999598264694214,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_e1e761",
-         "role": "text",
-         "text": ">",
-         "bbox": [
-            93,
-            705,
-            9,
-            13
-         ],
-         "conf": 0.9795413613319397,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_6a67ab",
-         "role": "text",
-         "text": "cache",
-         "bbox": [
-            106,
-            700,
-            50,
-            20
-         ],
-         "conf": 0.9999338984489441,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_d95aae",
-         "role": "text",
-         "text": "thub.com/ccache/ccache/blob/master/doc/INSTALL.md",
-         "bbox": [
-            411,
-            705,
-            495,
-            21
-         ],
-         "conf": 0.999913215637207,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_4a2b38",
-         "role": "text",
-         "text": ".9%",
-         "bbox": [
-            1358,
-            708,
-            31,
-            19
-         ],
-         "conf": 0.998979389667511,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_72394e",
-         "role": "text",
-         "text": "custom_tasks /chrome",
+         "text": "yolov8n.pt",
          "bbox": [
             108,
-            729,
-            172,
-            19
-         ],
-         "conf": 0.9801790118217468,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_f217a5",
-         "role": "text",
-         "text": "warnings.warn(",
-         "bbox": [
-            430,
-            729,
-            142,
-            20
-         ],
-         "conf": 0.9998188614845276,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_8506a3",
-         "role": "text",
-         "text": "(warning",
-         "bbox": [
             564,
-            730,
-            85,
+            104,
             20
          ],
-         "conf": 0.9997696876525879,
+         "conf": 0.9984754323959351,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_c28ce9",
+         "id": "t_5888ec",
          "role": "text",
-         "text": "_message)",
+         "text": "hon vision_CPU.py",
          "bbox": [
-            648,
-            728,
-            86,
-            24
+            409,
+            568,
+            178,
+            30
          ],
-         "conf": 0.9581413269042969,
+         "conf": 0.9899259209632874,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_e123f8",
+         "id": "t_3de1d8",
          "role": "text",
-         "text": "^C(APIServer",
-         "bbox": [
-            1352,
-            726,
-            128,
-            26
-         ],
-         "conf": 0.9665984511375427,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_40d85f",
-         "role": "text",
-         "text": "pid=99308)",
-         "bbox": [
-            1484,
-            729,
-            99,
-            20
-         ],
-         "conf": 0.9984842538833618,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_776a97",
-         "role": "text",
-         "text": "INFO",
-         "bbox": [
-            1593,
-            728,
-            45,
-            21
-         ],
-         "conf": 0.999487042427063,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_76030f",
-         "role": "text",
-         "text": "11-19",
-         "bbox": [
-            1644,
-            728,
-            55,
-            21
-         ],
-         "conf": 0.9998985528945923,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_8beacb",
-         "role": "text",
-         "text": "16:0",
-         "bbox": [
-            1704,
-            729,
-            46,
-            20
-         ],
-         "conf": 0.9988322854042053,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_3548a5",
-         "role": "text",
-         "text": "{}0d8b7de3-e8de-4d86-b9fd-d...",
-         "bbox": [
-            98,
-            756,
-            253,
-            19
-         ],
-         "conf": 0.9736207723617554,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_53605f",
-         "role": "text",
-         "text": "Creating model:",
-         "bbox": [
-            411,
-            751,
-            152,
-            20
-         ],
-         "conf": 0.9924188852310181,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_e1d021",
-         "role": "text",
-         "text": "( ' PP.",
-         "bbox": [
-            573,
-            751,
-            46,
-            20
-         ],
-         "conf": 0.8737155199050903,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_936d0f",
-         "role": "text",
-         "text": "-LCNet",
-         "bbox": [
-            610,
-            751,
-            73,
-            20
-         ],
-         "conf": 0.9973940253257751,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_fbd4ad",
-         "role": "text",
-         "text": "x1",
-         "bbox": [
-            681,
-            752,
-            25,
-            18
-         ],
-         "conf": 0.8444432020187378,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_2d119e",
-         "role": "text",
-         "text": "0",
-         "bbox": [
-            714,
-            754,
-            10,
-            13
-         ],
-         "conf": 0.8363761901855469,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_701fd2",
-         "role": "text",
-         "text": "textline",
-         "bbox": [
-            732,
-            751,
-            86,
-            20
-         ],
-         "conf": 0.9999698400497437,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_836498",
-         "role": "text",
-         "text": "ori'",
-         "bbox": [
-            819,
-            752,
-            43,
-            18
-         ],
-         "conf": 0.998881459236145,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_9dc974",
-         "role": "text",
-         "text": "None)",
-         "bbox": [
-            879,
-            748,
-            55,
-            25
-         ],
-         "conf": 0.9973861575126648,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_7d664c",
-         "role": "text",
-         "text": "2:14",
-         "bbox": [
-            1353,
-            750,
-            46,
-            21
-         ],
-         "conf": 0.9989807605743408,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_ae6b2c",
-         "role": "text",
-         "text": "[launcher.py:99]",
-         "bbox": [
-            1404,
-            748,
-            164,
-            26
-         ],
-         "conf": 0.9999046325683594,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_96120f",
-         "role": "text",
-         "text": "Shutting",
-         "bbox": [
-            1573,
-            750,
-            86,
-            24
-         ],
-         "conf": 0.9999849200248718,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_645888",
-         "role": "text",
-         "text": "down",
-         "bbox": [
-            1663,
-            751,
-            49,
-            20
-         ],
-         "conf": 0.9999176859855652,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_40d98e",
-         "role": "text",
-         "text": "Fas",
-         "bbox": [
-            1713,
-            753,
-            34,
-            17
-         ],
-         "conf": 0.999954879283905,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_e2d1aa",
-         "role": "text",
-         "text": "Model",
-         "bbox": [
-            410,
-            771,
-            55,
-            21
-         ],
-         "conf": 0.9999152421951294,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_aeb896",
-         "role": "text",
-         "text": "files",
-         "bbox": [
-            472,
-            772,
-            54,
-            20
-         ],
-         "conf": 0.9257428050041199,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_317048",
-         "role": "text",
-         "text": "already",
-         "bbox": [
-            528,
-            771,
-            78,
-            24
-         ],
-         "conf": 0.9999464750289917,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_440cec",
-         "role": "text",
-         "text": "exist.",
-         "bbox": [
-            612,
-            772,
-            61,
-            21
-         ],
-         "conf": 0.9991459846496582,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_1add38",
-         "role": "text",
-         "text": "Using",
-         "bbox": [
-            682,
-            772,
-            52,
-            21
-         ],
-         "conf": 0.9999376535415649,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_b1c970",
-         "role": "text",
-         "text": "cached",
-         "bbox": [
-            741,
-            772,
-            64,
-            21
-         ],
-         "conf": 0.9999809861183167,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_08b89b",
-         "role": "text",
-         "text": "files",
-         "bbox": [
-            813,
-            772,
-            54,
-            20
-         ],
-         "conf": 0.9999930262565613,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_41f8f0",
-         "role": "text",
-         "text": "To",
-         "bbox": [
-            882,
-            774,
-            25,
-            19
-         ],
-         "conf": 0.9996439218521118,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_e5e6e3",
-         "role": "text",
-         "text": "redownload,",
-         "bbox": [
-            913,
-            775,
-            106,
-            16
-         ],
-         "conf": 0.9970226883888245,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_d12cb0",
-         "role": "text",
-         "text": "please delete the directory",
-         "bbox": [
-            1029,
-            770,
-            276,
-            26
-         ],
-         "conf": 0.9890633821487427,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_ddb3ed",
-         "role": "text",
-         "text": "tAPI",
-         "bbox": [
-            1356,
-            774,
-            43,
-            18
-         ],
-         "conf": 0.9998147487640381,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_091ff4",
-         "role": "text",
-         "text": "HTTP",
-         "bbox": [
-            1402,
-            772,
-            48,
-            20
-         ],
-         "conf": 0.9409290552139282,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_bed4b9",
-         "role": "text",
-         "text": "server.",
-         "bbox": [
-            1454,
-            774,
-            70,
-            20
-         ],
-         "conf": 0.9999685287475586,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_36e3e0",
-         "role": "text",
-         "text": "2ad9387a-65d8-4e33-ad5b-7...",
-         "bbox": [
-            118,
-            786,
-            229,
-            15
-         ],
-         "conf": 0.9957574009895325,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_bb1373",
-         "role": "text",
-         "text": "manually:",
-         "bbox": [
-            420,
-            795,
-            96,
-            20
-         ],
-         "conf": 0.9999552965164185,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_0af653",
-         "role": "text",
-         "text": "/home/jraheema,",
-         "bbox": [
-            532,
-            795,
-            146,
-            20
-         ],
-         "conf": 0.9978063702583313,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_9ce6dd",
-         "role": "text",
-         "text": ".paddlex/offi",
-         "bbox": [
-            688,
-            795,
-            128,
-            20
-         ],
-         "conf": 0.9573402404785156,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_142528",
-         "role": "text",
-         "text": "icial",
-         "bbox": [
-            810,
-            796,
-            52,
-            16
-         ],
-         "conf": 0.9955664873123169,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_2d44f1",
-         "role": "text",
-         "text": "models/Pp-LCNet xl 0 textline ori",
-         "bbox": [
-            858,
-            795,
-            345,
-            19
-         ],
-         "conf": 0.9515097737312317,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_80ca27",
-         "role": "text",
-         "text": "(APIServer",
-         "bbox": [
-            1357,
-            795,
-            102,
-            20
-         ],
-         "conf": 0.9996750950813293,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_b3edbd",
-         "role": "text",
-         "text": "pid=99308)",
-         "bbox": [
-            1462,
-            795,
-            102,
-            20
-         ],
-         "conf": 0.998642086982727,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_62328f",
-         "role": "text",
-         "text": "INFO:",
-         "bbox": [
-            1574,
-            795,
-            54,
-            20
-         ],
-         "conf": 0.9989202618598938,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_d994b7",
-         "role": "text",
-         "text": "Shuttin",
-         "bbox": [
-            1675,
-            795,
-            74,
-            20
-         ],
-         "conf": 0.9999703168869019,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_aa5600",
-         "role": "text",
-         "text": "2ae9ba84-3a0d-4d4c-8338-3.",
-         "bbox": [
-            117,
-            812,
-            220,
-            15
-         ],
-         "conf": 0.9999611973762512,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_e54ecb",
-         "role": "text",
-         "text": "Creating",
-         "bbox": [
-            412,
-            817,
-            86,
-            20
-         ],
-         "conf": 0.9469923377037048,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_1a9bbb",
-         "role": "text",
-         "text": "model:",
-         "bbox": [
-            499,
-            816,
-            68,
-            21
-         ],
-         "conf": 0.9998271465301514,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_fde40a",
-         "role": "text",
-         "text": "PP",
-         "bbox": [
-            589,
-            817,
-            28,
-            19
-         ],
-         "conf": 0.9961110949516296,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_c9484d",
-         "role": "text",
-         "text": "-0CRv5",
-         "bbox": [
-            616,
-            816,
-            60,
-            21
-         ],
-         "conf": 0.9548304677009583,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_05e1dd",
-         "role": "text",
-         "text": "server",
-         "bbox": [
-            681,
-            817,
-            68,
-            20
-         ],
-         "conf": 0.9999334216117859,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_dc0eca",
-         "role": "text",
-         "text": "det'",
-         "bbox": [
-            751,
-            817,
-            46,
-            20
-         ],
-         "conf": 0.9064593315124512,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_5a9187",
-         "role": "text",
-         "text": "None)",
-         "bbox": [
-            812,
-            816,
-            50,
-            21
-         ],
-         "conf": 0.9971084594726562,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_bd413f",
-         "role": "text",
-         "text": "g down",
-         "bbox": [
-            1351,
-            813,
-            69,
-            27
-         ],
-         "conf": 0.9953070282936096,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_ec89c6",
-         "role": "text",
-         "text": "desktop_env",
+         "text": "yolov8s.pt",
          "bbox": [
             108,
-            836,
-            99,
-            22
+            590,
+            103,
+            20
          ],
-         "conf": 0.9995901584625244,
+         "conf": 0.9995248913764954,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_5ffe84",
+         "id": "t_438a97",
          "role": "text",
-         "text": "Model",
+         "text": "/home/jraheema/CSE291A_AI_Agents_and_Systems/Repo/CSE291_AI_Agent/ecua-2_agent/vision_module/vision_CPU.py:40: DeprecationWarning:T",
          "bbox": [
-            410,
-            837,
-            56,
-            21
-         ],
-         "conf": 0.9999243021011353,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_76f2e4",
-         "role": "text",
-         "text": "files",
-         "bbox": [
-            470,
-            835,
-            56,
+            412,
+            595,
+            1326,
             24
          ],
-         "conf": 0.9993208646774292,
+         "conf": 0.9901562333106995,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_01c6fc",
+         "id": "t_870db1",
          "role": "text",
-         "text": "already",
+         "text": ">",
          "bbox": [
-            530,
-            838,
-            75,
-            20
+            94,
+            622,
+            8,
+            12
          ],
-         "conf": 0.9999871253967285,
+         "conf": 0.9876484870910645,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_96446e",
+         "id": "t_fe11c2",
          "role": "text",
-         "text": "exist.",
+         "text": "tasks",
          "bbox": [
-            609,
-            837,
-            62,
-            20
-         ],
-         "conf": 0.9997660517692566,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_96720b",
-         "role": "text",
-         "text": "Using",
-         "bbox": [
-            680,
-            835,
-            57,
-            28
-         ],
-         "conf": 0.9998674392700195,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_33f843",
-         "role": "text",
-         "text": "cached",
-         "bbox": [
-            740,
-            837,
-            67,
-            22
-         ],
-         "conf": 0.9999850392341614,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_d56a4f",
-         "role": "text",
-         "text": "files",
-         "bbox": [
-            813,
-            837,
-            54,
-            21
-         ],
-         "conf": 0.9999917149543762,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_6abf48",
-         "role": "text",
-         "text": "To",
-         "bbox": [
-            882,
-            840,
-            25,
+            109,
+            619,
+            43,
             18
          ],
-         "conf": 0.9995772838592529,
+         "conf": 0.9999728202819824,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_7669a2",
+         "id": "t_b01fe2",
          "role": "text",
-         "text": "redownload,",
+         "text": "he parameter",
          "bbox": [
-            910,
-            838,
-            109,
-            20
-         ],
-         "conf": 0.9981738924980164,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_2d7f2c",
-         "role": "text",
-         "text": "please",
-         "bbox": [
-            1030,
-            841,
-            67,
-            16
-         ],
-         "conf": 0.9999812245368958,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_7ec6c9",
-         "role": "text",
-         "text": "delete the directory",
-         "bbox": [
-            1096,
-            836,
-            208,
-            26
-         ],
-         "conf": 0.9893819689750671,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_b115eb",
-         "role": "text",
-         "text": "(APIServer",
-         "bbox": [
-            1357,
-            840,
-            100,
-            20
-         ],
-         "conf": 0.9997106790542603,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_51d12e",
-         "role": "text",
-         "text": "pid=99308)",
-         "bbox": [
-            1461,
-            835,
-            103,
-            26
-         ],
-         "conf": 0.9978815317153931,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_4edfdc",
-         "role": "text",
-         "text": "INFO:",
-         "bbox": [
-            1575,
-            838,
-            52,
-            20
-         ],
-         "conf": 0.9991076588630676,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_9599ad",
-         "role": "text",
-         "text": "Waiting",
-         "bbox": [
-            1671,
-            835,
-            79,
-            27
-         ],
-         "conf": 0.9995558857917786,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_51715f",
-         "role": "text",
-         "text": "docker_vm_data",
-         "bbox": [
-            106,
-            862,
+            411,
+            619,
             128,
-            22
+            20
          ],
-         "conf": 0.99560546875,
+         "conf": 0.986305296421051,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_76b982",
+         "id": "t_28f19f",
          "role": "text",
-         "text": "manually:",
+         "text": "det_db_thresh has\u00afbeen deprecated and will be removed in the future. Please use",
          "bbox": [
-            418,
-            859,
-            98,
-            24
-         ],
-         "conf": 0.9999498724937439,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_163057",
-         "role": "text",
-         "text": "/home/",
-         "bbox": [
-            531,
-            860,
-            61,
-            21
-         ],
-         "conf": 0.9835574626922607,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_2b9e41",
-         "role": "text",
-         "text": "jraheema/.paddlex/official",
-         "bbox": [
-            598,
-            858,
-            258,
+            547,
+            615,
+            813,
             25
          ],
-         "conf": 0.9996079206466675,
+         "conf": 0.9764901399612427,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_4406d9",
+         "id": "t_3f6b98",
          "role": "text",
-         "text": "models/PP-0CRv5",
+         "text": "text det thresh",
          "bbox": [
-            860,
-            861,
-            158,
+            1369,
+            618,
+            159,
             19
          ],
-         "conf": 0.9943470358848572,
+         "conf": 0.989334762096405,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_919c20",
+         "id": "t_776b8e",
          "role": "text",
-         "text": "server det'.",
+         "text": "instead.",
          "bbox": [
-            1020,
-            861,
-            122,
-            19
-         ],
-         "conf": 0.9961240887641907,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_c2b41b",
-         "role": "text",
-         "text": "for",
-         "bbox": [
-            1365,
-            862,
-            34,
-            18
-         ],
-         "conf": 0.9999818801879883,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_cb3b8f",
-         "role": "text",
-         "text": "application",
-         "bbox": [
-            1402,
-            860,
-            118,
-            24
-         ],
-         "conf": 0.9999932646751404,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_08ed1d",
-         "role": "text",
-         "text": "shutdown.",
-         "bbox": [
-            1524,
-            861,
-            91,
+            1540,
+            618,
+            82,
             20
+         ],
+         "conf": 0.9999737739562988,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_8613f7",
+         "role": "text",
+         "text": "vision_files_samples",
+         "bbox": [
+            108,
+            645,
+            154,
+            19
+         ],
+         "conf": 0.9945236444473267,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_8b1200",
+         "role": "text",
+         "text": "self.ocr =",
+         "bbox": [
+            432,
+            639,
+            110,
+            20
+         ],
+         "conf": 0.9919474720954895,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_d8c0ec",
+         "role": "text",
+         "text": "PaddleOCR(",
+         "bbox": [
+            541,
+            640,
+            104,
+            20
+         ],
+         "conf": 0.9896873235702515,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_22b1b9",
+         "role": "text",
+         "text": ".gitignore",
+         "bbox": [
+            109,
+            672,
+            78,
+            25
+         ],
+         "conf": 0.9999223947525024,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_2e1281",
+         "role": "text",
+         "text": "/home/jraheema/anaconda3/envs/osworld/lib/python3.10/site-packages/paddle/utils/cpp_extension/extension_utils.py:718: UserWarning: N",
+         "bbox": [
+            411,
+            661,
+            1328,
+            25
+         ],
+         "conf": 0.9944231510162354,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_81e345",
+         "role": "text",
+         "text": "o ccache found. Please be aware that recompiling all source files may be required. You can download and install",
+         "bbox": [
+            410,
+            684,
+            1128,
+            22
+         ],
+         "conf": 0.9842499494552612,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_07405a",
+         "role": "text",
+         "text": "ccache from: https:/",
+         "bbox": [
+            1528,
+            686,
+            205,
+            20
+         ],
+         "conf": 0.9885751008987427,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_2cd84c",
+         "role": "text",
+         "text": "README.MD",
+         "bbox": [
+            110,
+            702,
+            97,
+            16
+         ],
+         "conf": 0.9995259046554565,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_52b739",
+         "role": "text",
+         "text": "M",
+         "bbox": [
+            352,
+            705,
+            16,
+            15
+         ],
+         "conf": 0.9998371601104736,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_9c0d39",
+         "role": "text",
+         "text": "/github.com/ccache/ccache/blob/master/doc/INSTALL.md",
+         "bbox": [
+            411,
+            706,
+            525,
+            22
+         ],
+         "conf": 0.9993131160736084,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_2f4496",
+         "role": "text",
+         "text": "for-dev-needed-for-projet",
+         "bbox": [
+            99,
+            729,
+            193,
+            19
+         ],
+         "conf": 0.9870022535324097,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_9133b7",
+         "role": "text",
+         "text": "warnings.warn(warning_message)",
+         "bbox": [
+            429,
+            727,
+            304,
+            25
          ],
          "conf": 0.9998918175697327,
          "source": "ocr",
@@ -3082,263 +1866,471 @@
          }
       },
       {
-         "id": "t_97994a",
+         "id": "t_597ee9",
          "role": "text",
-         "text": "Creating",
+         "text": "ecua-2_agent",
          "bbox": [
-            412,
-            883,
-            86,
-            20
-         ],
-         "conf": 0.9469922780990601,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_b8977b",
-         "role": "text",
-         "text": "model:",
-         "bbox": [
-            498,
-            882,
-            66,
+            106,
+            754,
+            106,
             21
          ],
-         "conf": 0.9995933175086975,
+         "conf": 0.9994478225708008,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_114763",
+         "id": "t_d4b95a",
          "role": "text",
-         "text": "en",
+         "text": "Creating model: ('PP-LCNet_xl_0_textline_ori',",
          "bbox": [
-            590,
-            883,
-            27,
-            19
-         ],
-         "conf": 0.9991632699966431,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_b4bd30",
-         "role": "text",
-         "text": "PP-0CRv5",
-         "bbox": [
-            620,
-            880,
-            90,
+            411,
+            751,
+            460,
             20
          ],
-         "conf": 0.9938317537307739,
+         "conf": 0.9853051900863647,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_5ce769",
+         "id": "t_d1596b",
          "role": "text",
-         "text": "mobile",
+         "text": "None)",
          "bbox": [
-            710,
-            884,
-            67,
+            880,
+            751,
+            52,
+            21
+         ],
+         "conf": 0.9990771412849426,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_2a1aa5",
+         "role": "text",
+         "text": "> agent",
+         "bbox": [
+            99,
+            782,
+            69,
+            22
+         ],
+         "conf": 0.9707244038581848,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_8827ed",
+         "role": "text",
+         "text": "Model",
+         "bbox": [
+            411,
+            772,
+            55,
+            20
+         ],
+         "conf": 0.9999266862869263,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_a6b11e",
+         "role": "text",
+         "text": "files already exist. Using",
+         "bbox": [
+            470,
+            772,
+            267,
+            20
+         ],
+         "conf": 0.9892857670783997,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_121a36",
+         "role": "text",
+         "text": "cached",
+         "bbox": [
+            739,
+            772,
+            69,
+            20
+         ],
+         "conf": 0.9999852180480957,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_e87346",
+         "role": "text",
+         "text": "files. To redownload,",
+         "bbox": [
+            811,
+            772,
+            216,
+            20
+         ],
+         "conf": 0.9947289228439331,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_fce7ba",
+         "role": "text",
+         "text": "please delete the directory manually:",
+         "bbox": [
+            1028,
+            774,
+            378,
+            20
+         ],
+         "conf": 0.9890464544296265,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_992b0f",
+         "role": "text",
+         "text": "/home/jraheema/.paddlex/officia",
+         "bbox": [
+            1418,
+            774,
+            318,
+            19
+         ],
+         "conf": 0.9998013973236084,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_494093",
+         "role": "text",
+         "text": "l_models/PP-LCNet_xl_0_textline_ori",
+         "bbox": [
+            412,
+            795,
+            356,
+            20
+         ],
+         "conf": 0.9819917678833008,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_294068",
+         "role": "text",
+         "text": "README.MD",
+         "bbox": [
+            120,
+            811,
+            97,
             16
          ],
-         "conf": 0.9999837875366211,
+         "conf": 0.9994955062866211,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_d28d83",
+         "id": "t_355f0e",
          "role": "text",
-         "text": "rec",
+         "text": "Creating model: ('Pp-oCRv5_server_det',",
          "bbox": [
-            780,
-            884,
-            38,
-            18
+            411,
+            814,
+            392,
+            24
          ],
-         "conf": 0.9998763203620911,
+         "conf": 0.9536507725715637,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_3b0f6c",
+         "id": "t_f5bf04",
+         "role": "text",
+         "text": "None)",
+         "bbox": [
+            808,
+            812,
+            56,
+            27
+         ],
+         "conf": 0.990184485912323,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_dbf4c6",
+         "role": "text",
+         "text": "mm_agents",
+         "bbox": [
+            108,
+            841,
+            91,
+            16
+         ],
+         "conf": 0.9998033046722412,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_0fc343",
+         "role": "text",
+         "text": "Model files already exist.",
+         "bbox": [
+            409,
+            835,
+            268,
+            25
+         ],
+         "conf": 0.9959539771080017,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_eebcb3",
+         "role": "text",
+         "text": "Using",
+         "bbox": [
+            679,
+            838,
+            58,
+            21
+         ],
+         "conf": 0.9999505281448364,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_9e810f",
+         "role": "text",
+         "text": "cached",
+         "bbox": [
+            741,
+            838,
+            65,
+            20
+         ],
+         "conf": 0.999983012676239,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_1c80ad",
+         "role": "text",
+         "text": "files. To redownload, please delete the directory manually:",
+         "bbox": [
+            810,
+            835,
+            596,
+            26
+         ],
+         "conf": 0.98062664270401,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_c65aac",
+         "role": "text",
+         "text": "\"/home/jraheema/.paddlex/officia",
+         "bbox": [
+            1412,
+            836,
+            326,
+            25
+         ],
+         "conf": 0.9822822213172913,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_22d3d7",
+         "role": "text",
+         "text": "tasks",
+         "bbox": [
+            106,
+            865,
+            46,
+            20
+         ],
+         "conf": 0.9999850988388062,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_b49aac",
+         "role": "text",
+         "text": "models/PP-ocRv5 server det.",
+         "bbox": [
+            428,
+            860,
+            283,
+            20
+         ],
+         "conf": 0.9395006895065308,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_4aaec7",
+         "role": "text",
+         "text": "Creatinq model:",
+         "bbox": [
+            412,
+            880,
+            153,
+            20
+         ],
+         "conf": 0.9885158538818359,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_a062f5",
+         "role": "text",
+         "text": "('en_PP-OcRv5_mobile_rec'",
+         "bbox": [
+            572,
+            879,
+            255,
+            25
+         ],
+         "conf": 0.9468309283256531,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_dc1038",
          "role": "text",
          "text": "None)",
          "bbox": [
             840,
-            879,
-            52,
-            26
-         ],
-         "conf": 0.9824503660202026,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_295379",
-         "role": "text",
-         "text": "(APIServer",
-         "bbox": [
-            1357,
-            883,
-            103,
-            20
-         ],
-         "conf": 0.9997336268424988,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_b5d21d",
-         "role": "text",
-         "text": "pid=99308)",
-         "bbox": [
-            1460,
-            879,
-            104,
-            27
-         ],
-         "conf": 0.994391143321991,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_4eef41",
-         "role": "text",
-         "text": "INFO:",
-         "bbox": [
-            1574,
-            883,
-            52,
-            20
-         ],
-         "conf": 0.9988265037536621,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_85d7b5",
-         "role": "text",
-         "text": "Applica",
-         "bbox": [
-            1674,
             882,
-            76,
-            25
+            54,
+            21
          ],
-         "conf": 0.9999872446060181,
+         "conf": 0.9979308843612671,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_493e00",
+         "id": "t_769aaa",
          "role": "text",
-         "text": ">",
+         "text": "ecua-2_run.py",
          "bbox": [
-            97,
-            898,
-            7,
-            9
+            109,
+            895,
+            105,
+            16
          ],
-         "conf": 0.9891564846038818,
+         "conf": 0.9998149275779724,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_4f6096",
-         "role": "text",
-         "text": "evaluation_examples",
-         "bbox": [
-            98,
-            894,
-            171,
-            19
-         ],
-         "conf": 0.9969853758811951,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_6dec4b",
+         "id": "t_9ce51d",
          "role": "text",
          "text": "Model",
          "bbox": [
             411,
             903,
-            54,
-            21
+            55,
+            20
          ],
-         "conf": 0.9999408721923828,
+         "conf": 0.9999018907546997,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_e61717",
+         "id": "t_f001cc",
          "role": "text",
          "text": "files",
          "bbox": [
             472,
-            904,
-            54,
-            20
+            906,
+            55,
+            16
          ],
-         "conf": 0.9257428050041199,
+         "conf": 0.9999858736991882,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_a6a7a7",
+         "id": "t_222d7d",
          "role": "text",
          "text": "already",
          "bbox": [
-            530,
+            528,
             904,
-            73,
+            79,
             20
          ],
-         "conf": 0.999980628490448,
+         "conf": 0.9999929070472717,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_05ed68",
+         "id": "t_64c651",
          "role": "text",
          "text": "exist.",
          "bbox": [
@@ -3354,359 +2346,199 @@
          }
       },
       {
-         "id": "t_1887c3",
+         "id": "t_f80ba5",
          "role": "text",
          "text": "Using",
          "bbox": [
-            680,
-            902,
-            56,
-            25
+            681,
+            904,
+            55,
+            20
          ],
-         "conf": 0.9999440312385559,
+         "conf": 0.9999622106552124,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_ec487f",
+         "id": "t_a510f6",
          "role": "text",
          "text": "cached",
          "bbox": [
-            741,
-            904,
-            65,
+            740,
+            903,
+            68,
             20
          ],
-         "conf": 0.9999827742576599,
+         "conf": 0.9999813437461853,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_c1600b",
+         "id": "t_95a5bf",
          "role": "text",
-         "text": "files",
+         "text": "files. To redownload, please delete the directory",
          "bbox": [
-            814,
-            904,
-            52,
-            20
-         ],
-         "conf": 0.9999927282333374,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_368b76",
-         "role": "text",
-         "text": "To",
-         "bbox": [
-            882,
-            906,
-            25,
-            18
-         ],
-         "conf": 0.9995772838592529,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_27b215",
-         "role": "text",
-         "text": "redownload,",
-         "bbox": [
-            910,
-            904,
-            111,
-            20
-         ],
-         "conf": 0.9999535083770752,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_2c154c",
-         "role": "text",
-         "text": "please",
-         "bbox": [
-            1030,
-            904,
-            69,
-            20
-         ],
-         "conf": 0.9999885559082031,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_cdafb2",
-         "role": "text",
-         "text": "delete the directory",
-         "bbox": [
-            1095,
+            810,
             902,
-            210,
-            27
+            499,
+            25
          ],
-         "conf": 0.9999237060546875,
+         "conf": 0.994617223739624,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_ff0fae",
+         "id": "t_03f5d6",
          "role": "text",
          "text": "OUTLINE",
          "bbox": [
-            80,
-            914,
-            63,
+            81,
+            915,
+            64,
             16
          ],
-         "conf": 0.9986061453819275,
+         "conf": 0.9992102980613708,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_b86ae9",
-         "role": "text",
-         "text": "tion",
-         "bbox": [
-            1354,
-            904,
-            46,
-            20
-         ],
-         "conf": 0.999977707862854,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_cb4bcc",
-         "role": "text",
-         "text": "shutdown",
-         "bbox": [
-            1405,
-            907,
-            84,
-            16
-         ],
-         "conf": 0.9999827146530151,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_856ead",
-         "role": "text",
-         "text": "complete.",
-         "bbox": [
-            1494,
-            906,
-            91,
-            20
-         ],
-         "conf": 0.9999628067016602,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_786699",
+         "id": "t_efeec0",
          "role": "text",
          "text": "manually:",
          "bbox": [
-            420,
-            925,
-            92,
-            25
-         ],
-         "conf": 0.9992191791534424,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_3dde8d",
-         "role": "text",
-         "text": "/home/",
-         "bbox": [
-            532,
-            926,
-            60,
-            21
-         ],
-         "conf": 0.958916425704956,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_f597b0",
-         "role": "text",
-         "text": "jraheema/.paddlex/official",
-         "bbox": [
-            597,
-            927,
-            260,
+            1310,
+            906,
+            94,
             20
          ],
-         "conf": 0.9996492862701416,
+         "conf": 0.9999472498893738,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_3ada02",
+         "id": "t_5fc038",
+         "role": "text",
+         "text": "/home/jraheema/.paddlex/officia",
+         "bbox": [
+            1420,
+            906,
+            315,
+            19
+         ],
+         "conf": 0.9996649622917175,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_efcf01",
          "role": "text",
          "text": "models/en",
          "bbox": [
-            858,
-            928,
-            99,
+            429,
+            927,
+            97,
             18
          ],
-         "conf": 0.9999350309371948,
+         "conf": 0.9999420642852783,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_cf1d02",
+         "id": "t_011d0e",
          "role": "text",
-         "text": "PP-OCRv5_mobile_rec",
+         "text": "PP-0CRv5_mobile",
          "bbox": [
-            960,
-            927,
-            205,
-            20
+            530,
+            925,
+            158,
+            22
          ],
-         "conf": 0.9778345823287964,
+         "conf": 0.9011421799659729,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_f545f9",
+         "id": "t_f14f7b",
          "role": "text",
-         "text": "(vllm)",
+         "text": "rec",
          "bbox": [
-            1357,
-            926,
-            57,
-            21
+            688,
+            928,
+            39,
+            18
          ],
-         "conf": 0.9999041557312012,
+         "conf": 0.9997850060462952,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_7ea4c3",
-         "role": "text",
-         "text": "jraheema@lportal:~/CSE291A_AI_Ag",
-         "bbox": [
-            1423,
-            924,
-            326,
-            27
-         ],
-         "conf": 0.9965164661407471,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_90e3bd",
+         "id": "t_b842d3",
          "role": "text",
          "text": "TIMELINE",
          "bbox": [
             81,
             943,
-            68,
+            69,
             18
          ],
-         "conf": 0.9995507001876831,
+         "conf": 0.9998874664306641,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_bcea25",
+         "id": "t_e45d81",
          "role": "text",
          "text": "Capturing",
          "bbox": [
-            410,
-            945,
-            97,
-            27
+            412,
+            950,
+            93,
+            20
          ],
-         "conf": 0.9999710917472839,
+         "conf": 0.9999761581420898,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_980e3f",
+         "id": "t_b4fdcf",
          "role": "text",
          "text": "Screen",
          "bbox": [
-            512,
-            949,
-            66,
-            20
+            513,
+            951,
+            64,
+            16
          ],
-         "conf": 0.9999618530273438,
+         "conf": 0.9999463558197021,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_8bc4ff",
-         "role": "text",
-         "text": "ents_and_Systems/Repo/0SWorld_old(main)",
-         "bbox": [
-            1352,
-            948,
-            392,
-            22
-         ],
-         "conf": 0.9923646450042725,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_07a79d",
+         "id": "t_0b0528",
          "role": "text",
          "text": "VSIX VIEWER",
          "bbox": [
@@ -3715,254 +2547,206 @@
             93,
             15
          ],
-         "conf": 0.9992406368255615,
+         "conf": 0.9985557198524475,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_8dd736",
+         "id": "t_eb1841",
          "role": "text",
-         "text": "$",
+         "text": "CSE291_Al_Agent",
          "bbox": [
-            1353,
-            973,
-            14,
-            19
+            69,
+            996,
+            128,
+            22
          ],
-         "conf": 0.9985514283180237,
+         "conf": 0.9704161286354065,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_af9329",
+         "id": "t_8c8d60",
          "role": "text",
-         "text": "CSE291_AI_Agent",
+         "text": "osworld_integration*",
          "bbox": [
-            70,
-            997,
-            125,
-            18
-         ],
-         "conf": 0.9745326638221741,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_f46611",
-         "role": "text",
-         "text": "osworld_integration-",
-         "bbox": [
-            223,
+            222,
             999,
-            142,
+            148,
             15
          ],
-         "conf": 0.9705038070678711,
+         "conf": 0.9996799230575562,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_1a3753",
+         "id": "t_79e58a",
          "role": "text",
          "text": "Launchpad",
          "bbox": [
-            502,
-            999,
-            75,
-            16
+            499,
+            997,
+            79,
+            20
          ],
-         "conf": 0.9999446868896484,
+         "conf": 0.9687824249267578,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_2828f9",
+         "id": "t_71b160",
          "role": "text",
-         "text": "X ROS2.humble",
+         "text": "\u00d7 ROS2.humble",
          "bbox": [
-            598,
+            597,
             998,
             115,
             16
          ],
-         "conf": 0.9701683521270752,
+         "conf": 0.9628876447677612,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_17b432",
+         "id": "t_b8d243",
          "role": "text",
-         "text": "x",
+         "text": "\u24670\u03943",
          "bbox": [
-            735,
-            1002,
-            13,
-            10
+            729,
+            997,
+            70,
+            20
          ],
-         "conf": 0.8915565013885498,
+         "conf": 0.7926124334335327,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_5de935",
+         "id": "t_ead700",
          "role": "text",
-         "text": "2",
+         "text": "Garrett Hilyer, 5 days agoLn 1, Col 1",
          "bbox": [
-            768,
+            1137,
             998,
-            33,
-            18
-         ],
-         "conf": 0.998685896396637,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_d29d4c",
-         "role": "text",
-         "text": "You, 2 minutes ago",
-         "bbox": [
-            1260,
-            998,
-            134,
+            282,
             19
          ],
-         "conf": 0.998927652835846,
+         "conf": 0.980577826499939,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_ba1156",
+         "id": "t_436123",
          "role": "text",
-         "text": "Ln 1, Col 1",
+         "text": "Spaces: 4",
          "bbox": [
-            1407,
+            1413,
             999,
-            73,
+            72,
             16
          ],
-         "conf": 0.9989166259765625,
+         "conf": 0.9914578199386597,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_b550d9",
-         "role": "text",
-         "text": "Spaces: 3",
-         "bbox": [
-            1497,
-            999,
-            66,
-            16
-         ],
-         "conf": 0.9970338344573975,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_0370ed",
+         "id": "t_16bfda",
          "role": "text",
          "text": "UTF-8",
          "bbox": [
-            1578,
-            997,
-            48,
-            20
+            1497,
+            999,
+            62,
+            16
          ],
-         "conf": 0.9998043775558472,
+         "conf": 0.9646269679069519,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_83deb5",
+         "id": "t_7aebc7",
          "role": "text",
          "text": "LF",
          "bbox": [
-            1636,
-            998,
-            25,
-            18
-         ],
-         "conf": 0.9999749660491943,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_bcec75",
-         "role": "text",
-         "text": "JSON",
-         "bbox": [
-            1696,
-            997,
-            50,
-            20
-         ],
-         "conf": 0.9996256828308105,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_da2228",
-         "role": "text",
-         "text": "88 Finish Setup",
-         "bbox": [
-            1758,
-            993,
-            117,
-            26
-         ],
-         "conf": 0.9256064295768738,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_ff8b81",
-         "role": "text",
-         "text": "Jr",
-         "bbox": [
-            9,
-            998,
-            19,
+            1554,
+            999,
+            43,
             16
          ],
-         "conf": 0.6800978183746338,
+         "conf": 0.9397217035293579,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_f6a0af",
+         "id": "t_42a90f",
+         "role": "text",
+         "text": "Python",
+         "bbox": [
+            1594,
+            998,
+            84,
+            20
+         ],
+         "conf": 0.9993478655815125,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_0490c1",
+         "role": "text",
+         "text": "&B Finish Setup",
+         "bbox": [
+            1690,
+            999,
+            110,
+            16
+         ],
+         "conf": 0.9540206789970398,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_7877c4",
+         "role": "text",
+         "text": "3.10.12",
+         "bbox": [
+            1815,
+            997,
+            57,
+            20
+         ],
+         "conf": 0.9999545216560364,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_b19786",
          "role": "text",
          "text": "SSD",
          "bbox": [
@@ -3978,57 +2762,57 @@
          }
       },
       {
-         "id": "t_4d4a1f",
+         "id": "t_99eecb",
          "role": "text",
          "text": "SSD",
          "bbox": [
-            542,
-            1048,
-            31,
-            18
+            540,
+            1045,
+            33,
+            22
          ],
-         "conf": 0.9988772869110107,
+         "conf": 0.9930009245872498,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "d_7e9a34",
-         "role": "icon",
-         "text": "laptop",
-         "bbox": [
-            5,
-            0,
-            1895,
-            1076
-         ],
-         "conf": 0.6352376341819763,
-         "source": "detector",
-         "meta": {
-            "class_id": 63
-         }
-      },
-      {
-         "id": "d_c77355",
+         "id": "d_1ce4c9",
          "role": "icon",
          "text": "tv",
          "bbox": [
-            3,
-            6,
-            1891,
-            1067
+            4,
+            7,
+            1915,
+            1053
          ],
-         "conf": 0.4238813519477844,
+         "conf": 0.4317414164543152,
          "source": "detector",
          "meta": {
             "class_id": 62
          }
+      },
+      {
+         "id": "d_2c9652",
+         "role": "icon",
+         "text": "laptop",
+         "bbox": [
+            2,
+            0,
+            1916,
+            1073
+         ],
+         "conf": 0.3757055699825287,
+         "source": "detector",
+         "meta": {
+            "class_id": 63
+         }
       }
    ],
    "timing_ms": {
-      "ocr": 12507,
-      "yolo": 122,
-      "total": 12630
+      "ocr": 14311,
+      "yolo": 96,
+      "total": 14408
    }
 }

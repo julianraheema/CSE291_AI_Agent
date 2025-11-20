@@ -146,6 +146,8 @@ python run.py \
   --max_steps 15 \
   --result_dir ./results/ecua-2_agent \
 
+  python ecua-2_run.py   --provider_name docker   --headless   --action_space computer_13   --observation_type screenshot   --model gpt-qwen2vl-7b   --sleep_after_execution 3   --max_steps 30   --result_dir ./results/test_custom_tasks_qwen2vl_new   --tasks_path ./custom_tasks
+
 
 # Assuming this structure:
 # OSWorld/                       (git clone)
