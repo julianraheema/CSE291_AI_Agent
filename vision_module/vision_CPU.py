@@ -121,12 +121,19 @@ class ScreenParserCPU:
 
                 elements.append(
                     Element(
+                        # id=f"t_{uuid.uuid4().hex[:6]}",
+                        # role=self._guess_role_from_text(text),
+                        # text=text.strip(),
+                        # bbox=[int(x1), int(y1), int(w), int(h)],
+                        # conf=conf,
+                        # source="ocr",
                         id=f"t_{uuid.uuid4().hex[:6]}",
                         role=self._guess_role_from_text(text),
                         text=text.strip(),
                         bbox=[int(x1), int(y1), int(w), int(h)],
                         conf=conf,
                         source="ocr",
+                        meta={"source_type": "ocr_v3"}
                     )
                 )
             return elements
