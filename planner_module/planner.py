@@ -38,49 +38,46 @@ def build_prompt(task, vision_data):
     window = vision_data.get("window", {})
     bbox = window.get("bbox", [0, 0, 1920, 1080])
     
-    # Format UI elements
-    ui_context = ""
-    for el in elements[:100]:  # Limit to first 100 elements
+    # Format UI elements - only show elements with text
+    ui_elements = []
+    for el in elements[:50]:  # Limit to first 50 elements
         text = el.get("text", "").strip()
-        role = el.get("role", "unknown")
         el_bbox = el.get("bbox", [0, 0, 0, 0])
         
-        if text:
-            ui_context += f'[{role}] "{text}" at ({el_bbox[0]}, {el_bbox[1]})\n'
+        if text and len(text) > 1:  # Only include meaningful text
+            ui_elements.append(f'"{text}" at ({el_bbox[0]}, {el_bbox[1]})')
     
-    # Build full prompt with few-shot examples
-    prompt = f"""You are a computer control system. Generate action commands.
+    ui_context = "\n".join(ui_elements)
+    
+    # Build focused prompt with strict examples
+    prompt = f"""Convert the task into computer actions using ONLY these actions:
+MOVE_TO x y - move cursor
+CLICK - click mouse
+TYPING "text" - type text
+HOTKEY keys - keyboard shortcut
+DONE - finish
 
-AVAILABLE ACTIONS:
-{AVAILABLE_ACTIONS}
-
-SCREEN:
+Screen elements:
 {ui_context}
 
-Example 1:
-TASK: Click on Gmail
-OUTPUT:
+Examples:
+
+Task: Click on Gmail
 MOVE_TO 3523 213
 CLICK
 DONE
 
-Example 2:
-TASK: Type hello in search box
-OUTPUT:
+Task: Search for python
 MOVE_TO 1380 588
 CLICK
-TYPING "hello"
+TYPING "python"
 DONE
 
-Example 3:
-TASK: Open terminal
-OUTPUT:
+Task: Open terminal
 HOTKEY ctrl+alt+t
 DONE
 
-Now complete this task:
-TASK: {task}
-OUTPUT:
+Task: {task}
 """
     return prompt
 
@@ -119,15 +116,27 @@ def generate_plan(task, vision_path, model_path="./models/llama-3.2-1b",
         enforce_eager=True,
     )
     
-    sampling_params = SamplingParams(temperature=temperature, max_tokens=max_tokens)
+    sampling_params = SamplingParams(
+        temperature=temperature, 
+        max_tokens=max_tokens,
+        stop=["DONE", "FAIL"]
+    )
     outputs = llm.generate([prompt], sampling_params)
     
-    return outputs[0].outputs[0].text.strip()
+    # Get output and add back the stop token
+    output = outputs[0].outputs[0].text.strip()
+    stop_reason = outputs[0].outputs[0].stop_reason
+    
+    # Add back DONE or FAIL if it was the stop reason
+    if stop_reason and stop_reason in ["DONE", "FAIL"]:
+        output += f"\n{stop_reason}"
+    
+    return output
 
 
 def main():
-    task = "Click on Syllabus"
-    vision_file = "./vision_files/cpu_vision_output.json"
+    task = "Search up cat pictures in google search bar"
+    vision_file = "./vision_files/gpu_omni_output.json"
     model_path = "planner_module/models/llama-3.2-1b"
     temperature = 0.3
     max_tokens = 512
