@@ -10,7 +10,7 @@
    },
    "elements": [
       {
-         "id": "t_a31d95",
+         "id": "t_7b6214",
          "role": "text",
          "text": "Activities",
          "bbox": [
@@ -26,7 +26,7 @@
          }
       },
       {
-         "id": "t_643e80",
+         "id": "t_ba1311",
          "role": "text",
          "text": "A Visual Studio Code",
          "bbox": [
@@ -42,55 +42,55 @@
          }
       },
       {
-         "id": "t_4622cf",
+         "id": "t_d1205f",
          "role": "text",
-         "text": "Nov 19 15:58",
+         "text": "Nov 19 16:02",
          "bbox": [
             902,
             4,
-            116,
+            115,
             20
          ],
-         "conf": 0.971388041973114,
+         "conf": 0.9968622326850891,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_c03f6c",
+         "id": "t_d8677c",
          "role": "text",
          "text": "File Edit Selection",
          "bbox": [
             48,
             39,
-            175,
+            174,
             23
          ],
-         "conf": 0.9891611337661743,
+         "conf": 0.9888278841972351,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_dac465",
+         "id": "t_9f54ea",
          "role": "text",
          "text": "View",
          "bbox": [
-            225,
+            229,
             43,
-            52,
+            49,
             20
          ],
-         "conf": 0.9999335408210754,
+         "conf": 0.999957799911499,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_4cca05",
+         "id": "t_9b9c92",
          "role": "text",
          "text": "Go",
          "bbox": [
@@ -106,7 +106,7 @@
          }
       },
       {
-         "id": "t_7132ac",
+         "id": "t_bb269d",
          "role": "text",
          "text": "Run",
          "bbox": [
@@ -122,23 +122,23 @@
          }
       },
       {
-         "id": "t_7da0c2",
+         "id": "t_98c70a",
          "role": "text",
          "text": "Terminal",
          "bbox": [
             379,
-            43,
-            72,
+            42,
+            70,
             20
          ],
-         "conf": 0.9999776482582092,
+         "conf": 0.9999669790267944,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_31f05e",
+         "id": "t_386eba",
          "role": "text",
          "text": "Help",
          "bbox": [
@@ -154,7 +154,7 @@
          }
       },
       {
-         "id": "t_335e12",
+         "id": "t_641174",
          "role": "text",
          "text": "K",
          "bbox": [
@@ -170,7 +170,7 @@
          }
       },
       {
-         "id": "t_35ee5c",
+         "id": "t_b64870",
          "role": "text",
          "text": "7",
          "bbox": [
@@ -186,7 +186,7 @@
          }
       },
       {
-         "id": "t_878bfe",
+         "id": "t_4c6706",
          "role": "text",
          "text": "Q",
          "bbox": [
@@ -202,7 +202,7 @@
          }
       },
       {
-         "id": "t_6c5c1e",
+         "id": "t_50838f",
          "role": "text",
          "text": "Repo",
          "bbox": [
@@ -218,7 +218,7 @@
          }
       },
       {
-         "id": "t_b104c9",
+         "id": "t_12ae9e",
          "role": "text",
          "text": "EXPLORER",
          "bbox": [
@@ -227,14 +227,14 @@
             72,
             15
          ],
-         "conf": 0.9999221563339233,
+         "conf": 0.9999213814735413,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_3eeefe",
+         "id": "t_44f663",
          "role": "text",
          "text": "...",
          "bbox": [
@@ -243,14 +243,14 @@
             16,
             8
          ],
-         "conf": 0.6689026355743408,
+         "conf": 0.6689028143882751,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_7048c8",
+         "id": "t_f81999",
          "role": "text",
          "text": "2",
          "bbox": [
@@ -266,55 +266,71 @@
          }
       },
       {
-         "id": "t_951041",
+         "id": "t_a4e1c4",
          "role": "text",
-         "text": "vision_CPU.py 2, M X",
+         "text": "vision_CPU.py 2",
          "bbox": [
             423,
             85,
-            172,
-            27
+            128,
+            23
          ],
-         "conf": 0.9660784602165222,
+         "conf": 0.9961678385734558,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_451f8c",
+         "id": "t_ca963d",
          "role": "text",
-         "text": "f",
+         "text": "\u00d7",
          "bbox": [
-            620,
-            92,
-            13,
-            10
+            546,
+            90,
+            27,
+            18
          ],
-         "conf": 0.8127210736274719,
+         "conf": 0.7248024344444275,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_f6d3bd",
+         "id": "t_5c2a7b",
+         "role": "text",
+         "text": "A",
+         "bbox": [
+            598,
+            90,
+            15,
+            15
+         ],
+         "conf": 0.6866242289543152,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_31b63b",
          "role": "text",
          "text": "README.MD",
          "bbox": [
-            639,
+            620,
             88,
-            99,
+            98,
             16
          ],
-         "conf": 0.9996123909950256,
+         "conf": 0.9994787573814392,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_29fcb3",
+         "id": "t_66dd29",
          "role": "text",
          "text": "REPO",
          "bbox": [
@@ -330,71 +346,39 @@
          }
       },
       {
-         "id": "t_c98b14",
+         "id": "t_cbf393",
          "role": "text",
-         "text": "CSE291_Al_Agent > vision_module >",
+         "text": "CSE291_Al_Agent > vision_module > &",
          "bbox": [
             406,
             123,
-            280,
+            304,
             21
          ],
-         "conf": 0.9803823828697205,
+         "conf": 0.9598932266235352,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_dfa046",
+         "id": "t_fb6c5c",
          "role": "text",
-         "text": "2",
+         "text": "vision_CPU.py >  ScreenParserCP >  run_ocr",
          "bbox": [
-            691,
-            124,
-            16,
-            17
-         ],
-         "conf": 0.9932378530502319,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_8bc3cb",
-         "role": "text",
-         "text": "vision_CPU.py >",
-         "bbox": [
-            711,
+            710,
             123,
-            123,
+            381,
             21
          ],
-         "conf": 0.9945300221443176,
+         "conf": 0.9440065026283264,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_25f52b",
-         "role": "text",
-         "text": "ScreenParserCPU > run_ocr",
-         "bbox": [
-            836,
-            123,
-            255,
-            21
-         ],
-         "conf": 0.9503908753395081,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_de0b76",
+         "id": "t_f56c50",
          "role": "text",
          "text": "> .vscode",
          "bbox": [
@@ -410,71 +394,71 @@
          }
       },
       {
-         "id": "t_1356c5",
+         "id": "t_0c0dd6",
          "role": "text",
          "text": "25",
          "bbox": [
-            421,
-            147,
-            26,
-            20
+            418,
+            146,
+            28,
+            24
          ],
-         "conf": 0.9999851584434509,
+         "conf": 0.999975323677063,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_867f68",
+         "id": "t_de8ede",
          "role": "text",
          "text": "class",
          "bbox": [
             475,
             147,
-            57,
+            58,
             21
          ],
-         "conf": 0.9999812245368958,
+         "conf": 0.9999793767929077,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_eb3de9",
+         "id": "t_0cc60b",
          "role": "text",
          "text": "ScreenParserCPU:",
          "bbox": [
-            535,
-            144,
-            174,
-            27
+            536,
+            147,
+            171,
+            20
          ],
-         "conf": 0.9901120662689209,
+         "conf": 0.9969862699508667,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_c79db0",
+         "id": "t_9c06d8",
          "role": "text",
          "text": "elements.append(",
          "bbox": [
-            1273,
+            1274,
             156,
-            139,
+            138,
             20
          ],
-         "conf": 0.9996492862701416,
+         "conf": 0.9819190502166748,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_8083a8",
+         "id": "t_b68142",
          "role": "text",
          "text": "Aa ab, .*",
          "bbox": [
@@ -490,23 +474,23 @@
          }
       },
       {
-         "id": "t_0154b8",
+         "id": "t_f9c0a2",
          "role": "text",
-         "text": "1 of 3",
+         "text": "?of3",
          "bbox": [
-            1546,
-            157,
-            45,
-            21
+            1545,
+            158,
+            43,
+            18
          ],
-         "conf": 0.9281780123710632,
+         "conf": 0.9989565014839172,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_b5b5e0",
+         "id": "t_1c3fb3",
          "role": "text",
          "text": "79",
          "bbox": [
@@ -522,7 +506,7 @@
          }
       },
       {
-         "id": "t_386fe3",
+         "id": "t_538840",
          "role": "text",
          "text": "def",
          "bbox": [
@@ -538,87 +522,87 @@
          }
       },
       {
-         "id": "t_bdc261",
+         "id": "t_c51de0",
          "role": "text",
-         "text": "run_ocr(self",
+         "text": "run_ocr(self,",
          "bbox": [
-            558,
+            556,
             170,
-            134,
+            139,
             23
          ],
-         "conf": 0.9998672604560852,
+         "conf": 0.9980087280273438,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_0a45cb",
+         "id": "t_fd896f",
          "role": "text",
          "text": "img",
          "bbox": [
-            704,
-            168,
-            40,
-            27
+            703,
+            169,
+            43,
+            26
          ],
-         "conf": 0.9996830821037292,
+         "conf": 0.9994707703590393,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_1fa5b0",
+         "id": "t_ebab85",
          "role": "text",
-         "text": "np.ndarray)",
+         "text": "_bgr: np.ndarray)",
          "bbox": [
-            798,
+            744,
             171,
-            121,
+            176,
             24
          ],
-         "conf": 0.9997609853744507,
+         "conf": 0.9868465662002563,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_4858b0",
+         "id": "t_4b6279",
          "role": "text",
          "text": "List[Element]:",
          "bbox": [
-            957,
-            169,
-            150,
-            24
+            954,
+            168,
+            153,
+            26
          ],
-         "conf": 0.9985223412513733,
+         "conf": 0.9999244809150696,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_9f4274",
+         "id": "t_098900",
          "role": "text",
          "text": ">",
          "bbox": [
             1251,
-            160,
+            162,
             9,
-            13
+            12
          ],
-         "conf": 0.9624733924865723,
+         "conf": 0.9619178771972656,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_9945d9",
+         "id": "t_80a603",
          "role": "text",
          "text": "> code",
          "bbox": [
@@ -634,55 +618,55 @@
          }
       },
       {
-         "id": "t_3f74bb",
+         "id": "t_f2654e",
          "role": "text",
-         "text": "bgr:",
+         "text": "->",
          "bbox": [
-            747,
-            172,
-            45,
-            22
-         ],
-         "conf": 0.9997526407241821,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_8030c5",
-         "role": "text",
-         "text": ">",
-         "bbox": [
-            936,
+            930,
             175,
-            15,
-            15
+            25,
+            14
          ],
-         "conf": 0.9925763607025146,
+         "conf": 0.9963200688362122,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_376056",
+         "id": "t_4040c0",
          "role": "text",
-         "text": "125",
+         "text": "122",
          "bbox": [
             410,
-            202,
-            38,
+            195,
+            37,
             21
          ],
-         "conf": 0.9999439120292664,
+         "conf": 0.9999762177467346,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_bf12ee",
+         "id": "t_a5af55",
+         "role": "text",
+         "text": "elements.append(",
+         "bbox": [
+            643,
+            195,
+            174,
+            24
+         ],
+         "conf": 0.9983689785003662,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_be0a1c",
          "role": "text",
          "text": "> code_sample_design_code_good_ref",
          "bbox": [
@@ -698,151 +682,39 @@
          }
       },
       {
-         "id": "t_305207",
+         "id": "t_610018",
          "role": "text",
-         "text": "#",
-         "bbox": [
-            728,
-            205,
-            15,
-            18
-         ],
-         "conf": 0.9940513968467712,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_734fd7",
-         "role": "text",
-         "text": "role=self",
-         "bbox": [
-            751,
-            204,
-            99,
-            20
-         ],
-         "conf": 0.9847249984741211,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_837fab",
-         "role": "text",
-         "text": "guess",
-         "bbox": [
-            864,
-            205,
-            60,
-            20
-         ],
-         "conf": 0.9999502897262573,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_1b8417",
-         "role": "text",
-         "text": "role",
-         "bbox": [
-            927,
-            204,
-            51,
-            20
-         ],
-         "conf": 0.9999727010726929,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_a4ad5c",
-         "role": "text",
-         "text": "_from_text(text),",
-         "bbox": [
-            972,
-            204,
-            176,
-            20
-         ],
-         "conf": 0.9977404475212097,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_8920af",
-         "role": "text",
-         "text": "126",
+         "text": "123",
          "bbox": [
             410,
-            226,
-            38,
-            21
+            218,
+            37,
+            22
          ],
-         "conf": 0.99992436170578,
+         "conf": 0.9998665452003479,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_fbac13",
+         "id": "t_b4736c",
          "role": "text",
-         "text": "#",
+         "text": "Element(",
          "bbox": [
-            728,
-            229,
-            14,
-            18
-         ],
-         "conf": 0.9976915121078491,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_baa56e",
-         "role": "text",
-         "text": "text=text.",
-         "bbox": [
-            750,
-            228,
-            102,
-            20
-         ],
-         "conf": 0.9990115165710449,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_e960d3",
-         "role": "text",
-         "text": ".strip(),",
-         "bbox": [
-            850,
-            226,
+            685,
+            218,
             87,
             24
          ],
-         "conf": 0.9269624352455139,
+         "conf": 0.9997930526733398,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_ee5284",
+         "id": "t_f7ff05",
          "role": "text",
          "text": "v CSE291_Al_Agent",
          "bbox": [
@@ -858,151 +730,167 @@
          }
       },
       {
-         "id": "t_93ab1f",
+         "id": "t_c929ac",
+         "role": "text",
+         "text": "124",
+         "bbox": [
+            410,
+            242,
+            37,
+            22
+         ],
+         "conf": 0.9998567700386047,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_9fa59b",
+         "role": "text",
+         "text": "#",
+         "bbox": [
+            728,
+            246,
+            16,
+            16
+         ],
+         "conf": 0.9976342916488647,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_a58d7c",
+         "role": "text",
+         "text": "id=f\"t",
+         "bbox": [
+            747,
+            243,
+            68,
+            20
+         ],
+         "conf": 0.9986121654510498,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_f78312",
+         "role": "text",
+         "text": "{uuid.uuid4().hex[:6]}\",",
+         "bbox": [
+            824,
+            242,
+            249,
+            24
+         ],
+         "conf": 0.9978378415107727,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_d84129",
          "role": "text",
          "text": "> .vscode",
          "bbox": [
-            87,
+            88,
             259,
-            81,
+            80,
             22
          ],
-         "conf": 0.9539549350738525,
+         "conf": 0.968469500541687,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_ff9e69",
+         "id": "t_58cb6c",
          "role": "text",
-         "text": "127",
+         "text": "125",
          "bbox": [
-            410,
-            249,
-            38,
-            22
-         ],
-         "conf": 0.9999348521232605,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_fede5a",
-         "role": "text",
-         "text": "#",
-         "bbox": [
-            728,
-            253,
-            14,
-            16
-         ],
-         "conf": 0.9979667663574219,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_fb4b80",
-         "role": "text",
-         "text": "bbox=[int(x1),",
-         "bbox": [
-            748,
-            252,
-            145,
-            20
-         ],
-         "conf": 0.9397916197776794,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_9af514",
-         "role": "text",
-         "text": "int(y1),",
-         "bbox": [
-            907,
-            250,
-            86,
-            24
-         ],
-         "conf": 0.9691917896270752,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_d1c755",
-         "role": "text",
-         "text": "int(w), int(h)],",
-         "bbox": [
-            1002,
-            252,
-            168,
-            20
-         ],
-         "conf": 0.9548934698104858,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_00f200",
-         "role": "text",
-         "text": "128",
-         "bbox": [
-            410,
-            274,
-            38,
+            411,
+            266,
+            36,
             21
          ],
-         "conf": 0.9999358057975769,
+         "conf": 0.9999754428863525,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_4f24e5",
+         "id": "t_b7fa2d",
          "role": "text",
          "text": "#",
          "bbox": [
             728,
-            277,
+            267,
             14,
             18
          ],
-         "conf": 0.9976915121078491,
+         "conf": 0.9993972778320312,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_7a5d10",
+         "id": "t_7ca3eb",
          "role": "text",
-         "text": "conf=conf,",
+         "text": "role=self.",
          "bbox": [
-            750,
-            276,
-            104,
+            748,
+            265,
+            103,
+            24
+         ],
+         "conf": 0.9911493062973022,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_595a45",
+         "role": "text",
+         "text": "guess",
+         "bbox": [
+            864,
+            267,
+            61,
             20
          ],
-         "conf": 0.9997357130050659,
+         "conf": 0.999912440776825,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_ae0673",
+         "id": "t_2da45d",
+         "role": "text",
+         "text": "role from text(text),",
+         "bbox": [
+            927,
+            267,
+            220,
+            19
+         ],
+         "conf": 0.9832754731178284,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_7b00e1",
          "role": "text",
          "text": "> ecua-2_agent",
          "bbox": [
@@ -1011,78 +899,62 @@
             122,
             20
          ],
-         "conf": 0.9785953164100647,
+         "conf": 0.9792723059654236,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_4c2e23",
+         "id": "t_beedb9",
          "role": "text",
-         "text": "129",
+         "text": "126",
          "bbox": [
             410,
-            297,
-            38,
+            289,
+            37,
             22
          ],
-         "conf": 0.9998363852500916,
+         "conf": 0.9999356865882874,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_8363d3",
+         "id": "t_8219fd",
          "role": "text",
          "text": "#",
          "bbox": [
             728,
-            300,
+            292,
             14,
-            18
-         ],
-         "conf": 0.9994192123413086,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_29a3fc",
-         "role": "text",
-         "text": "source=",
-         "bbox": [
-            750,
-            301,
-            76,
             16
          ],
-         "conf": 0.9990560412406921,
+         "conf": 0.9978220462799072,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_51a049",
+         "id": "t_9a7f2d",
          "role": "text",
-         "text": "'ocr\"",
+         "text": "text=text.strip(),",
          "bbox": [
-            830,
-            296,
-            51,
-            26
+            750,
+            291,
+            187,
+            20
          ],
-         "conf": 0.9935920834541321,
+         "conf": 0.9995149970054626,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_8f3209",
+         "id": "t_753d5b",
          "role": "text",
          "text": "> planner_module",
          "bbox": [
@@ -1098,55 +970,87 @@
          }
       },
       {
-         "id": "t_1a57c7",
+         "id": "t_a4e614",
          "role": "text",
-         "text": "130",
+         "text": "127",
          "bbox": [
-            410,
-            321,
-            37,
-            21
+            411,
+            313,
+            36,
+            22
          ],
-         "conf": 0.9999270439147949,
+         "conf": 0.9999639391899109,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_6092b9",
+         "id": "t_e25a22",
          "role": "text",
-         "text": "id=f\"t",
+         "text": "#",
          "bbox": [
             728,
-            321,
-            69,
-            21
+            316,
+            15,
+            16
          ],
-         "conf": 0.9989466667175293,
+         "conf": 0.9976646900177002,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_44327f",
+         "id": "t_bf26dc",
          "role": "text",
-         "text": "_{uuid.uuid4().hex[:6]}\",",
+         "text": "bbox=[int(x1),",
          "bbox": [
-            800,
-            320,
-            256,
-            25
+            748,
+            313,
+            148,
+            24
          ],
-         "conf": 0.9724063873291016,
+         "conf": 0.9897921681404114,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_e21340",
+         "id": "t_601605",
+         "role": "text",
+         "text": "int(y1),",
+         "bbox": [
+            906,
+            313,
+            88,
+            24
+         ],
+         "conf": 0.958386242389679,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_95443f",
+         "role": "text",
+         "text": "int(w), int(h)],",
+         "bbox": [
+            1000,
+            315,
+            169,
+            20
+         ],
+         "conf": 0.9730914235115051,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_fbd54c",
          "role": "text",
          "text": "> tasks",
          "bbox": [
@@ -1162,71 +1066,55 @@
          }
       },
       {
-         "id": "t_2d7b5f",
+         "id": "t_469d56",
          "role": "text",
-         "text": "131",
+         "text": "128",
          "bbox": [
             410,
-            344,
+            337,
             37,
             22
          ],
-         "conf": 0.9988595843315125,
+         "conf": 0.9999285340309143,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_38a007",
+         "id": "t_1a1310",
          "role": "text",
-         "text": "role=self.",
+         "text": "#",
          "bbox": [
             728,
-            344,
-            102,
-            25
+            340,
+            15,
+            16
          ],
-         "conf": 0.9744855761528015,
+         "conf": 0.9976646900177002,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_40635c",
+         "id": "t_55bb2a",
          "role": "text",
-         "text": "guess",
+         "text": "conf=conf,",
          "bbox": [
-            842,
-            345,
-            61,
-            25
+            746,
+            336,
+            109,
+            27
          ],
-         "conf": 0.9998704195022583,
+         "conf": 0.9996050000190735,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_d3d99b",
-         "role": "text",
-         "text": "role_from_text(text),",
-         "bbox": [
-            908,
-            346,
-            219,
-            20
-         ],
-         "conf": 0.9988456964492798,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_45bf6c",
+         "id": "t_057fb6",
          "role": "text",
          "text": "> vision_files",
          "bbox": [
@@ -1235,78 +1123,110 @@
             110,
             27
          ],
-         "conf": 0.9579564929008484,
+         "conf": 0.9290681481361389,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_445963",
+         "id": "t_007e81",
          "role": "text",
-         "text": "132",
+         "text": "129",
          "bbox": [
             410,
-            369,
+            360,
             37,
             21
          ],
-         "conf": 0.9999582171440125,
+         "conf": 0.9999771118164062,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_8daa94",
+         "id": "t_e937fd",
          "role": "text",
-         "text": "text=text.strip(),",
+         "text": "#",
          "bbox": [
-            727,
-            369,
-            192,
-            24
+            728,
+            363,
+            14,
+            16
          ],
-         "conf": 0.9982789158821106,
+         "conf": 0.9979456067085266,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_3a0d35",
+         "id": "t_96d895",
          "role": "text",
-         "text": "133",
+         "text": "source=\"ocr\"",
+         "bbox": [
+            747,
+            360,
+            134,
+            21
+         ],
+         "conf": 0.9860793948173523,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_7a8f1a",
+         "role": "text",
+         "text": "130",
          "bbox": [
             410,
-            391,
+            384,
             37,
-            24
+            22
          ],
-         "conf": 0.9999551773071289,
+         "conf": 0.9999537467956543,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_b81310",
+         "id": "t_4f7213",
          "role": "text",
-         "text": "bbox=[int(x1),",
+         "text": "id=f\"t",
          "bbox": [
-            726,
-            388,
-            152,
-            28
+            728,
+            385,
+            69,
+            21
          ],
-         "conf": 0.9975163340568542,
+         "conf": 0.9982934594154358,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_05a726",
+         "id": "t_0993ed",
+         "role": "text",
+         "text": "{uuid.uuid4().hex[:6]}\"",
+         "bbox": [
+            804,
+            385,
+            248,
+            21
+         ],
+         "conf": 0.9772748351097107,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_dc454c",
          "role": "text",
          "text": "v vision_module",
          "bbox": [
@@ -1315,46 +1235,78 @@
             130,
             20
          ],
-         "conf": 0.9546607732772827,
+         "conf": 0.9502677917480469,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_2ba2b2",
+         "id": "t_753a35",
          "role": "text",
-         "text": "\u2022",
+         "text": "131",
          "bbox": [
-            356,
-            403,
-            10,
-            12
-         ],
-         "conf": 0.6710198521614075,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_b106d5",
-         "role": "text",
-         "text": "int(y1), int(w), int(h)],",
-         "bbox": [
-            886,
-            393,
-            262,
+            410,
+            409,
+            37,
             21
          ],
-         "conf": 0.9574652910232544,
+         "conf": 0.9999364018440247,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_879800",
+         "id": "t_c54f47",
+         "role": "text",
+         "text": "role=self.",
+         "bbox": [
+            728,
+            409,
+            103,
+            24
+         ],
+         "conf": 0.9963214993476868,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_430138",
+         "role": "text",
+         "text": "guess_role_from_text(text),",
+         "bbox": [
+            843,
+            410,
+            284,
+            20
+         ],
+         "conf": 0.9992306232452393,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_546bf6",
+         "role": "text",
+         "text": "Garrett Hilyer, 5 days ago  vision branch init",
+         "bbox": [
+            1194,
+            411,
+            495,
+            19
+         ],
+         "conf": 0.9904685616493225,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_20c0fd",
          "role": "text",
          "text": "README.MD",
          "bbox": [
@@ -1363,62 +1315,46 @@
             99,
             16
          ],
-         "conf": 0.9973856806755066,
+         "conf": 0.9834387898445129,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_3a8340",
+         "id": "t_0ba1af",
          "role": "text",
-         "text": "134",
+         "text": "132",
          "bbox": [
             410,
-            416,
+            433,
             37,
-            22
+            21
          ],
-         "conf": 0.9666111469268799,
+         "conf": 0.9999699592590332,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_67d938",
+         "id": "t_e8cd6a",
          "role": "text",
-         "text": "conf=conf,",
+         "text": "text=text.strip(),",
          "bbox": [
-            727,
-            416,
-            106,
-            24
+            726,
+            432,
+            193,
+            25
          ],
-         "conf": 0.9997237920761108,
+         "conf": 0.9996099472045898,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_fa3479",
-         "role": "text",
-         "text": "135",
-         "bbox": [
-            410,
-            440,
-            37,
-            22
-         ],
-         "conf": 0.9999597668647766,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_f5aa02",
+         "id": "t_2e17a2",
          "role": "text",
          "text": "vision_CPU.py",
          "bbox": [
@@ -1427,110 +1363,78 @@
             108,
             20
          ],
-         "conf": 0.9843229055404663,
+         "conf": 0.9844292998313904,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_62b027",
+         "id": "t_0f69c4",
          "role": "text",
-         "text": "2, M",
+         "text": "2",
          "bbox": [
-            334,
-            454,
+            358,
+            459,
+            9,
+            12
+         ],
+         "conf": 0.9999581575393677,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_37b1b4",
+         "role": "text",
+         "text": "133",
+         "bbox": [
+            410,
+            456,
             37,
             21
          ],
-         "conf": 0.9996113777160645,
+         "conf": 0.9999658465385437,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_b2aab1",
+         "id": "t_7f1de2",
          "role": "text",
-         "text": "source=",
+         "text": "bbox=[int(x1),",
          "bbox": [
-            729,
-            445,
-            77,
-            16
-         ],
-         "conf": 0.9873712658882141,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_74e517",
-         "role": "text",
-         "text": ":\"ocr\"",
-         "bbox": [
-            799,
-            439,
-            60,
-            26
-         ],
-         "conf": 0.9937987923622131,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_2807b1",
-         "role": "text",
-         "text": "136",
-         "bbox": [
-            409,
-            463,
-            42,
-            26
-         ],
-         "conf": 0.999964714050293,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_c6031a",
-         "role": "text",
-         "text": "meta={\"source_type\":",
-         "bbox": [
-            724,
-            464,
-            219,
-            25
-         ],
-         "conf": 0.9928744435310364,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_20dcb2",
-         "role": "text",
-         "text": "\"ocr_v3\"}",
-         "bbox": [
-            949,
-            466,
-            96,
+            728,
+            457,
+            148,
             20
          ],
-         "conf": 0.9890522360801697,
+         "conf": 0.9995450973510742,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_128497",
+         "id": "t_f66398",
+         "role": "text",
+         "text": "int(y1), int(w), int(h)],",
+         "bbox": [
+            884,
+            456,
+            266,
+            24
+         ],
+         "conf": 0.9890741109848022,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_3d7fd7",
          "role": "text",
          "text": "yolov8n.pt",
          "bbox": [
@@ -1539,46 +1443,46 @@
             105,
             20
          ],
-         "conf": 0.9992982745170593,
+         "conf": 0.9993684887886047,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_338c03",
+         "id": "t_dbbc39",
          "role": "text",
-         "text": "137",
+         "text": "134",
          "bbox": [
             410,
-            487,
+            478,
             37,
             22
          ],
-         "conf": 0.9999852776527405,
+         "conf": 0.9999739527702332,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_a1869b",
+         "id": "t_394b1b",
          "role": "text",
-         "text": "Garrett Hilyer, 5 days ago  vision branch init",
+         "text": "conf=conf,",
          "bbox": [
-            759,
-            488,
-            497,
-            22
+            727,
+            478,
+            104,
+            24
          ],
-         "conf": 0.9804429411888123,
+         "conf": 0.9848235249519348,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_16a2a8",
+         "id": "t_6fcd53",
          "role": "text",
          "text": "yolov8s.pt",
          "bbox": [
@@ -1587,30 +1491,62 @@
             104,
             20
          ],
-         "conf": 0.9998200535774231,
+         "conf": 0.9998272061347961,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_d72a43",
+         "id": "t_c7609c",
          "role": "text",
-         "text": "138",
+         "text": "135",
          "bbox": [
             410,
-            511,
+            502,
             37,
             22
          ],
-         "conf": 0.9999372959136963,
+         "conf": 0.9999842643737793,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_b55647",
+         "id": "t_0aee5c",
+         "role": "text",
+         "text": "source=",
+         "bbox": [
+            729,
+            507,
+            77,
+            16
+         ],
+         "conf": 0.9992957711219788,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_dacb29",
+         "role": "text",
+         "text": "'ocr",
+         "bbox": [
+            811,
+            507,
+            38,
+            16
+         ],
+         "conf": 0.8638551235198975,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_26fe94",
          "role": "text",
          "text": ".gitignore",
          "bbox": [
@@ -1626,39 +1562,103 @@
          }
       },
       {
-         "id": "t_29fdee",
+         "id": "t_fc036d",
          "role": "text",
-         "text": "139",
+         "text": "136",
          "bbox": [
             410,
-            535,
+            526,
             37,
             22
          ],
-         "conf": 0.9999570846557617,
+         "conf": 0.9999812245368958,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_7fcac5",
+         "id": "t_50455d",
          "role": "text",
-         "text": "return elements",
+         "text": "meta=",
          "bbox": [
-            603,
-            537,
-            159,
-            19
+            727,
+            529,
+            60,
+            20
          ],
-         "conf": 0.999761700630188,
+         "conf": 0.9972756505012512,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_99b11c",
+         "id": "t_ebf481",
+         "role": "text",
+         "text": "'source",
+         "bbox": [
+            800,
+            531,
+            68,
+            16
+         ],
+         "conf": 0.9832000136375427,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_abf16b",
+         "role": "text",
+         "text": "type\":",
+         "bbox": [
+            876,
+            531,
+            66,
+            16
+         ],
+         "conf": 0.9999036192893982,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_2bcdae",
+         "role": "text",
+         "text": "\"ocr_v3\"}",
+         "bbox": [
+            949,
+            529,
+            94,
+            20
+         ],
+         "conf": 0.9992468357086182,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_9ae516",
+         "role": "text",
+         "text": "137",
+         "bbox": [
+            410,
+            549,
+            37,
+            22
+         ],
+         "conf": 0.9999775886535645,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_dd39e4",
          "role": "text",
          "text": "README.MD",
          "bbox": [
@@ -1667,30 +1667,30 @@
             98,
             16
          ],
-         "conf": 0.9990761876106262,
+         "conf": 0.9989429116249084,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_aee599",
+         "id": "t_fd7d25",
          "role": "text",
-         "text": "140",
+         "text": "138",
          "bbox": [
             410,
-            559,
+            574,
             37,
-            22
+            21
          ],
-         "conf": 0.9999346137046814,
+         "conf": 0.999973475933075,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_cc46fd",
+         "id": "t_1eec7c",
          "role": "text",
          "text": "for-dev-needed-for-projet",
          "bbox": [
@@ -1706,39 +1706,23 @@
          }
       },
       {
-         "id": "t_a2aa49",
+         "id": "t_2ba52f",
          "role": "text",
-         "text": "141",
+         "text": "1.20",
          "bbox": [
-            410,
-            582,
-            37,
-            21
+            412,
+            598,
+            32,
+            13
          ],
-         "conf": 0.9995217323303223,
+         "conf": 0.8740033507347107,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_55edd2",
-         "role": "text",
-         "text": "# ocr v2 usage",
-         "bbox": [
-            556,
-            580,
-            156,
-            27
-         ],
-         "conf": 0.9978991150856018,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_40b67f",
+         "id": "t_4aeb02",
          "role": "text",
          "text": "v ecua-2_agent",
          "bbox": [
@@ -1747,30 +1731,30 @@
             124,
             19
          ],
-         "conf": 0.9621666669845581,
+         "conf": 0.9632444977760315,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_ea17f2",
+         "id": "t_b9453f",
          "role": "text",
          "text": "PROBLEMS",
          "bbox": [
-            411,
+            412,
             621,
-            75,
+            74,
             16
          ],
-         "conf": 0.9999233484268188,
+         "conf": 0.9998594522476196,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_ce6037",
+         "id": "t_e49028",
          "role": "text",
          "text": "OUTPUT",
          "bbox": [
@@ -1786,7 +1770,7 @@
          }
       },
       {
-         "id": "t_def172",
+         "id": "t_88a997",
          "role": "text",
          "text": "DEBUG CONSOLE",
          "bbox": [
@@ -1795,14 +1779,14 @@
             114,
             16
          ],
-         "conf": 0.9945376515388489,
+         "conf": 0.9989674091339111,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_412918",
+         "id": "t_1a86a9",
          "role": "text",
          "text": "TERMINAL",
          "bbox": [
@@ -1818,23 +1802,23 @@
          }
       },
       {
-         "id": "t_d66d80",
+         "id": "t_31488e",
          "role": "text",
          "text": "PORTS",
          "bbox": [
             855,
             621,
-            46,
+            48,
             16
          ],
-         "conf": 0.9997751116752625,
+         "conf": 0.9997901916503906,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_59f87a",
+         "id": "t_57588d",
          "role": "text",
          "text": "GITLENS",
          "bbox": [
@@ -1850,39 +1834,55 @@
          }
       },
       {
-         "id": "t_4602e3",
+         "id": "t_705d95",
+         "role": "text",
+         "text": ">",
+         "bbox": [
+            1479,
+            624,
+            20,
+            14
+         ],
+         "conf": 0.8669542074203491,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_6a2f8a",
          "role": "text",
          "text": "python - vision_module",
          "bbox": [
-            1500,
+            1498,
             621,
-            175,
+            177,
             19
          ],
-         "conf": 0.9801459908485413,
+         "conf": 0.962432324886322,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_5f8a43",
+         "id": "t_d0a332",
          "role": "text",
          "text": "+ v",
          "bbox": [
-            1686,
-            624,
-            40,
-            13
+            1684,
+            621,
+            43,
+            16
          ],
-         "conf": 0.7601843476295471,
+         "conf": 0.9697758555412292,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_2fd74e",
+         "id": "t_df7cbf",
          "role": "text",
          "text": "a",
          "bbox": [
@@ -1898,7 +1898,7 @@
          }
       },
       {
-         "id": "t_f712cb",
+         "id": "t_a637d2",
          "role": "text",
          "text": "> agent",
          "bbox": [
@@ -1914,23 +1914,23 @@
          }
       },
       {
-         "id": "t_318e67",
+         "id": "t_108052",
          "role": "text",
          "text": "(osworld)",
          "bbox": [
             415,
             661,
-            93,
+            92,
             21
          ],
-         "conf": 0.999710738658905,
+         "conf": 0.9996885657310486,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_238f05",
+         "id": "t_a1715f",
          "role": "text",
          "text": "jraheema@lportal:~/CSE291A_AI_Agents_and_Systems/Repo/CSE291_AI_Agent/vision_mo",
          "bbox": [
@@ -1946,7 +1946,7 @@
          }
       },
       {
-         "id": "t_25ac11",
+         "id": "t_bc929f",
          "role": "text",
          "text": "(APIServer pid=99308)",
          "bbox": [
@@ -1962,23 +1962,23 @@
          }
       },
       {
-         "id": "t_b4c88a",
+         "id": "t_ad7ce0",
          "role": "text",
          "text": "INFO",
          "bbox": [
-            1570,
+            1572,
             662,
-            52,
+            51,
             21
          ],
-         "conf": 0.9989438056945801,
+         "conf": 0.9985997676849365,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_d9ba82",
+         "id": "t_ede334",
          "role": "text",
          "text": "11-19 15:34:",
          "bbox": [
@@ -1987,30 +1987,30 @@
             129,
             21
          ],
-         "conf": 0.9933509230613708,
+         "conf": 0.9933541417121887,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_8ee198",
+         "id": "t_619406",
          "role": "text",
          "text": "pyth...",
          "bbox": [
-            1819,
-            657,
-            51,
-            16
+            1818,
+            655,
+            54,
+            21
          ],
-         "conf": 0.9911977052688599,
+         "conf": 0.9541221261024475,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_3916b2",
+         "id": "t_36a873",
          "role": "text",
          "text": "README.MD",
          "bbox": [
@@ -2019,62 +2019,62 @@
             99,
             18
          ],
-         "conf": 0.99798583984375,
+         "conf": 0.9979592561721802,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_4d1f91",
+         "id": "t_c4de6a",
          "role": "text",
          "text": "dule(osworld_integration)$ python vision_CPU.py",
          "bbox": [
-            411,
-            682,
-            475,
-            24
+            409,
+            678,
+            478,
+            30
          ],
-         "conf": 0.9929817914962769,
+         "conf": 0.9813057780265808,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_fa9f67",
+         "id": "t_099f54",
          "role": "text",
          "text": "55",
          "bbox": [
-            1353,
-            685,
-            36,
-            21
+            1354,
+            686,
+            31,
+            19
          ],
-         "conf": 0.999989926815033,
+         "conf": 0.9999822974205017,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_c34600",
+         "id": "t_54da29",
          "role": "text",
          "text": "[loggers.py:127]",
          "bbox": [
             1384,
-            686,
-            170,
+            685,
+            165,
             20
          ],
-         "conf": 0.9996089339256287,
+         "conf": 0.9996492862701416,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_b34cd2",
+         "id": "t_7efcef",
          "role": "text",
          "text": "Engine",
          "bbox": [
@@ -2090,7 +2090,7 @@
          }
       },
       {
-         "id": "t_2ee997",
+         "id": "t_f48f35",
          "role": "text",
          "text": "000: Avg pro",
          "bbox": [
@@ -2099,14 +2099,14 @@
             130,
             28
          ],
-         "conf": 0.9717513918876648,
+         "conf": 0.969342052936554,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_816201",
+         "id": "t_adc423",
          "role": "text",
          "text": "pyth.",
          "bbox": [
@@ -2122,7 +2122,7 @@
          }
       },
       {
-         "id": "t_af17a2",
+         "id": "t_92f548",
          "role": "text",
          "text": ">",
          "bbox": [
@@ -2138,7 +2138,7 @@
          }
       },
       {
-         "id": "t_a6eb6f",
+         "id": "t_9e8e33",
          "role": "text",
          "text": "mm_agents",
          "bbox": [
@@ -2147,14 +2147,14 @@
             95,
             24
          ],
-         "conf": 0.9999433159828186,
+         "conf": 0.999944269657135,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_314a7d",
+         "id": "t_7b9611",
          "role": "text",
          "text": "thub.com/ccache/ccache/blob/master/doc/INSTALL.md",
          "bbox": [
@@ -2170,23 +2170,39 @@
          }
       },
       {
-         "id": "t_42b520",
+         "id": "t_d42c06",
          "role": "text",
-         "text": "mpt throughput:",
+         "text": "mpt",
          "bbox": [
-            1351,
-            706,
-            158,
-            24
+            1352,
+            708,
+            39,
+            21
          ],
-         "conf": 0.9880358576774597,
+         "conf": 0.9999621510505676,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_67cd17",
+         "id": "t_cb6d94",
+         "role": "text",
+         "text": "throughput:",
+         "bbox": [
+            1390,
+            706,
+            118,
+            24
+         ],
+         "conf": 0.9999144077301025,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_b3766d",
          "role": "text",
          "text": "1274.0",
          "bbox": [
@@ -2202,39 +2218,39 @@
          }
       },
       {
-         "id": "t_d909d2",
+         "id": "t_a5a121",
          "role": "text",
          "text": "tokens/s,",
          "bbox": [
-            1582,
-            706,
+            1584,
+            708,
             88,
             20
          ],
-         "conf": 0.9599887132644653,
+         "conf": 0.9997044801712036,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_ebba56",
+         "id": "t_82f773",
          "role": "text",
          "text": "Avg ge",
          "bbox": [
-            1680,
+            1681,
             704,
-            70,
+            69,
             28
          ],
-         "conf": 0.9888010025024414,
+         "conf": 0.9993745684623718,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_48f799",
+         "id": "t_1b96db",
          "role": "text",
          "text": ">",
          "bbox": [
@@ -2250,7 +2266,7 @@
          }
       },
       {
-         "id": "t_960eb2",
+         "id": "t_a0f7a4",
          "role": "text",
          "text": "tasks",
          "bbox": [
@@ -2266,87 +2282,71 @@
          }
       },
       {
-         "id": "t_5bccda",
+         "id": "t_2ccd8f",
          "role": "text",
          "text": "warnings.warn(warning_message)",
          "bbox": [
             429,
             728,
-            304,
+            306,
             24
          ],
-         "conf": 0.9999322891235352,
+         "conf": 0.9999199509620667,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_b1b5dc",
+         "id": "t_ab19a2",
          "role": "text",
          "text": "neration",
          "bbox": [
             1353,
             729,
-            88,
+            87,
             20
          ],
-         "conf": 0.9999667406082153,
+         "conf": 0.9999775886535645,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_fc88b3",
+         "id": "t_1ca73b",
          "role": "text",
          "text": "throughput:",
          "bbox": [
             1441,
             728,
-            118,
+            117,
             24
          ],
-         "conf": 0.9999227523803711,
+         "conf": 0.9998961091041565,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_e827fb",
+         "id": "t_2f56f5",
          "role": "text",
-         "text": "4.3",
+         "text": "tokens/s",
          "bbox": [
-            1563,
-            730,
-            36,
-            18
-         ],
-         "conf": 0.9999182820320129,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_01197a",
-         "role": "text",
-         "text": "tokens/s,",
-         "bbox": [
-            1603,
-            729,
+            1602,
+            728,
             90,
             20
          ],
-         "conf": 0.9997126460075378,
+         "conf": 0.9999234676361084,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_1dead6",
+         "id": "t_015730",
          "role": "text",
          "text": "Runn",
          "bbox": [
@@ -2362,7 +2362,7 @@
          }
       },
       {
-         "id": "t_2a5c1d",
+         "id": "t_22e572",
          "role": "text",
          "text": "ecua-2_run.py",
          "bbox": [
@@ -2371,94 +2371,126 @@
             109,
             23
          ],
-         "conf": 0.9999167919158936,
+         "conf": 0.9999144077301025,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_6ad2e4",
+         "id": "t_79b4e2",
          "role": "text",
          "text": "Creating model:",
          "bbox": [
-            410,
-            750,
-            153,
-            20
-         ],
-         "conf": 0.9963409900665283,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_0feba8",
-         "role": "text",
-         "text": "( 'PP-LCNet_x1_0",
-         "bbox": [
-            572,
+            411,
             751,
-            157,
+            152,
             20
          ],
-         "conf": 0.9502003192901611,
+         "conf": 0.9922715425491333,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_857c53",
+         "id": "t_457d53",
+         "role": "text",
+         "text": "( 'PP-LCNet_:",
+         "bbox": [
+            573,
+            751,
+            114,
+            20
+         ],
+         "conf": 0.9313520193099976,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_e27357",
+         "role": "text",
+         "text": "x1",
+         "bbox": [
+            680,
+            752,
+            31,
+            18
+         ],
+         "conf": 0.8527676463127136,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_4391fd",
+         "role": "text",
+         "text": "0",
+         "bbox": [
+            709,
+            750,
+            19,
+            20
+         ],
+         "conf": 0.9990737438201904,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_3fa94d",
          "role": "text",
          "text": "textline_ori'",
          "bbox": [
-            730,
+            732,
             751,
-            138,
+            135,
             20
          ],
-         "conf": 0.9988400340080261,
+         "conf": 0.999225378036499,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_807278",
+         "id": "t_da1dd7",
          "role": "text",
          "text": "None)",
          "bbox": [
-            880,
-            751,
-            52,
-            21
+            879,
+            747,
+            54,
+            26
          ],
-         "conf": 0.9990771412849426,
+         "conf": 0.9936695098876953,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_755c58",
+         "id": "t_14b5d0",
          "role": "text",
          "text": "ing:",
          "bbox": [
             1354,
             751,
-            44,
+            45,
             21
          ],
-         "conf": 0.9998176097869873,
+         "conf": 0.9997719526290894,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_bed975",
+         "id": "t_47a6fd",
          "role": "text",
          "text": "0",
          "bbox": [
@@ -2474,39 +2506,39 @@
          }
       },
       {
-         "id": "t_7cd80a",
+         "id": "t_5b0267",
          "role": "text",
          "text": "reqs",
          "bbox": [
-            1416,
+            1417,
             752,
-            55,
+            54,
             20
          ],
-         "conf": 0.9989814162254333,
+         "conf": 0.9995244741439819,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_acd748",
+         "id": "t_e67fcd",
          "role": "text",
          "text": "Waiting:",
          "bbox": [
             1482,
             751,
-            85,
-            20
+            87,
+            24
          ],
-         "conf": 0.9996850490570068,
+         "conf": 0.999886691570282,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_95b62b",
+         "id": "t_c57b22",
          "role": "text",
          "text": "0",
          "bbox": [
@@ -2515,14 +2547,14 @@
             10,
             14
          ],
-         "conf": 0.8903328776359558,
+         "conf": 0.8903329968452454,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_6788f3",
+         "id": "t_c29c8e",
          "role": "text",
          "text": "reqs,",
          "bbox": [
@@ -2538,7 +2570,7 @@
          }
       },
       {
-         "id": "t_2238d7",
+         "id": "t_c3cc3b",
          "role": "text",
          "text": "GPU",
          "bbox": [
@@ -2554,7 +2586,23 @@
          }
       },
       {
-         "id": "t_52613f",
+         "id": "t_3361fb",
+         "role": "text",
+         "text": "KV",
+         "bbox": [
+            1694,
+            752,
+            26,
+            18
+         ],
+         "conf": 0.9945026636123657,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_2e5c7a",
          "role": "text",
          "text": "ca",
          "bbox": [
@@ -2570,183 +2618,167 @@
          }
       },
       {
-         "id": "t_07ed89",
+         "id": "t_02e684",
          "role": "text",
          "text": "Model",
          "bbox": [
-            410,
-            772,
-            55,
-            20
+            409,
+            770,
+            56,
+            22
          ],
-         "conf": 0.9999045133590698,
+         "conf": 0.9998999834060669,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_d8238f",
+         "id": "t_b9de4e",
          "role": "text",
          "text": "files",
          "bbox": [
-            471,
+            472,
             772,
-            56,
+            54,
             20
          ],
-         "conf": 0.9999918937683105,
+         "conf": 0.9257427453994751,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_8661bf",
+         "id": "t_5ec2ec",
          "role": "text",
          "text": "already",
          "bbox": [
-            529,
-            772,
-            76,
-            20
+            528,
+            771,
+            78,
+            24
          ],
-         "conf": 0.9999882578849792,
+         "conf": 0.9999464750289917,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_7fe95b",
+         "id": "t_6f53e7",
          "role": "text",
          "text": "exist.",
          "bbox": [
             610,
             772,
-            63,
+            62,
             21
          ],
-         "conf": 0.9999382495880127,
+         "conf": 0.9999132752418518,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_8f7bf7",
+         "id": "t_3c3754",
          "role": "text",
          "text": "Using",
          "bbox": [
-            680,
+            681,
             772,
-            56,
+            55,
             21
          ],
-         "conf": 0.9999629259109497,
+         "conf": 0.9999572038650513,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_9865c3",
+         "id": "t_200198",
          "role": "text",
          "text": "cached",
          "bbox": [
-            740,
-            771,
-            67,
-            22
+            741,
+            772,
+            65,
+            21
          ],
-         "conf": 0.9999857544898987,
+         "conf": 0.9999812245368958,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_f988bc",
+         "id": "t_2cbd6a",
          "role": "text",
          "text": "files",
          "bbox": [
-            812,
+            813,
             772,
-            56,
+            55,
             20
          ],
-         "conf": 0.9999914169311523,
+         "conf": 0.9999940991401672,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_4e1da9",
+         "id": "t_45a48d",
          "role": "text",
          "text": "To",
          "bbox": [
-            879,
+            880,
             774,
-            30,
+            27,
             18
          ],
-         "conf": 0.999873161315918,
+         "conf": 0.9998005032539368,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_72eab5",
+         "id": "t_50ed96",
          "role": "text",
          "text": "redownload,",
          "bbox": [
-            900,
-            772,
-            126,
-            19
+            912,
+            775,
+            114,
+            16
          ],
-         "conf": 0.988983690738678,
+         "conf": 0.9999056458473206,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_3b9748",
+         "id": "t_99a19d",
          "role": "text",
          "text": "please delete the directory",
          "bbox": [
             1027,
             770,
-            279,
+            278,
             26
          ],
-         "conf": 0.9953488111495972,
+         "conf": 0.9942417740821838,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_b867a8",
-         "role": "text",
-         "text": "OSWorld",
-         "bbox": [
-            99,
-            783,
-            68,
-            16
-         ],
-         "conf": 0.9343243837356567,
-         "source": "ocr",
-         "meta": {
-            "source_type": "ocr_v3"
-         }
-      },
-      {
-         "id": "t_b88f60",
+         "id": "t_554c46",
          "role": "text",
          "text": "che usage:",
          "bbox": [
@@ -2755,14 +2787,14 @@
             106,
             24
          ],
-         "conf": 0.9997169375419617,
+         "conf": 0.9997190237045288,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_b7862e",
+         "id": "t_617f63",
          "role": "text",
          "text": "0.0%,",
          "bbox": [
@@ -2778,23 +2810,39 @@
          }
       },
       {
-         "id": "t_f73649",
+         "id": "t_b6fcbc",
          "role": "text",
          "text": "Prefix",
          "bbox": [
-            1525,
-            775,
-            63,
-            16
+            1524,
+            772,
+            66,
+            20
          ],
-         "conf": 0.9999693036079407,
+         "conf": 0.9999771118164062,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_141582",
+         "id": "t_cc9f17",
+         "role": "text",
+         "text": "OSWorld",
+         "bbox": [
+            100,
+            784,
+            68,
+            16
+         ],
+         "conf": 0.9815281629562378,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_ca130b",
          "role": "text",
          "text": "cache",
          "bbox": [
@@ -2810,7 +2858,7 @@
          }
       },
       {
-         "id": "t_ff9781",
+         "id": "t_5d4a89",
          "role": "text",
          "text": "hit",
          "bbox": [
@@ -2826,7 +2874,7 @@
          }
       },
       {
-         "id": "t_596182",
+         "id": "t_6ff4a5",
          "role": "text",
          "text": "rate:",
          "bbox": [
@@ -2842,7 +2890,7 @@
          }
       },
       {
-         "id": "t_006034",
+         "id": "t_ef8a07",
          "role": "text",
          "text": "manually:",
          "bbox": [
@@ -2851,46 +2899,62 @@
             96,
             20
          ],
-         "conf": 0.9999407529830933,
+         "conf": 0.9999396204948425,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_1fbd70",
+         "id": "t_ae72a8",
          "role": "text",
-         "text": "/home/jraheema/.paddlex/official_models/PP-LCNet_x1_0_textline_ori",
+         "text": "/home/jraheema,",
          "bbox": [
-            530,
+            532,
             794,
-            675,
+            147,
+            20
+         ],
+         "conf": 0.9943132996559143,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_9834ea",
+         "role": "text",
+         "text": "/.paddlex/official_models/PP-LCNet_xl_0_textline_ori",
+         "bbox": [
+            678,
+            794,
+            528,
             22
          ],
-         "conf": 0.9860367178916931,
+         "conf": 0.9795933365821838,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_5e6f44",
+         "id": "t_c9996c",
          "role": "text",
          "text": "43.9%",
          "bbox": [
-            1363,
+            1362,
             794,
-            57,
+            58,
             21
          ],
-         "conf": 0.9973580241203308,
+         "conf": 0.9998666644096375,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_fe006e",
+         "id": "t_b35c63",
          "role": "text",
          "text": ">",
          "bbox": [
@@ -2906,7 +2970,7 @@
          }
       },
       {
-         "id": "t_843460",
+         "id": "t_64d91a",
          "role": "text",
          "text": "_pycache",
          "bbox": [
@@ -2922,71 +2986,103 @@
          }
       },
       {
-         "id": "t_d4fa6b",
+         "id": "t_da0aa0",
          "role": "text",
-         "text": "Creating model:",
+         "text": "Creating",
          "bbox": [
-            411,
-            814,
-            166,
-            24
+            412,
+            816,
+            92,
+            20
          ],
-         "conf": 0.9930417537689209,
+         "conf": 0.9999401569366455,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_9cd28f",
+         "id": "t_c1d1f6",
          "role": "text",
-         "text": "( 'PP-OCRv5",
+         "text": "\"model:",
          "bbox": [
-            572,
+            495,
             814,
-            106,
+            74,
             24
          ],
-         "conf": 0.9312284588813782,
+         "conf": 0.9282756447792053,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_325a77",
+         "id": "t_480210",
+         "role": "text",
+         "text": "( 'PP.",
+         "bbox": [
+            574,
+            816,
+            45,
+            21
+         ],
+         "conf": 0.9795606732368469,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_813915",
+         "role": "text",
+         "text": "-0CRv5",
+         "bbox": [
+            610,
+            816,
+            67,
+            21
+         ],
+         "conf": 0.9762784838676453,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_970388",
          "role": "text",
          "text": "server",
          "bbox": [
-            680,
+            681,
             817,
-            73,
+            69,
             20
          ],
-         "conf": 0.9999303221702576,
+         "conf": 0.9999404549598694,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_7f40e6",
+         "id": "t_1c2b94",
          "role": "text",
          "text": "det',",
          "bbox": [
-            750,
+            751,
             817,
-            51,
+            50,
             20
          ],
-         "conf": 0.9930711984634399,
+         "conf": 0.9968029260635376,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_45fc93",
+         "id": "t_25f92b",
          "role": "text",
          "text": "None)",
          "bbox": [
@@ -3002,23 +3098,23 @@
          }
       },
       {
-         "id": "t_5631a5",
+         "id": "t_4e8dd2",
          "role": "text",
          "text": "(APIServer",
          "bbox": [
-            1354,
+            1353,
             813,
-            105,
+            106,
             26
          ],
-         "conf": 0.9999030828475952,
+         "conf": 0.9998637437820435,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_3c1c93",
+         "id": "t_3a0994",
          "role": "text",
          "text": "pid=99308)",
          "bbox": [
@@ -3027,14 +3123,14 @@
             102,
             24
          ],
-         "conf": 0.9981397390365601,
+         "conf": 0.9981741905212402,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_6c9913",
+         "id": "t_c14f5f",
          "role": "text",
          "text": "INFO",
          "bbox": [
@@ -3050,7 +3146,7 @@
          }
       },
       {
-         "id": "t_560d0e",
+         "id": "t_928fc6",
          "role": "text",
          "text": "11-19",
          "bbox": [
@@ -3066,7 +3162,7 @@
          }
       },
       {
-         "id": "t_98928a",
+         "id": "t_0c5caf",
          "role": "text",
          "text": "15:35:",
          "bbox": [
@@ -3082,7 +3178,7 @@
          }
       },
       {
-         "id": "t_d15384",
+         "id": "t_27c62f",
          "role": "text",
          "text": "assets",
          "bbox": [
@@ -3098,87 +3194,87 @@
          }
       },
       {
-         "id": "t_69a955",
+         "id": "t_434d21",
          "role": "text",
          "text": "Model",
          "bbox": [
             410,
             837,
-            66,
+            58,
             20
          ],
-         "conf": 0.999794602394104,
+         "conf": 0.9999311566352844,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_a1fb75",
+         "id": "t_26d311",
          "role": "text",
          "text": "files",
          "bbox": [
-            466,
-            837,
-            62,
-            20
+            469,
+            835,
+            58,
+            24
          ],
-         "conf": 0.9999942779541016,
+         "conf": 0.999804675579071,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_21bf5f",
+         "id": "t_76c7c1",
          "role": "text",
-         "text": ";already",
+         "text": "already",
          "bbox": [
-            522,
+            528,
             838,
-            85,
+            78,
             20
          ],
-         "conf": 0.9469795227050781,
+         "conf": 0.9999925494194031,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_569998",
+         "id": "t_034d47",
          "role": "text",
          "text": "exist.",
          "bbox": [
-            608,
+            609,
             837,
-            64,
+            63,
             20
          ],
-         "conf": 0.9998658299446106,
+         "conf": 0.9998771548271179,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_c58fbe",
+         "id": "t_6aca86",
          "role": "text",
          "text": "Using",
          "bbox": [
-            680,
-            838,
-            57,
-            21
+            679,
+            835,
+            60,
+            28
          ],
-         "conf": 0.9999687075614929,
+         "conf": 0.9999073147773743,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_b71da5",
+         "id": "t_4bf312",
          "role": "text",
          "text": "cached",
          "bbox": [
@@ -3194,39 +3290,39 @@
          }
       },
       {
-         "id": "t_a75714",
+         "id": "t_52f368",
          "role": "text",
          "text": "files.",
          "bbox": [
             813,
-            838,
-            63,
-            20
+            837,
+            61,
+            21
          ],
-         "conf": 0.9999902844429016,
+         "conf": 0.9999833703041077,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_3040a3",
+         "id": "t_5af098",
          "role": "text",
-         "text": ",To redownload,",
+         "text": "To redownload,",
          "bbox": [
-            871,
+            877,
             838,
-            151,
+            145,
             20
          ],
-         "conf": 0.9428165555000305,
+         "conf": 0.9972886443138123,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_e6d1d0",
+         "id": "t_6828ba",
          "role": "text",
          "text": "please delete the directory",
          "bbox": [
@@ -3242,7 +3338,7 @@
          }
       },
       {
-         "id": "t_c4d231",
+         "id": "t_259a87",
          "role": "text",
          "text": "05",
          "bbox": [
@@ -3258,7 +3354,7 @@
          }
       },
       {
-         "id": "t_ef4cd7",
+         "id": "t_10d8ad",
          "role": "text",
          "text": "[loggers.py:127]",
          "bbox": [
@@ -3267,14 +3363,14 @@
             163,
             24
          ],
-         "conf": 0.9992753863334656,
+         "conf": 0.9850773215293884,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_e0a2dc",
+         "id": "t_1b2272",
          "role": "text",
          "text": "Engine",
          "bbox": [
@@ -3290,7 +3386,7 @@
          }
       },
       {
-         "id": "t_32999b",
+         "id": "t_6d6738",
          "role": "text",
          "text": "000:",
          "bbox": [
@@ -3306,7 +3402,7 @@
          }
       },
       {
-         "id": "t_8039b2",
+         "id": "t_54a1bb",
          "role": "text",
          "text": "Avg pro",
          "bbox": [
@@ -3315,14 +3411,14 @@
             79,
             24
          ],
-         "conf": 0.9755744338035583,
+         "conf": 0.9755744934082031,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_8f5e4c",
+         "id": "t_508948",
          "role": "text",
          "text": "cache",
          "bbox": [
@@ -3338,39 +3434,55 @@
          }
       },
       {
-         "id": "t_5fa5e8",
+         "id": "t_7ee283",
          "role": "text",
          "text": "manually:",
          "bbox": [
             420,
             859,
-            98,
+            97,
             24
          ],
-         "conf": 0.9999297261238098,
+         "conf": 0.9999192357063293,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_08da59",
+         "id": "t_9163b8",
          "role": "text",
-         "text": "/home/jraheema/.paddlex/official_models/PP-ocRv5_server_det.",
+         "text": "/home/j",
          "bbox": [
             529,
             859,
-            614,
+            76,
             24
          ],
-         "conf": 0.982022225856781,
+         "conf": 0.9926763772964478,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_2a295f",
+         "id": "t_0d54c3",
+         "role": "text",
+         "text": "jraheema/.paddlex/official_models/PP-OcRv5_server_det.",
+         "bbox": [
+            592,
+            858,
+            550,
+            25
+         ],
+         "conf": 0.9810864925384521,
+         "source": "ocr",
+         "meta": {
+            "source_type": "ocr_v3"
+         }
+      },
+      {
+         "id": "t_273623",
          "role": "text",
          "text": "mpt",
          "bbox": [
@@ -3386,23 +3498,23 @@
          }
       },
       {
-         "id": "t_50dc82",
+         "id": "t_dea05d",
          "role": "text",
          "text": "throughput:",
          "bbox": [
             1392,
             860,
-            117,
+            127,
             24
          ],
-         "conf": 0.9998544454574585,
+         "conf": 0.9987464547157288,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_f6bed4",
+         "id": "t_eb0a4b",
          "role": "text",
          "text": "0.0",
          "bbox": [
@@ -3418,7 +3530,7 @@
          }
       },
       {
-         "id": "t_983d70",
+         "id": "t_a591e0",
          "role": "text",
          "text": "tokens/s,",
          "bbox": [
@@ -3427,14 +3539,14 @@
             92,
             20
          ],
-         "conf": 0.999954879283905,
+         "conf": 0.9999546408653259,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_b15282",
+         "id": "t_04a5f0",
          "role": "text",
          "text": "Avg",
          "bbox": [
@@ -3450,7 +3562,7 @@
          }
       },
       {
-         "id": "t_b4ca25",
+         "id": "t_873fa9",
          "role": "text",
          "text": ">",
          "bbox": [
@@ -3466,7 +3578,7 @@
          }
       },
       {
-         "id": "t_e341fb",
+         "id": "t_3fa65b",
          "role": "text",
          "text": "gener",
          "bbox": [
@@ -3482,55 +3594,55 @@
          }
       },
       {
-         "id": "t_ec6e70",
+         "id": "t_47fd19",
          "role": "text",
-         "text": "Creating model:",
+         "text": "Creatinq model:",
          "bbox": [
-            412,
-            882,
-            153,
+            411,
+            880,
+            152,
             20
          ],
-         "conf": 0.9970882534980774,
+         "conf": 0.9581882953643799,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_c15a77",
+         "id": "t_7351cd",
          "role": "text",
          "text": "( 'en",
          "bbox": [
-            574,
+            577,
             882,
-            45,
+            42,
             21
          ],
-         "conf": 0.9474153518676758,
+         "conf": 0.9896672368049622,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_b472ab",
+         "id": "t_a2da72",
          "role": "text",
-         "text": "n_PP-oCRv5_mobile_rec'",
+         "text": "_PP-OCRv5_mobile_rec'",
          "bbox": [
-            610,
+            616,
             879,
-            214,
+            208,
             25
          ],
-         "conf": 0.9645296335220337,
+         "conf": 0.9561566114425659,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_5b4675",
+         "id": "t_4607b1",
          "role": "text",
          "text": "None)",
          "bbox": [
@@ -3546,7 +3658,7 @@
          }
       },
       {
-         "id": "t_9e2de2",
+         "id": "t_d55396",
          "role": "text",
          "text": "ation",
          "bbox": [
@@ -3562,23 +3674,23 @@
          }
       },
       {
-         "id": "t_b6cc0a",
+         "id": "t_8b7db6",
          "role": "text",
          "text": "throughput:",
          "bbox": [
-            1411,
+            1410,
             882,
-            120,
+            121,
             24
          ],
-         "conf": 0.9999492764472961,
+         "conf": 0.999913215637207,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_11eb15",
+         "id": "t_47e711",
          "role": "text",
          "text": "0.0",
          "bbox": [
@@ -3594,7 +3706,7 @@
          }
       },
       {
-         "id": "t_8afdc9",
+         "id": "t_d181f3",
          "role": "text",
          "text": "tokens/s",
          "bbox": [
@@ -3603,14 +3715,14 @@
             88,
             20
          ],
-         "conf": 0.9999155402183533,
+         "conf": 0.9999154210090637,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_55dd51",
+         "id": "t_99c0f4",
          "role": "text",
          "text": "Running",
          "bbox": [
@@ -3626,23 +3738,23 @@
          }
       },
       {
-         "id": "t_20c1bd",
+         "id": "t_b344de",
          "role": "text",
          "text": "v custom tasks/chrome",
          "bbox": [
             90,
             895,
-            188,
+            189,
             15
          ],
-         "conf": 0.9778173565864563,
+         "conf": 0.9768088459968567,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_efcbc8",
+         "id": "t_7438d2",
          "role": "text",
          "text": "Model",
          "bbox": [
@@ -3658,7 +3770,7 @@
          }
       },
       {
-         "id": "t_65bd8c",
+         "id": "t_7c22ab",
          "role": "text",
          "text": "files",
          "bbox": [
@@ -3674,7 +3786,7 @@
          }
       },
       {
-         "id": "t_f6e5bf",
+         "id": "t_26f6a4",
          "role": "text",
          "text": "already",
          "bbox": [
@@ -3690,7 +3802,7 @@
          }
       },
       {
-         "id": "t_59f1fe",
+         "id": "t_ac921c",
          "role": "text",
          "text": "exist.",
          "bbox": [
@@ -3706,7 +3818,7 @@
          }
       },
       {
-         "id": "t_c4d9b0",
+         "id": "t_73292b",
          "role": "text",
          "text": "Using",
          "bbox": [
@@ -3722,39 +3834,39 @@
          }
       },
       {
-         "id": "t_d08d26",
+         "id": "t_cd429b",
          "role": "text",
          "text": "cached",
          "bbox": [
             741,
             904,
-            67,
+            65,
             20
          ],
-         "conf": 0.9999836087226868,
+         "conf": 0.9999827742576599,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_d9d5c7",
+         "id": "t_a4b0af",
          "role": "text",
-         "text": "files.",
+         "text": "files",
          "bbox": [
             813,
             904,
-            56,
+            55,
             20
          ],
-         "conf": 0.9993870258331299,
+         "conf": 0.999994158744812,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_029f64",
+         "id": "t_5cc361",
          "role": "text",
          "text": "To",
          "bbox": [
@@ -3770,7 +3882,7 @@
          }
       },
       {
-         "id": "t_4076bb",
+         "id": "t_0d6af7",
          "role": "text",
          "text": "redownload,",
          "bbox": [
@@ -3779,62 +3891,62 @@
             118,
             20
          ],
-         "conf": 0.9999526739120483,
+         "conf": 0.9999520778656006,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_5f0890",
+         "id": "t_1b0268",
          "role": "text",
          "text": "please delete the directory",
          "bbox": [
-            1026,
+            1027,
             901,
-            279,
+            278,
             28
          ],
-         "conf": 0.9881183505058289,
+         "conf": 0.9993644952774048,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_7d16a0",
+         "id": "t_23510f",
          "role": "text",
          "text": ": 0 reqs,",
          "bbox": [
-            1353,
-            903,
-            88,
-            25
+            1354,
+            906,
+            87,
+            20
          ],
-         "conf": 0.9586114883422852,
+         "conf": 0.9553905129432678,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_a8bc8e",
+         "id": "t_9c143f",
          "role": "text",
          "text": "Waiting:",
          "bbox": [
             1452,
-            906,
-            86,
+            904,
+            85,
             20
          ],
-         "conf": 0.9998471736907959,
+         "conf": 0.9996677041053772,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_422d64",
+         "id": "t_2f4d51",
          "role": "text",
          "text": "0",
          "bbox": [
@@ -3850,7 +3962,7 @@
          }
       },
       {
-         "id": "t_7bad96",
+         "id": "t_cdcaa9",
          "role": "text",
          "text": "reqs,",
          "bbox": [
@@ -3866,7 +3978,7 @@
          }
       },
       {
-         "id": "t_abb4dc",
+         "id": "t_36cd03",
          "role": "text",
          "text": "GPU",
          "bbox": [
@@ -3882,7 +3994,7 @@
          }
       },
       {
-         "id": "t_130295",
+         "id": "t_801ac4",
          "role": "text",
          "text": "KV",
          "bbox": [
@@ -3898,7 +4010,7 @@
          }
       },
       {
-         "id": "t_983243",
+         "id": "t_f1efbb",
          "role": "text",
          "text": "cache",
          "bbox": [
@@ -3914,7 +4026,7 @@
          }
       },
       {
-         "id": "t_166b76",
+         "id": "t_918ad4",
          "role": "text",
          "text": "OUTLINE",
          "bbox": [
@@ -3930,7 +4042,7 @@
          }
       },
       {
-         "id": "t_9f48e1",
+         "id": "t_a5381e",
          "role": "text",
          "text": "manually:",
          "bbox": [
@@ -3939,62 +4051,62 @@
             92,
             21
          ],
-         "conf": 0.9998065233230591,
+         "conf": 0.9997983574867249,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_9b578c",
+         "id": "t_ae4322",
          "role": "text",
          "text": "/home/jraheema/.paddlex/official_models/en",
          "bbox": [
             532,
             926,
-            427,
+            426,
             21
          ],
-         "conf": 0.9996514320373535,
+         "conf": 0.9925640821456909,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_6cb282",
+         "id": "t_d0ce4f",
          "role": "text",
          "text": "_PP-OCRv5_mobile_rec",
          "bbox": [
             958,
             927,
-            207,
+            208,
             20
          ],
-         "conf": 0.9728981852531433,
+         "conf": 0.9729399681091309,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_bd5ee7",
+         "id": "t_5f52a5",
          "role": "text",
          "text": "usage:",
          "bbox": [
             1364,
-            927,
+            928,
             63,
-            22
+            21
          ],
-         "conf": 0.9998252391815186,
+         "conf": 0.9998014569282532,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_187edd",
+         "id": "t_af3abc",
          "role": "text",
          "text": "0.0%,",
          "bbox": [
@@ -4010,7 +4122,7 @@
          }
       },
       {
-         "id": "t_7d4c6b",
+         "id": "t_4435fc",
          "role": "text",
          "text": "Prefix",
          "bbox": [
@@ -4026,7 +4138,7 @@
          }
       },
       {
-         "id": "t_76968e",
+         "id": "t_406b36",
          "role": "text",
          "text": "cache",
          "bbox": [
@@ -4042,39 +4154,39 @@
          }
       },
       {
-         "id": "t_1bd2bb",
+         "id": "t_ce8210",
          "role": "text",
          "text": "hit",
          "bbox": [
             1623,
             926,
-            38,
+            37,
             22
          ],
-         "conf": 0.9680497050285339,
+         "conf": 0.9999715685844421,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_f6ec27",
+         "id": "t_acb931",
          "role": "text",
          "text": "rate: 43",
          "bbox": [
-            1664,
+            1665,
             928,
-            84,
+            82,
             18
          ],
-         "conf": 0.9598171710968018,
+         "conf": 0.9807243943214417,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_470b86",
+         "id": "t_8aea1d",
          "role": "text",
          "text": "TIMELINE",
          "bbox": [
@@ -4090,7 +4202,7 @@
          }
       },
       {
-         "id": "t_b5eb40",
+         "id": "t_286ad8",
          "role": "text",
          "text": "Capturing",
          "bbox": [
@@ -4099,14 +4211,14 @@
             97,
             27
          ],
-         "conf": 0.9999698996543884,
+         "conf": 0.9999710917472839,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_e16333",
+         "id": "t_e37744",
          "role": "text",
          "text": "Screen",
          "bbox": [
@@ -4122,7 +4234,7 @@
          }
       },
       {
-         "id": "t_2143e5",
+         "id": "t_2194b3",
          "role": "text",
          "text": "9%",
          "bbox": [
@@ -4138,7 +4250,7 @@
          }
       },
       {
-         "id": "t_7332be",
+         "id": "t_e73ce9",
          "role": "text",
          "text": "VSIX VIEWER",
          "bbox": [
@@ -4147,14 +4259,14 @@
             94,
             15
          ],
-         "conf": 0.999249279499054,
+         "conf": 0.9991722702980042,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_0d8b2b",
+         "id": "t_a2533a",
          "role": "text",
          "text": "Jr",
          "bbox": [
@@ -4170,23 +4282,23 @@
          }
       },
       {
-         "id": "t_d483a7",
+         "id": "t_4a5a08",
          "role": "text",
-         "text": "CSE291_AI_Agent",
+         "text": "CSE291_Al_Agent",
          "bbox": [
-            70,
-            997,
-            125,
-            18
+            72,
+            999,
+            124,
+            15
          ],
-         "conf": 0.9667168259620667,
+         "conf": 0.9844741821289062,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_65e53a",
+         "id": "t_389a76",
          "role": "text",
          "text": "osworld_integration*",
          "bbox": [
@@ -4202,7 +4314,7 @@
          }
       },
       {
-         "id": "t_2ea8cd",
+         "id": "t_51d0c0",
          "role": "text",
          "text": "Launchpad",
          "bbox": [
@@ -4218,7 +4330,7 @@
          }
       },
       {
-         "id": "t_7dd3a4",
+         "id": "t_5552de",
          "role": "text",
          "text": "\u00d7 ROS2.humble",
          "bbox": [
@@ -4234,87 +4346,87 @@
          }
       },
       {
-         "id": "t_ff3f95",
+         "id": "t_b1d1a4",
          "role": "text",
          "text": "2",
          "bbox": [
-            764,
+            766,
             998,
-            34,
+            32,
             18
          ],
-         "conf": 0.9951111674308777,
+         "conf": 0.7711994647979736,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_18582e",
+         "id": "t_771c68",
          "role": "text",
          "text": "Garrett Hilyer, 5 days ago",
          "bbox": [
-            888,
+            889,
             997,
-            177,
+            176,
             21
          ],
-         "conf": 0.9940520524978638,
+         "conf": 0.9506241679191589,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_13e5d2",
+         "id": "t_44b4a2",
          "role": "text",
          "text": "Garrett Hilyer (5 days ago)",
          "bbox": [
-            1104,
-            997,
-            184,
-            21
+            1105,
+            998,
+            183,
+            19
          ],
-         "conf": 0.993650496006012,
+         "conf": 0.9915026426315308,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_b4a3d3",
+         "id": "t_16d38f",
          "role": "text",
-         "text": "Ln 137, Col 22",
+         "text": "Ln 131, Col 54",
          "bbox": [
             1300,
             999,
-            99,
+            100,
             16
          ],
-         "conf": 0.9702067971229553,
+         "conf": 0.9760978817939758,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_3b8dd8",
+         "id": "t_cb58e0",
          "role": "text",
          "text": "Spaces: 4",
          "bbox": [
-            1414,
+            1416,
             999,
-            68,
+            67,
             16
          ],
-         "conf": 0.9980702996253967,
+         "conf": 0.9989092350006104,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_72b762",
+         "id": "t_44e9ed",
          "role": "text",
          "text": "UTF-8",
          "bbox": [
@@ -4330,23 +4442,23 @@
          }
       },
       {
-         "id": "t_161f11",
+         "id": "t_3434f5",
          "role": "text",
          "text": "LF",
          "bbox": [
-            1557,
-            998,
-            24,
-            19
+            1555,
+            994,
+            27,
+            22
          ],
-         "conf": 0.9999499917030334,
+         "conf": 0.9999285936355591,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_b482a3",
+         "id": "t_afe563",
          "role": "text",
          "text": "{",
          "bbox": [
@@ -4355,14 +4467,14 @@
             18,
             15
          ],
-         "conf": 0.8017679452896118,
+         "conf": 0.8017681241035461,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_626313",
+         "id": "t_7b6c3b",
          "role": "text",
          "text": "Python",
          "bbox": [
@@ -4378,7 +4490,7 @@
          }
       },
       {
-         "id": "t_7f461b",
+         "id": "t_9ab0c0",
          "role": "text",
          "text": "Finish Setup",
          "bbox": [
@@ -4387,14 +4499,14 @@
             109,
             16
          ],
-         "conf": 0.9976592063903809,
+         "conf": 0.9980190396308899,
          "source": "ocr",
          "meta": {
             "source_type": "ocr_v3"
          }
       },
       {
-         "id": "t_d1864f",
+         "id": "t_4200c6",
          "role": "text",
          "text": "3.10.12",
          "bbox": [
@@ -4410,7 +4522,7 @@
          }
       },
       {
-         "id": "t_b27de8",
+         "id": "t_4c6eb2",
          "role": "text",
          "text": "SSD",
          "bbox": [
@@ -4426,7 +4538,7 @@
          }
       },
       {
-         "id": "t_d6f115",
+         "id": "t_986009",
          "role": "text",
          "text": "SSD",
          "bbox": [
@@ -4442,41 +4554,25 @@
          }
       },
       {
-         "id": "d_080413",
+         "id": "d_8e9f45",
          "role": "icon",
          "text": "laptop",
          "bbox": [
-            4,
             0,
-            1889,
-            1074
+            0,
+            1914,
+            1072
          ],
-         "conf": 0.4739278256893158,
+         "conf": 0.5851965546607971,
          "source": "detector",
          "meta": {
             "class_id": 63
          }
-      },
-      {
-         "id": "d_21b185",
-         "role": "icon",
-         "text": "tv",
-         "bbox": [
-            4,
-            4,
-            1915,
-            1049
-         ],
-         "conf": 0.3471010625362396,
-         "source": "detector",
-         "meta": {
-            "class_id": 62
-         }
       }
    ],
    "timing_ms": {
-      "ocr": 13597,
-      "yolo": 170,
-      "total": 13767
+      "ocr": 15633,
+      "yolo": 109,
+      "total": 15742
    }
 }
