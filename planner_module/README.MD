@@ -35,14 +35,22 @@ uv pip install vllm --torch-backend=auto
 
 This will automatically detect your CUDA version and install the appropriate PyTorch build.
 
-## Step 4: Install Hugging Face Hub
+## Step 4: Put Your Model in planner_module/models
+
+Put whichever LLM model you are using in the directory planner_module/models. 
+Change the code in planner_module/planner.py and set the model_path to your model's path. 
+
+# How to Download a Llama Model
+
+
+## Step 1: Install Hugging Face Hub
 
 Install the Hub library (includes the `hf` CLI):
 ```bash
 uv pip install -U "huggingface_hub"
 ```
 
-## Step 5: Login to Hugging Face (Required for Llama models)
+## Step 2: Login to Hugging Face (Required for Llama models)
 
 Llama models require authentication. Create a Hugging Face account and get access:
 
@@ -56,7 +64,7 @@ hf auth login
 
 Enter your access token when prompted.
 
-## Step 6: Download the Model
+## Step 3: Download the Model
 
 Download the Llama 3.2 1B Instruct model locally:
 ```bash
