@@ -31,12 +31,12 @@ def load_vision_json(vision_path):
         return json.load(f)
 
 
-def build_prompt(task, vision_data):
+def build_prompt(task, vision_data, bbox):
     """Build the prompt for the LLM."""
     # Extract screen context
     elements = vision_data.get("elements", [])
     window = vision_data.get("window", {})
-    bbox = window.get("bbox", [0, 0, 1920, 1080])
+    bbox = window.get("bbox", bbox)
     
     # Format UI elements - only show elements with text
     ui_elements = []
@@ -51,57 +51,55 @@ def build_prompt(task, vision_data):
     
     # Build focused prompt with strict examples
     prompt = f"""Convert the task into computer actions using ONLY these actions:
-MOVE_TO x y - move cursor
-CLICK - click mouse
-TYPING "text" - type text
-HOTKEY keys - keyboard shortcut
-DONE - finish
+        MOVE_TO x y - move cursor
+        CLICK - click mouse
+        TYPING "text" - type text
+        HOTKEY keys - keyboard shortcut
+        DONE - finish
 
-Screen elements:
-{ui_context}
+        Screen elements:
+        {ui_context}
 
-Examples:
+        Examples:
 
-Task: Click on Gmail
-MOVE_TO 3523 213
-CLICK
-DONE
+        Task: Click on Gmail
+        MOVE_TO 3523 213
+        CLICK
+        DONE
 
-Task: Search for python
-MOVE_TO 1380 588
-CLICK
-TYPING "python"
-DONE
+        Task: Search for python
+        MOVE_TO 1380 588
+        CLICK
+        TYPING "python"
+        DONE
 
-Task: Open terminal
-HOTKEY ctrl+alt+t
-DONE
+        Task: Open terminal
+        HOTKEY ctrl+alt+t
+        DONE
 
-Task: {task}
-"""
+        Task: {task}
+    """
     return prompt
 
 
-def generate_plan(task, vision_path, model_path="./models/llama-3.2-1b", 
-                 temperature=0.3, max_tokens=512):
+def generate_plan(task, vision_data, model_path, bbox, temperature=0.3, max_tokens=512):
     """
     Generate action plan using LLM.
     
     Args:
         task: Task description
-        vision_path: Path to vision JSON file
+        vision_data: Vision output dictionary
         model_path: Path to LLM model
+        bbox: Bounding box [x, y, width, height]
         temperature: Sampling temperature
         max_tokens: Max tokens to generate
         
     Returns:
-        Raw LLM output string
+        output (raw string) and actions (list of action strings)
     """
-    # Load vision data
-    vision_data = load_vision_json(vision_path)
     
     # Build prompt
-    prompt = build_prompt(task, vision_data)
+    prompt = build_prompt(task, vision_data, bbox)
     print("=== Prompt ===")
     print(prompt)
     
@@ -131,11 +129,18 @@ def generate_plan(task, vision_path, model_path="./models/llama-3.2-1b",
     if stop_reason and stop_reason in ["DONE", "FAIL"]:
         output += f"\n{stop_reason}"
     
-    return output
+    # Parse output into action list
+    actions = []
+    for line in output.split('\n'):
+        line = line.strip()
+        if line:  # Skip empty lines
+            actions.append(line)
+    
+    return output, actions
 
 
 def main():
-    task = "Search up cat pictures in google search bar"
+    task = "Search cat pictures in google search bar"
     vision_file = "./vision_files/gpu_omni_output.json"
     model_path = "planner_module/models/llama-3.2-1b"
     temperature = 0.3
@@ -144,11 +149,15 @@ def main():
     print(f"Task: {task}")
     print(f"Vision file: {vision_file}")
     print("\nGenerating plan...\n")
+
+    # Load vision data
+    vision_data = load_vision_json(vision_file)
     
-    output = generate_plan(
+    output, actions = generate_plan(
         task=task,
-        vision_path=vision_file,
+        vision_data=vision_data,
         model_path=model_path,
+        bbox=[0, 0, 1920, 1080],
         temperature=temperature,
         max_tokens=max_tokens,
     )
@@ -157,6 +166,11 @@ def main():
     print("LLM OUTPUT:")
     print("="*80)
     print(output)
+    print("="*80)
+    
+    print("\nACTIONS LIST:")
+    print("="*80)
+    print(actions)
     print("="*80)
 
 
