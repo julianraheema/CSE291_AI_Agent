@@ -240,6 +240,25 @@ class ScreenParserCPU:
                 "total": int((t2 - t0) * 1000),
             }
         }
+    
+    # function call for OSWorld pipeline usage
+    def parse_obs(self, img_bgr, bbox) -> Dict[str, Any]:
+        t0 = time.time()
+        ocr_elems = self.run_ocr(img_bgr)
+        t1 = time.time()
+        det_elems = self.run_yolo(img_bgr)
+        t2 = time.time()
+
+        elements = [asdict(e) for e in ocr_elems + det_elems]
+        return {
+            "window": {"bbox": [bbox[0], bbox[1], bbox[2], bbox[3]], "scale": 1.0},
+            "elements": elements,
+            "timing_ms": {
+                "ocr": int((t1 - t0) * 1000),
+                "yolo": int((t2 - t1) * 1000),
+                "total": int((t2 - t0) * 1000),
+            }
+        }
 
 # small test code to run standalone
 if __name__ == "__main__":
