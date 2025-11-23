@@ -1,0 +1,31 @@
+{
+    "instruction": "Turn Microphone audio into ASCII visualizer in terminal",
+    "single-action": [
+        "'HOTKEY' ctrl-alt-t to open terminal",
+        "'CLICK' on terminal prompt line",
+        "'TYPING' 'sudo apt install sox ffmpeg'",
+        "'TYPING' 'arecord -l'",
+        "'TYPING' 'arecord -f cd -t wav mic.wav'",
+        "'TYPING' 'sox mic.wav -c 1 -r 8000 mono.wav'",
+        "'TYPING' 'sox mono.wav -n stat'",
+        "'TYPING' 'sox mono.wav -n spectrogram -o spectrogram.png'",
+        "'TYPING' 'jp2a spectrogram.png --width=80'"
+    ],
+    "grouped-action" : [
+        [
+            "'HOTKEY' ctrl-alt-t to open terminal"
+        ],
+        [
+            "'CLICK' on terminal prompt line"
+        ],
+        [
+            "'TYPING' 'sudo apt install sox ffmpeg'",
+            "'TYPING' 'arecord -l'",
+            "'TYPING' 'arecord -f cd -t wav mic.wav'",
+            "'TYPING' 'sox mic.wav -c 1 -r 8000 mono.wav'",
+            "'TYPING' 'sox mono.wav -n stat'",
+            "'TYPING' 'sox mono.wav -n spectrogram -o spectrogram.png'",
+            "'TYPING' 'jp2a spectrogram.png --width=80'"
+        ]
+    ]
+}

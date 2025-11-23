@@ -1,0 +1,65 @@
+{
+  "single-action": [
+    "`HOTKEY` 'Ctrl+Alt+T'",
+    "`TYPING` google-chrome https://quickmap.dot.ca.gov/",
+    "`PRESS` Enter",
+    "`WAIT` 2500",
+
+    "`CLICK` 'Options'",
+    "`CLICK` 'Road Conditions'",
+
+    "`CLICK` 'Fast' checkbox",
+    "`WAIT` 200",
+    "`CLICK` 'Lane closures' checkbox",
+    "`WAIT` 200",
+    "`CLICK` 'Full Closures' checkbox",
+    "`WAIT` 200",
+    "`CLICK` 'CHP Incidents' checkbox",
+    "`WAIT` 300",
+
+    "`CLICK` 'Zoom to'",
+    "`CLICK` 'San Diego'",
+    "`WAIT` 2000",
+
+    "`HOTKEY` 'F11'",
+    "`WAIT` 1000",
+
+    "`HOTKEY` 'Alt+Print'",
+    "`WAIT` 1000",
+    "`DONE`"
+  ],
+  "grouped-action": [
+    [
+      "`HOTKEY` 'Ctrl+Alt+T'",
+      "`TYPING` google-chrome https://quickmap.dot.ca.gov/",
+      "`PRESS` Enter",
+      "`WAIT` 2500"
+    ],
+    [
+      "`CLICK` 'Options'",
+      "`CLICK` 'Road Conditions'"
+    ],
+    [
+      "`CLICK` 'Fast' checkbox",
+      "`WAIT` 200",
+      "`CLICK` 'Lane closures' checkbox",
+      "`WAIT` 200",
+      "`CLICK` 'Full Closures' checkbox",
+      "`WAIT` 200",
+      "`CLICK` 'CHP Incidents' checkbox",
+      "`WAIT` 300"
+    ],
+    [
+      "`CLICK` 'Zoom to'",
+      "`CLICK` 'San Diego'",
+      "`WAIT` 2000"
+    ],
+    [
+      "`HOTKEY` 'F11'",
+      "`WAIT` 1000",
+      "`HOTKEY` 'Alt+Print'",
+      "`WAIT` 1000",
+      "`DONE`"
+    ]
+  ]
+}

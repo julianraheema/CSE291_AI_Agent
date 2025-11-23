@@ -1,0 +1,37 @@
+{
+    "instruction": "This CLI process pulls a black image from the internet and blends/manipulates/displays it into blurry effect",
+    "single-action": [
+        "'HOTKEY' ctrl-alt-t to open terminal",
+        "'CLICK' on terminal prompt line",
+        "'TYPING' 'sudo apt install imagemagick jp2a -y'",
+        "'TYPING' 'curl -s -L -o sample.jpg https://upload.wikimedia.org/wikipedia/commons/9/99/Black_square.jpg'",
+        "'TYPING' 'convert sample.jpg -resize 200x200 resized.jpg'",
+        "'TYPING' 'convert resized.jpg -colorspace Gray gray.jpg'",
+        "'TYPING' 'convert gray.jpg -blur 0x6 blur.jpg'",
+        "'TYPING' 'convert gray.jpg blur.jpg -compose blend -define compose:args=50,50 -composite blend.jpg'",
+        "'TYPING' 'jp2a blend.jpg --width=80 --colors'",
+        "'TYPING' 'display blend.jpg'",
+        "'TYPING' 'rm resized.jpg gray.jpg blur.jpg sample.jpg'",
+        "'TYPING' 'rm blend.jpg'"
+    ],
+    "grouped-action" : [
+        [
+            "'HOTKEY' ctrl-alt-t to open terminal"
+        ],
+        [
+            "'CLICK' on terminal prompt line"
+        ],
+        [
+            "'TYPING' 'sudo apt install imagemagick jp2a -y'",
+            "'TYPING' 'curl -s -L -o sample.jpg https://upload.wikimedia.org/wikipedia/commons/9/99/Black_square.jpg'",
+            "'TYPING' 'convert sample.jpg -resize 200x200 resized.jpg'",
+            "'TYPING' 'convert resized.jpg -colorspace Gray gray.jpg'",
+            "'TYPING' 'convert gray.jpg -blur 0x6 blur.jpg'",
+            "'TYPING' 'convert gray.jpg blur.jpg -compose blend -define compose:args=50,50 -composite blend.jpg'",
+            "'TYPING' 'jp2a blend.jpg --width=80 --colors'",
+            "'TYPING' 'display blend.jpg'",
+            "'TYPING' 'rm resized.jpg gray.jpg blur.jpg sample.jpg'",
+            "'TYPING' 'rm blend.jpg'"
+        ]
+    ]
+}

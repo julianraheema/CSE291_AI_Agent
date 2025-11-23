@@ -1,0 +1,2696 @@
+{
+   "window": {
+      "bbox": [
+         0,
+         0,
+         1920,
+         1080
+      ],
+      "scale": 1.0
+   },
+   "elements": [
+      {
+         "id": "t_fd5145",
+         "role": "text",
+         "text": "Activities",
+         "bbox": [
+            14,
+            6,
+            82,
+            20
+         ],
+         "conf": 0.999958336353302,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_1547e6",
+         "role": "text",
+         "text": "4 Visual Studio Code",
+         "bbox": [
+            128,
+            6,
+            182,
+            20
+         ],
+         "conf": 0.9428523778915405,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_5ca577",
+         "role": "text",
+         "text": "Nov 22 14:04",
+         "bbox": [
+            902,
+            4,
+            124,
+            20
+         ],
+         "conf": 0.9825875163078308,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_bc369e",
+         "role": "text",
+         "text": "File",
+         "bbox": [
+            49,
+            42,
+            34,
+            21
+         ],
+         "conf": 0.9111239314079285,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_c7c6a0",
+         "role": "text",
+         "text": "Edit",
+         "bbox": [
+            96,
+            44,
+            37,
+            18
+         ],
+         "conf": 0.9998047351837158,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_7ca201",
+         "role": "text",
+         "text": "Selection",
+         "bbox": [
+            144,
+            43,
+            76,
+            20
+         ],
+         "conf": 0.9999793171882629,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_588df6",
+         "role": "text",
+         "text": "View",
+         "bbox": [
+            232,
+            44,
+            43,
+            18
+         ],
+         "conf": 0.9999614953994751,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_3a3edb",
+         "role": "text",
+         "text": "Go",
+         "bbox": [
+            291,
+            44,
+            26,
+            18
+         ],
+         "conf": 0.9997625946998596,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_e5f769",
+         "role": "text",
+         "text": "Run",
+         "bbox": [
+            331,
+            44,
+            36,
+            18
+         ],
+         "conf": 0.9992830157279968,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_621337",
+         "role": "text",
+         "text": "Terminal",
+         "bbox": [
+            380,
+            43,
+            70,
+            20
+         ],
+         "conf": 0.9999657273292542,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_e0fb98",
+         "role": "text",
+         "text": "Help",
+         "bbox": [
+            463,
+            43,
+            42,
+            21
+         ],
+         "conf": 0.9999512434005737,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_828fd4",
+         "role": "text",
+         "text": "<",
+         "bbox": [
+            535,
+            49,
+            13,
+            10
+         ],
+         "conf": 0.7382791638374329,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_810902",
+         "role": "text",
+         "text": "7",
+         "bbox": [
+            566,
+            43,
+            20,
+            21
+         ],
+         "conf": 0.9262282252311707,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_861c1f",
+         "role": "text",
+         "text": "Q",
+         "bbox": [
+            937,
+            43,
+            21,
+            19
+         ],
+         "conf": 0.9829932451248169,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_f11225",
+         "role": "text",
+         "text": "Repo",
+         "bbox": [
+            955,
+            40,
+            49,
+            26
+         ],
+         "conf": 0.9998294115066528,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_fa1eb2",
+         "role": "text",
+         "text": "EXPLORER",
+         "bbox": [
+            81,
+            90,
+            72,
+            15
+         ],
+         "conf": 0.9614038467407227,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_68b33e",
+         "role": "text",
+         "text": "2",
+         "bbox": [
+            378,
+            90,
+            15,
+            15
+         ],
+         "conf": 0.9975274205207825,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_bce65e",
+         "role": "text",
+         "text": "controller.py u",
+         "bbox": [
+            399,
+            88,
+            114,
+            20
+         ],
+         "conf": 0.9985793828964233,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_2039cd",
+         "role": "text",
+         "text": "README.md u",
+         "bbox": [
+            584,
+            87,
+            116,
+            20
+         ],
+         "conf": 0.982285737991333,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_cb1d42",
+         "role": "text",
+         "text": "2",
+         "bbox": [
+            752,
+            91,
+            12,
+            11
+         ],
+         "conf": 0.9962943196296692,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_ba0663",
+         "role": "text",
+         "text": "run_agent.py u X",
+         "bbox": [
+            769,
+            87,
+            145,
+            20
+         ],
+         "conf": 0.9503796696662903,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_3ca5b9",
+         "role": "text",
+         "text": "README.MD u",
+         "bbox": [
+            961,
+            90,
+            115,
+            16
+         ],
+         "conf": 0.9613742828369141,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_cb1b1f",
+         "role": "text",
+         "text": "2",
+         "bbox": [
+            1130,
+            92,
+            10,
+            9
+         ],
+         "conf": 0.9656868577003479,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_c1da33",
+         "role": "text",
+         "text": "vision_CPU.py 2, U",
+         "bbox": [
+            1146,
+            85,
+            144,
+            27
+         ],
+         "conf": 0.9719841480255127,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_d2326c",
+         "role": "text",
+         "text": "2",
+         "bbox": [
+            1339,
+            90,
+            15,
+            14
+         ],
+         "conf": 0.9976097345352173,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_d02753",
+         "role": "text",
+         "text": "planner.py 1, U",
+         "bbox": [
+            1357,
+            85,
+            116,
+            23
+         ],
+         "conf": 0.9439210891723633,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_325abc",
+         "role": "text",
+         "text": "REPO",
+         "bbox": [
+            80,
+            124,
+            43,
+            17
+         ],
+         "conf": 0.9997491836547852,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_bf3778",
+         "role": "text",
+         "text": "CSE291_AI_Agent >",
+         "bbox": [
+            379,
+            123,
+            149,
+            20
+         ],
+         "conf": 0.9643197655677795,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_82b1aa",
+         "role": "text",
+         "text": "2",
+         "bbox": [
+            537,
+            126,
+            15,
+            16
+         ],
+         "conf": 0.9964821338653564,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_703989",
+         "role": "text",
+         "text": "run_agent.py >  run_vision_subprocess",
+         "bbox": [
+            558,
+            123,
+            312,
+            21
+         ],
+         "conf": 0.9916183948516846,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_674e2d",
+         "role": "text",
+         "text": "CSE291_Al_Agent",
+         "bbox": [
+            100,
+            151,
+            134,
+            20
+         ],
+         "conf": 0.932577908039093,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_24f09f",
+         "role": "text",
+         "text": "89",
+         "bbox": [
+            393,
+            159,
+            26,
+            20
+         ],
+         "conf": 0.9999492764472961,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_4d283a",
+         "role": "text",
+         "text": "def",
+         "bbox": [
+            446,
+            159,
+            38,
+            21
+         ],
+         "conf": 0.9999338984489441,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_aa9eca",
+         "role": "text",
+         "text": "run_vision_subprocess():",
+         "bbox": [
+            489,
+            160,
+            253,
+            20
+         ],
+         "conf": 0.9917923808097839,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_5a197a",
+         "role": "text",
+         "text": "parse_Fullscreen",
+         "bbox": [
+            1270,
+            151,
+            129,
+            27
+         ],
+         "conf": 0.9719675779342651,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_08d7d1",
+         "role": "text",
+         "text": "Aa ab, .*",
+         "bbox": [
+            1461,
+            156,
+            80,
+            24
+         ],
+         "conf": 0.9568195343017578,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_cdef74",
+         "role": "text",
+         "text": "?of2",
+         "bbox": [
+            1544,
+            157,
+            46,
+            21
+         ],
+         "conf": 0.9816726446151733,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_5f56c6",
+         "role": "text",
+         "text": "ecua2_agent",
+         "bbox": [
+            109,
+            181,
+            98,
+            16
+         ],
+         "conf": 0.9735350012779236,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_0e9df4",
+         "role": "text",
+         "text": "90",
+         "bbox": [
+            393,
+            183,
+            26,
+            20
+         ],
+         "conf": 0.9997804164886475,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_aabf66",
+         "role": "text",
+         "text": "cmd",
+         "bbox": [
+            489,
+            186,
+            36,
+            18
+         ],
+         "conf": 0.9999215006828308,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_088876",
+         "role": "text",
+         "text": "=",
+         "bbox": [
+            530,
+            187,
+            16,
+            14
+         ],
+         "conf": 0.9973613619804382,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_69c72b",
+         "role": "text",
+         "text": "> controller",
+         "bbox": [
+            102,
+            201,
+            93,
+            15
+         ],
+         "conf": 0.9910292625427246,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_a651b1",
+         "role": "text",
+         "text": "91",
+         "bbox": [
+            393,
+            207,
+            25,
+            20
+         ],
+         "conf": 0.9994117021560669,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_9263e4",
+         "role": "text",
+         "text": "\"python3\",",
+         "bbox": [
+            530,
+            204,
+            109,
+            30
+         ],
+         "conf": 0.9485045671463013,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_8cfe72",
+         "role": "text",
+         "text": "176",
+         "bbox": [
+            24,
+            230,
+            22,
+            14
+         ],
+         "conf": 0.999991238117218,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_c9364e",
+         "role": "text",
+         "text": "v planner_module",
+         "bbox": [
+            98,
+            226,
+            146,
+            19
+         ],
+         "conf": 0.9661822319030762,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_a3828c",
+         "role": "text",
+         "text": "92",
+         "bbox": [
+            393,
+            231,
+            26,
+            20
+         ],
+         "conf": 0.9999434947967529,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_636d7e",
+         "role": "text",
+         "text": "\"ecua2",
+         "bbox": [
+            532,
+            230,
+            68,
+            24
+         ],
+         "conf": 0.9997791647911072,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_11e8ff",
+         "role": "text",
+         "text": "agent/vision_module/vision_CPU.py\",",
+         "bbox": [
+            603,
+            232,
+            368,
+            20
+         ],
+         "conf": 0.9952658414840698,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_d523fb",
+         "role": "text",
+         "text": "^",
+         "bbox": [
+            114,
+            258,
+            8,
+            13
+         ],
+         "conf": 0.9258143901824951,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_a4cfb9",
+         "role": "text",
+         "text": "_pycache",
+         "bbox": [
+            144,
+            254,
+            66,
+            20
+         ],
+         "conf": 0.985795795917511,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_4dfdcc",
+         "role": "text",
+         "text": "93",
+         "bbox": [
+            393,
+            254,
+            26,
+            20
+         ],
+         "conf": 0.9998301267623901,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_b38c4c",
+         "role": "text",
+         "text": "1",
+         "bbox": [
+            492,
+            256,
+            8,
+            18
+         ],
+         "conf": 0.8927744626998901,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_9dc8b7",
+         "role": "text",
+         "text": "94",
+         "bbox": [
+            393,
+            278,
+            26,
+            20
+         ],
+         "conf": 0.9999067187309265,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_38c080",
+         "role": "text",
+         "text": "result",
+         "bbox": [
+            489,
+            277,
+            68,
+            22
+         ],
+         "conf": 0.9999849200248718,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_db0f49",
+         "role": "text",
+         "text": "> models",
+         "bbox": [
+            109,
+            278,
+            79,
+            22
+         ],
+         "conf": 0.9725072383880615,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_093ab8",
+         "role": "text",
+         "text": "=",
+         "bbox": [
+            565,
+            284,
+            10,
+            10
+         ],
+         "conf": 0.9497485160827637,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_aa5a51",
+         "role": "text",
+         "text": "subprocess.run(cmd,",
+         "bbox": [
+            583,
+            279,
+            201,
+            20
+         ],
+         "conf": 0.9999158978462219,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_2db5ac",
+         "role": "text",
+         "text": "capture_output=True,text=True)",
+         "bbox": [
+            794,
+            279,
+            327,
+            20
+         ],
+         "conf": 0.9982736110687256,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_b5557e",
+         "role": "text",
+         "text": "2",
+         "bbox": [
+            110,
+            313,
+            10,
+            10
+         ],
+         "conf": 0.9931502938270569,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_374ba2",
+         "role": "text",
+         "text": "init_.py",
+         "bbox": [
+            142,
+            307,
+            69,
+            22
+         ],
+         "conf": 0.9909579753875732,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_9bf351",
+         "role": "text",
+         "text": "95",
+         "bbox": [
+            393,
+            302,
+            25,
+            20
+         ],
+         "conf": 0.99993497133255,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_0c268b",
+         "role": "text",
+         "text": "U",
+         "bbox": [
+            330,
+            314,
+            9,
+            10
+         ],
+         "conf": 0.8811995983123779,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_45104e",
+         "role": "text",
+         "text": "planner.py",
+         "bbox": [
+            127,
+            333,
+            84,
+            25
+         ],
+         "conf": 0.9995896220207214,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_8f95d6",
+         "role": "text",
+         "text": "96",
+         "bbox": [
+            393,
+            326,
+            26,
+            20
+         ],
+         "conf": 0.9999182820320129,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_52a76a",
+         "role": "text",
+         "text": "if",
+         "bbox": [
+            489,
+            326,
+            24,
+            20
+         ],
+         "conf": 0.9999459385871887,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_543b33",
+         "role": "text",
+         "text": "result.",
+         "bbox": [
+            522,
+            325,
+            70,
+            22
+         ],
+         "conf": 0.9997492432594299,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_940015",
+         "role": "text",
+         "text": "returncode",
+         "bbox": [
+            592,
+            322,
+            112,
+            26
+         ],
+         "conf": 0.9999775886535645,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_9adddb",
+         "role": "text",
+         "text": "!=",
+         "bbox": [
+            712,
+            327,
+            26,
+            18
+         ],
+         "conf": 0.9955837726593018,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_3d8b84",
+         "role": "text",
+         "text": "0:",
+         "bbox": [
+            740,
+            326,
+            25,
+            20
+         ],
+         "conf": 0.9955650568008423,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_f13b06",
+         "role": "text",
+         "text": "1, U",
+         "bbox": [
+            313,
+            338,
+            30,
+            16
+         ],
+         "conf": 0.9665145874023438,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_986ee7",
+         "role": "text",
+         "text": "97",
+         "bbox": [
+            393,
+            349,
+            26,
+            20
+         ],
+         "conf": 0.9999624490737915,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_ad4d9c",
+         "role": "text",
+         "text": "print(",
+         "bbox": [
+            529,
+            346,
+            72,
+            27
+         ],
+         "conf": 0.9997425675392151,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_518faf",
+         "role": "text",
+         "text": "[ERROR]",
+         "bbox": [
+            606,
+            348,
+            75,
+            24
+         ],
+         "conf": 0.9994417428970337,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_5c0cd0",
+         "role": "text",
+         "text": "vision",
+         "bbox": [
+            688,
+            349,
+            68,
+            21
+         ],
+         "conf": 0.9998458027839661,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_30dd7b",
+         "role": "text",
+         "text": "CPU.py",
+         "bbox": [
+            762,
+            348,
+            70,
+            25
+         ],
+         "conf": 0.9959905743598938,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_e702f4",
+         "role": "text",
+         "text": "failed\")",
+         "bbox": [
+            837,
+            348,
+            87,
+            24
+         ],
+         "conf": 0.9999250173568726,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_28a559",
+         "role": "text",
+         "text": "README.MD",
+         "bbox": [
+            128,
+            364,
+            99,
+            16
+         ],
+         "conf": 0.9996641874313354,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_c07fb0",
+         "role": "text",
+         "text": "98",
+         "bbox": [
+            393,
+            373,
+            26,
+            20
+         ],
+         "conf": 0.9999495148658752,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_d95d09",
+         "role": "text",
+         "text": "print(\"",
+         "bbox": [
+            529,
+            369,
+            76,
+            28
+         ],
+         "conf": 0.9985358119010925,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_eb7ebe",
+         "role": "text",
+         "text": "returncode:",
+         "bbox": [
+            628,
+            375,
+            116,
+            16
+         ],
+         "conf": 0.9999486804008484,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_3224a1",
+         "role": "text",
+         "text": "result.returncode)",
+         "bbox": [
+            775,
+            374,
+            189,
+            20
+         ],
+         "conf": 0.9761230945587158,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_d9e0ff",
+         "role": "text",
+         "text": "vision_module",
+         "bbox": [
+            118,
+            390,
+            111,
+            21
+         ],
+         "conf": 0.9978246688842773,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_4d42e3",
+         "role": "text",
+         "text": "99",
+         "bbox": [
+            393,
+            397,
+            26,
+            21
+         ],
+         "conf": 0.9997944235801697,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_9b681a",
+         "role": "text",
+         "text": "print(",
+         "bbox": [
+            529,
+            393,
+            72,
+            28
+         ],
+         "conf": 0.9996461868286133,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_5ee65b",
+         "role": "text",
+         "text": "stderr:\\n\",",
+         "bbox": [
+            626,
+            397,
+            112,
+            21
+         ],
+         "conf": 0.9884679913520813,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_54caf0",
+         "role": "text",
+         "text": "result.stderr)",
+         "bbox": [
+            753,
+            397,
+            147,
+            21
+         ],
+         "conf": 0.999943196773529,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_cadd8d",
+         "role": "text",
+         "text": "^",
+         "bbox": [
+            114,
+            422,
+            8,
+            14
+         ],
+         "conf": 0.9203572273254395,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_5af3b1",
+         "role": "text",
+         "text": "_pycache",
+         "bbox": [
+            141,
+            416,
+            68,
+            25
+         ],
+         "conf": 0.9973760843276978,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_88f871",
+         "role": "text",
+         "text": "100",
+         "bbox": [
+            384,
+            421,
+            37,
+            21
+         ],
+         "conf": 0.9998223185539246,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_2b1703",
+         "role": "text",
+         "text": "raise",
+         "bbox": [
+            532,
+            422,
+            57,
+            20
+         ],
+         "conf": 0.9999872446060181,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_b5c29d",
+         "role": "text",
+         "text": "RuntimeError(",
+         "bbox": [
+            592,
+            421,
+            141,
+            21
+         ],
+         "conf": 0.9996662735939026,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_f54d2f",
+         "role": "text",
+         "text": "\"vision",
+         "bbox": [
+            735,
+            422,
+            75,
+            20
+         ],
+         "conf": 0.9995476603507996,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_0e2eab",
+         "role": "text",
+         "text": "CPU.py",
+         "bbox": [
+            817,
+            422,
+            66,
+            21
+         ],
+         "conf": 0.9966104626655579,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_2a5e45",
+         "role": "text",
+         "text": "failed\")",
+         "bbox": [
+            890,
+            422,
+            85,
+            20
+         ],
+         "conf": 0.9999542236328125,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_d11e99",
+         "role": "text",
+         "text": "vision_files",
+         "bbox": [
+            126,
+            445,
+            90,
+            20
+         ],
+         "conf": 0.9990116953849792,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_d25dcc",
+         "role": "text",
+         "text": "101",
+         "bbox": [
+            384,
+            444,
+            36,
+            21
+         ],
+         "conf": 0.999552309513092,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_ca689b",
+         "role": "text",
+         "text": ">",
+         "bbox": [
+            116,
+            452,
+            7,
+            9
+         ],
+         "conf": 0.943635880947113,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_7c0992",
+         "role": "text",
+         "text": "102",
+         "bbox": [
+            384,
+            468,
+            36,
+            21
+         ],
+         "conf": 0.9999241828918457,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_b1fb6c",
+         "role": "text",
+         "text": "stdout",
+         "bbox": [
+            489,
+            469,
+            68,
+            20
+         ],
+         "conf": 0.9999586939811707,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_0eb9ca",
+         "role": "text",
+         "text": "result.stdout.strip()",
+         "bbox": [
+            580,
+            466,
+            226,
+            25
+         ],
+         "conf": 0.9832860827445984,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_6242dd",
+         "role": "text",
+         "text": "vision_GPU",
+         "bbox": [
+            123,
+            474,
+            92,
+            20
+         ],
+         "conf": 0.9937570691108704,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_de8df5",
+         "role": "text",
+         "text": "_init_.py",
+         "bbox": [
+            130,
+            498,
+            82,
+            26
+         ],
+         "conf": 0.9302117824554443,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_3fc9da",
+         "role": "text",
+         "text": "103",
+         "bbox": [
+            384,
+            492,
+            36,
+            21
+         ],
+         "conf": 0.9999253153800964,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_01eb66",
+         "role": "text",
+         "text": "if",
+         "bbox": [
+            490,
+            493,
+            25,
+            18
+         ],
+         "conf": 0.9999696016311646,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_8fa9f4",
+         "role": "text",
+         "text": "not",
+         "bbox": [
+            519,
+            494,
+            38,
+            18
+         ],
+         "conf": 0.9999933242797852,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_25c47e",
+         "role": "text",
+         "text": "stdout:",
+         "bbox": [
+            562,
+            493,
+            76,
+            20
+         ],
+         "conf": 0.9999002814292908,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_4cbfe8",
+         "role": "text",
+         "text": "104",
+         "bbox": [
+            384,
+            516,
+            37,
+            21
+         ],
+         "conf": 0.9998164176940918,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_076516",
+         "role": "text",
+         "text": "print(\"[ERROR]",
+         "bbox": [
+            529,
+            513,
+            152,
+            26
+         ],
+         "conf": 0.9986357688903809,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_cf041f",
+         "role": "text",
+         "text": "vision",
+         "bbox": [
+            690,
+            517,
+            67,
+            20
+         ],
+         "conf": 0.9999136328697205,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_efc361",
+         "role": "text",
+         "text": "CPU.py",
+         "bbox": [
+            762,
+            513,
+            70,
+            27
+         ],
+         "conf": 0.9955903887748718,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_749fda",
+         "role": "text",
+         "text": "produced no stdout\")",
+         "bbox": [
+            834,
+            514,
+            214,
+            25
+         ],
+         "conf": 0.9858821034431458,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_3f6516",
+         "role": "text",
+         "text": "cpu_vision_output.json",
+         "bbox": [
+            122,
+            529,
+            181,
+            20
+         ],
+         "conf": 0.991780698299408,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_736d42",
+         "role": "text",
+         "text": "U",
+         "bbox": [
+            330,
+            535,
+            9,
+            10
+         ],
+         "conf": 0.9678385257720947,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_6bb8f5",
+         "role": "text",
+         "text": "105",
+         "bbox": [
+            382,
+            538,
+            37,
+            21
+         ],
+         "conf": 0.9998167157173157,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_9c8044",
+         "role": "text",
+         "text": "print(",
+         "bbox": [
+            531,
+            540,
+            66,
+            21
+         ],
+         "conf": 0.9999073147773743,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_242b07",
+         "role": "text",
+         "text": "stderr:\\n\"",
+         "bbox": [
+            628,
+            542,
+            105,
+            16
+         ],
+         "conf": 0.9995934367179871,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_485b51",
+         "role": "text",
+         "text": "result.stderr)",
+         "bbox": [
+            753,
+            540,
+            147,
+            20
+         ],
+         "conf": 0.9999621510505676,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_814dee",
+         "role": "text",
+         "text": "README.MD",
+         "bbox": [
+            128,
+            556,
+            98,
+            16
+         ],
+         "conf": 0.9997181296348572,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_d60e99",
+         "role": "text",
+         "text": "U",
+         "bbox": [
+            330,
+            561,
+            9,
+            10
+         ],
+         "conf": 0.9327778220176697,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_48ece8",
+         "role": "text",
+         "text": "106",
+         "bbox": [
+            382,
+            562,
+            38,
+            21
+         ],
+         "conf": 0.9999427199363708,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_599d36",
+         "role": "text",
+         "text": "raise",
+         "bbox": [
+            534,
+            566,
+            55,
+            16
+         ],
+         "conf": 0.9999794960021973,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_194bbe",
+         "role": "text",
+         "text": "RuntimeError(\"Empty",
+         "bbox": [
+            592,
+            562,
+            218,
+            21
+         ],
+         "conf": 0.9984403848648071,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_4336e4",
+         "role": "text",
+         "text": "stdout",
+         "bbox": [
+            804,
+            564,
+            73,
+            20
+         ],
+         "conf": 0.9999521374702454,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_dc720e",
+         "role": "text",
+         "text": "from vision CPU.py\")",
+         "bbox": [
+            876,
+            565,
+            212,
+            19
+         ],
+         "conf": 0.9397370219230652,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_a1b021",
+         "role": "text",
+         "text": "vision_CPU.py",
+         "bbox": [
+            126,
+            582,
+            109,
+            22
+         ],
+         "conf": 0.9635016322135925,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_767ebd",
+         "role": "text",
+         "text": "2, U",
+         "bbox": [
+            312,
+            585,
+            31,
+            18
+         ],
+         "conf": 0.9945828914642334,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_dcef1a",
+         "role": "text",
+         "text": "PROBLEMS",
+         "bbox": [
+            385,
+            595,
+            74,
+            16
+         ],
+         "conf": 0.9999321699142456,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_de9335",
+         "role": "text",
+         "text": "OUTPUT",
+         "bbox": [
+            508,
+            595,
+            56,
+            15
+         ],
+         "conf": 0.9997353553771973,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_9235a8",
+         "role": "text",
+         "text": "DEBUG CONSOLE",
+         "bbox": [
+            592,
+            595,
+            112,
+            15
+         ],
+         "conf": 0.9940699338912964,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_40657d",
+         "role": "text",
+         "text": "TERMINAL",
+         "bbox": [
+            732,
+            595,
+            68,
+            15
+         ],
+         "conf": 0.9999508261680603,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_959d26",
+         "role": "text",
+         "text": "PORTS",
+         "bbox": [
+            826,
+            592,
+            49,
+            21
+         ],
+         "conf": 0.9996870160102844,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_28fcb6",
+         "role": "text",
+         "text": "GITLENS",
+         "bbox": [
+            901,
+            595,
+            56,
+            16
+         ],
+         "conf": 0.9999538064002991,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_43dd44",
+         "role": "text",
+         "text": "python -CSE291_Al_Agent +v…",
+         "bbox": [
+            1480,
+            594,
+            350,
+            20
+         ],
+         "conf": 0.9130352735519409,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_8dbc9a",
+         "role": "text",
+         "text": "| ( x",
+         "bbox": [
+            1830,
+            594,
+            68,
+            20
+         ],
+         "conf": 0.7612054944038391,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_7ffc7a",
+         "role": "text",
+         "text": "yolov8n.pt",
+         "bbox": [
+            108,
+            610,
+            103,
+            20
+         ],
+         "conf": 0.9992362260818481,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_2e5762",
+         "role": "text",
+         "text": "yolov8s.pt",
+         "bbox": [
+            109,
+            640,
+            99,
+            16
+         ],
+         "conf": 0.9992831945419312,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_86d637",
+         "role": "text",
+         "text": "U",
+         "bbox": [
+            330,
+            644,
+            9,
+            10
+         ],
+         "conf": 0.8811995387077332,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_cfbe2a",
+         "role": "text",
+         "text": "31,",
+         "bbox": [
+            462,
+            637,
+            38,
+            27
+         ],
+         "conf": 0.9994239807128906,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_caf286",
+         "role": "text",
+         "text": "^",
+         "bbox": [
+            94,
+            670,
+            8,
+            13
+         ],
+         "conf": 0.9497579336166382,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_2143c0",
+         "role": "text",
+         "text": "osworld_tasks",
+         "bbox": [
+            108,
+            664,
+            110,
+            21
+         ],
+         "conf": 0.9999479651451111,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_38a919",
+         "role": "text",
+         "text": "19",
+         "bbox": [
+            465,
+            661,
+            25,
+            21
+         ],
+         "conf": 0.9999789595603943,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_4d95d6",
+         "role": "text",
+         "text": "results",
+         "bbox": [
+            105,
+            691,
+            58,
+            24
+         ],
+         "conf": 0.9999823570251465,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_f95d9a",
+         "role": "text",
+         "text": "'conf\":",
+         "bbox": [
+            453,
+            704,
+            63,
+            24
+         ],
+         "conf": 0.9967729449272156,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_a93633",
+         "role": "text",
+         "text": "0.9984042644500732,",
+         "bbox": [
+            524,
+            708,
+            190,
+            19
+         ],
+         "conf": 0.992972731590271,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_647a7c",
+         "role": "text",
+         "text": ".gitignore",
+         "bbox": [
+            109,
+            720,
+            76,
+            22
+         ],
+         "conf": 0.9998726844787598,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_d1ad95",
+         "role": "text",
+         "text": "\"source'",
+         "bbox": [
+            446,
+            726,
+            78,
+            25
+         ],
+         "conf": 0.9989855289459229,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_c9b487",
+         "role": "text",
+         "text": "'ocr",
+         "bbox": [
+            554,
+            732,
+            34,
+            16
+         ],
+         "conf": 0.9492818117141724,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_635f2d",
+         "role": "text",
+         "text": "cpu_vision_output.json",
+         "bbox": [
+            105,
+            750,
+            177,
+            19
+         ],
+         "conf": 0.9739528298377991,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_856803",
+         "role": "text",
+         "text": "U",
+         "bbox": [
+            330,
+            753,
+            9,
+            13
+         ],
+         "conf": 0.9832524061203003,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_62de73",
+         "role": "text",
+         "text": "\"meta\"",
+         "bbox": [
+            450,
+            752,
+            58,
+            16
+         ],
+         "conf": 0.9998714923858643,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_b4d0ae",
+         "role": "text",
+         "text": "cpu_vision_screenshot.png",
+         "bbox": [
+            102,
+            775,
+            208,
+            21
+         ],
+         "conf": 0.9995461106300354,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_dbebb3",
+         "role": "text",
+         "text": "U",
+         "bbox": [
+            330,
+            781,
+            10,
+            12
+         ],
+         "conf": 0.9903662204742432,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_8f5559",
+         "role": "text",
+         "text": "README.MD",
+         "bbox": [
+            109,
+            805,
+            98,
+            15
+         ],
+         "conf": 0.9987185597419739,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_fa0589",
+         "role": "text",
+         "text": "1",
+         "bbox": [
+            387,
+            818,
+            8,
+            16
+         ],
+         "conf": 0.8691575527191162,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_570677",
+         "role": "text",
+         "text": "run_agent.py",
+         "bbox": [
+            109,
+            834,
+            99,
+            16
+         ],
+         "conf": 0.9998106360435486,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_729c3e",
+         "role": "text",
+         "text": "U",
+         "bbox": [
+            330,
+            835,
+            10,
+            14
+         ],
+         "conf": 0.9966565370559692,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_25a95e",
+         "role": "text",
+         "text": "O",
+         "bbox": [
+            370,
+            844,
+            12,
+            9
+         ],
+         "conf": 0.8107694387435913,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_e7be4a",
+         "role": "text",
+         "text": "(Repo)",
+         "bbox": [
+            386,
+            838,
+            62,
+            21
+         ],
+         "conf": 0.9971053004264832,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_775dc0",
+         "role": "text",
+         "text": "jraheema@lportal:~/CSE291A_AI_Agents_and_Systems/Repo/CSE291_AI_Agent(integration_standalone)$ python run_agent.py --path osworld_tasks/ --recor",
+         "bbox": [
+            453,
+            838,
+            1446,
+            22
+         ],
+         "conf": 0.9890879392623901,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_5d9147",
+         "role": "text",
+         "text": "yolov8n.pt",
+         "bbox": [
+            100,
+            860,
+            89,
+            16
+         ],
+         "conf": 0.9990488290786743,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_efe2e5",
+         "role": "text",
+         "text": "U",
+         "bbox": [
+            330,
+            862,
+            10,
+            13
+         ],
+         "conf": 0.9875989556312561,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_659157",
+         "role": "text",
+         "text": "> for-dev-needed-for-projet",
+         "bbox": [
+            80,
+            884,
+            211,
+            19
+         ],
+         "conf": 0.9554499387741089,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_a4b1e3",
+         "role": "text",
+         "text": "TASK FILE:",
+         "bbox": [
+            426,
+            906,
+            102,
+            16
+         ],
+         "conf": 0.9970600008964539,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_513fda",
+         "role": "text",
+         "text": "/home/jraheema/CSE291A_AI_Agents_and_Systems/Repo/CSE291_AI_Agent/osworld_tasks/chrome/0d8b7de3-e8de-4d86-b9fd-dd2dce58a217.json",
+         "bbox": [
+            528,
+            903,
+            1292,
+            22
+         ],
+         "conf": 0.9947817325592041,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_c6414f",
+         "role": "text",
+         "text": "> OUTLINE",
+         "bbox": [
+            66,
+            915,
+            79,
+            15
+         ],
+         "conf": 0.9538668394088745,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_287d9b",
+         "role": "text",
+         "text": "Instruction:",
+         "bbox": [
+            385,
+            924,
+            123,
+            24
+         ],
+         "conf": 0.9999073147773743,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_9a235b",
+         "role": "text",
+         "text": "Browse",
+         "bbox": [
+            514,
+            926,
+            67,
+            21
+         ],
+         "conf": 0.9997256398200989,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_0e4882",
+         "role": "text",
+         "text": "the",
+         "bbox": [
+            585,
+            928,
+            34,
+            18
+         ],
+         "conf": 0.9999615550041199,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_0aa8af",
+         "role": "text",
+         "text": "natural",
+         "bbox": [
+            625,
+            928,
+            72,
+            18
+         ],
+         "conf": 0.9999831914901733,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_c12b98",
+         "role": "text",
+         "text": "products",
+         "bbox": [
+            706,
+            928,
+            85,
+            18
+         ],
+         "conf": 0.9999582767486572,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_363171",
+         "role": "text",
+         "text": "database",
+         "bbox": [
+            790,
+            926,
+            92,
+            21
+         ],
+         "conf": 0.9999417066574097,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_d586f4",
+         "role": "text",
+         "text": "TIMELINE",
+         "bbox": [
+            79,
+            943,
+            70,
+            18
+         ],
+         "conf": 0.9994602203369141,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_a5bfe0",
+         "role": "text",
+         "text": "[INFO]",
+         "bbox": [
+            387,
+            949,
+            61,
+            20
+         ],
+         "conf": 0.9733948111534119,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_830668",
+         "role": "text",
+         "text": "Starting",
+         "bbox": [
+            452,
+            946,
+            88,
+            25
+         ],
+         "conf": 0.9533666968345642,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_20873a",
+         "role": "text",
+         "text": "recording:",
+         "bbox": [
+            543,
+            950,
+            106,
+            20
+         ],
+         "conf": 0.9999510645866394,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_cc204a",
+         "role": "text",
+         "text": "results/chrome/0d8b7de3-e8de-4d86-b9fd-dd2dce58a217/recording.mp4",
+         "bbox": [
+            649,
+            950,
+            660,
+            19
+         ],
+         "conf": 0.9992554783821106,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_891bdb",
+         "role": "text",
+         "text": "> VSIX VIEWER",
+         "bbox": [
+            64,
+            972,
+            109,
+            15
+         ],
+         "conf": 0.9589459896087646,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_6e9e11",
+         "role": "text",
+         "text": "CSE291_AI_Agent",
+         "bbox": [
+            69,
+            997,
+            127,
+            19
+         ],
+         "conf": 0.9678066372871399,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_238a09",
+         "role": "text",
+         "text": "$integration_standalone*",
+         "bbox": [
+            218,
+            999,
+            175,
+            15
+         ],
+         "conf": 0.9760642051696777,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_5ad48f",
+         "role": "text",
+         "text": "Launchpad",
+         "bbox": [
+            522,
+            999,
+            76,
+            16
+         ],
+         "conf": 0.9999330043792725,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_cb7a39",
+         "role": "text",
+         "text": "× ROS2.humble",
+         "bbox": [
+            619,
+            999,
+            115,
+            15
+         ],
+         "conf": 0.9850053787231445,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_b36580",
+         "role": "text",
+         "text": "03",
+         "bbox": [
+            771,
+            997,
+            51,
+            20
+         ],
+         "conf": 0.9069899320602417,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_0ab10f",
+         "role": "text",
+         "text": "Ln 106, Col 57 Spaces: 4",
+         "bbox": [
+            1302,
+            998,
+            186,
+            19
+         ],
+         "conf": 0.9916349053382874,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_ebb2b7",
+         "role": "text",
+         "text": "UTF-8 LF { Python",
+         "bbox": [
+            1496,
+            998,
+            182,
+            20
+         ],
+         "conf": 0.9547242522239685,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_4275e8",
+         "role": "text",
+         "text": "Finish Setup",
+         "bbox": [
+            1690,
+            999,
+            111,
+            16
+         ],
+         "conf": 0.9601925611495972,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_d8b6b3",
+         "role": "text",
+         "text": "3.10.12",
+         "bbox": [
+            1814,
+            997,
+            58,
+            20
+         ],
+         "conf": 0.9998964667320251,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_2aadd4",
+         "role": "text",
+         "text": "SSD",
+         "bbox": [
+            484,
+            1048,
+            30,
+            18
+         ],
+         "conf": 0.9928033947944641,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_67d553",
+         "role": "text",
+         "text": "SSD",
+         "bbox": [
+            542,
+            1048,
+            31,
+            18
+         ],
+         "conf": 0.9988772869110107,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "d_0d45f2",
+         "role": "icon",
+         "text": "laptop",
+         "bbox": [
+            1,
+            0,
+            1918,
+            1077
+         ],
+         "conf": 0.4326876103878021,
+         "source": "detector",
+         "meta": {
+            "class_id": 63
+         }
+      },
+      {
+         "id": "d_261a7a",
+         "role": "icon",
+         "text": "tv",
+         "bbox": [
+            7,
+            1,
+            1912,
+            1075
+         ],
+         "conf": 0.2925198972225189,
+         "source": "detector",
+         "meta": {
+            "class_id": 62
+         }
+      }
+   ],
+   "timing_ms": {
+      "ocr": 12604,
+      "yolo": 107,
+      "total": 12712
+   }
+}

@@ -1,0 +1,396 @@
+{
+  "window": {
+    "bbox": [
+      0,
+      0,
+      1920,
+      1080
+    ],
+    "scale": 1.0
+  },
+  "elements": [
+    {
+      "id": "t_59d176",
+      "role": "text",
+      "text": "Activities",
+      "bbox": [
+        14,
+        6,
+        82,
+        20
+      ],
+      "conf": 0.9615576863288879,
+      "source": "ocr",
+      "meta": {}
+    },
+    {
+      "id": "t_fca66c",
+      "role": "text",
+      "text": "Files",
+      "bbox": [
+        124,
+        1,
+        69,
+        27
+      ],
+      "conf": 0.9949809908866882,
+      "source": "ocr",
+      "meta": {}
+    },
+    {
+      "id": "t_f400af",
+      "role": "text",
+      "text": "Nov 22 15:24",
+      "bbox": [
+        903,
+        7,
+        118,
+        18
+      ],
+      "conf": 0.9649719595909119,
+      "source": "ocr",
+      "meta": {}
+    },
+    {
+      "id": "t_789e01",
+      "role": "text",
+      "text": "Home / CS... ms / Repo / CS... nt / results / chrome / 0d8b7de3-e8de-4d86-b9fd-dd2dce58a217",
+      "bbox": [
+        488,
+        45,
+        872,
+        22
+      ],
+      "conf": 0.9741119742393494,
+      "source": "ocr",
+      "meta": {}
+    },
+    {
+      "id": "t_a31094",
+      "role": "text",
+      "text": "Q",
+      "bbox": [
+        1419,
+        48,
+        16,
+        16
+      ],
+      "conf": 0.9965813755989075,
+      "source": "ocr",
+      "meta": {}
+    },
+    {
+      "id": "t_d15072",
+      "role": "text",
+      "text": "D",
+      "bbox": [
+        12,
+        94,
+        22,
+        14
+      ],
+      "conf": 0.8580185770988464,
+      "source": "ocr",
+      "meta": {}
+    },
+    {
+      "id": "t_d6a10b",
+      "role": "text",
+      "text": "Recent",
+      "bbox": [
+        31,
+        92,
+        68,
+        20
+      ],
+      "conf": 0.9999310374259949,
+      "source": "ocr",
+      "meta": {}
+    },
+    {
+      "id": "t_c93830",
+      "role": "text",
+      "text": "Starred",
+      "bbox": [
+        12,
+        129,
+        88,
+        21
+      ],
+      "conf": 0.9631121754646301,
+      "source": "ocr",
+      "meta": {}
+    },
+    {
+      "id": "t_a2a67b",
+      "role": "text",
+      "text": "recording.",
+      "bbox": [
+        229,
+        153,
+        91,
+        24
+      ],
+      "conf": 0.9678002595901489,
+      "source": "ocr",
+      "meta": {}
+    },
+    {
+      "id": "t_40cf83",
+      "role": "text",
+      "text": "screenshot",
+      "bbox": [
+        397,
+        154,
+        96,
+        20
+      ],
+      "conf": 0.9999679327011108,
+      "source": "ocr",
+      "meta": {}
+    },
+    {
+      "id": "t_49d4b1",
+      "role": "text",
+      "text": "vision.json",
+      "bbox": [
+        565,
+        150,
+        96,
+        28
+      ],
+      "conf": 0.9998958110809326,
+      "source": "ocr",
+      "meta": {}
+    },
+    {
+      "id": "t_d2028d",
+      "role": "text",
+      "text": "Home",
+      "bbox": [
+        32,
+        169,
+        57,
+        20
+      ],
+      "conf": 0.9999278783798218,
+      "source": "ocr",
+      "meta": {}
+    },
+    {
+      "id": "t_822579",
+      "role": "text",
+      "text": "mp4",
+      "bbox": [
+        254,
+        176,
+        44,
+        22
+      ],
+      "conf": 0.9998250007629395,
+      "source": "ocr",
+      "meta": {}
+    },
+    {
+      "id": "t_bf7373",
+      "role": "text",
+      "text": ".png",
+      "bbox": [
+        423,
+        178,
+        42,
+        21
+      ],
+      "conf": 0.9990627765655518,
+      "source": "ocr",
+      "meta": {}
+    },
+    {
+      "id": "t_13663f",
+      "role": "text",
+      "text": "\u25a1 Desktop",
+      "bbox": [
+        10,
+        205,
+        98,
+        24
+      ],
+      "conf": 0.9812561869621277,
+      "source": "ocr",
+      "meta": {}
+    },
+    {
+      "id": "t_a46fce",
+      "role": "text",
+      "text": "Documents",
+      "bbox": [
+        32,
+        242,
+        103,
+        22
+      ],
+      "conf": 0.9999405741691589,
+      "source": "ocr",
+      "meta": {}
+    },
+    {
+      "id": "t_8b13e3",
+      "role": "text",
+      "text": "Downloads",
+      "bbox": [
+        32,
+        282,
+        100,
+        20
+      ],
+      "conf": 0.9999581575393677,
+      "source": "ocr",
+      "meta": {}
+    },
+    {
+      "id": "t_f4a6db",
+      "role": "text",
+      "text": "JMusic",
+      "bbox": [
+        10,
+        318,
+        79,
+        24
+      ],
+      "conf": 0.9924988150596619,
+      "source": "ocr",
+      "meta": {}
+    },
+    {
+      "id": "t_75f5f8",
+      "role": "text",
+      "text": "Pictures",
+      "bbox": [
+        28,
+        355,
+        78,
+        25
+      ],
+      "conf": 0.9999261498451233,
+      "source": "ocr",
+      "meta": {}
+    },
+    {
+      "id": "t_be238c",
+      "role": "text",
+      "text": "\u2162 Videos",
+      "bbox": [
+        9,
+        393,
+        88,
+        25
+      ],
+      "conf": 0.9064431190490723,
+      "source": "ocr",
+      "meta": {}
+    },
+    {
+      "id": "t_832f27",
+      "role": "text",
+      "text": "Trash",
+      "bbox": [
+        10,
+        432,
+        75,
+        25
+      ],
+      "conf": 0.9968563914299011,
+      "source": "ocr",
+      "meta": {}
+    },
+    {
+      "id": "t_c8eab2",
+      "role": "text",
+      "text": "gdrive",
+      "bbox": [
+        21,
+        470,
+        72,
+        25
+      ],
+      "conf": 0.9457935690879822,
+      "source": "ocr",
+      "meta": {}
+    },
+    {
+      "id": "t_dc95f5",
+      "role": "text",
+      "text": "m julianraheem...",
+      "bbox": [
+        12,
+        519,
+        152,
+        20
+      ],
+      "conf": 0.9780775904655457,
+      "source": "ocr",
+      "meta": {}
+    },
+    {
+      "id": "t_f16857",
+      "role": "text",
+      "text": "Other Locations",
+      "bbox": [
+        34,
+        566,
+        138,
+        19
+      ],
+      "conf": 0.9998494386672974,
+      "source": "ocr",
+      "meta": {}
+    },
+    {
+      "id": "t_52b840",
+      "role": "text",
+      "text": ":::",
+      "bbox": [
+        1869,
+        1032,
+        34,
+        28
+      ],
+      "conf": 0.9352032542228699,
+      "source": "ocr",
+      "meta": {}
+    },
+    {
+      "id": "t_47dbcb",
+      "role": "text",
+      "text": "SSD",
+      "bbox": [
+        484,
+        1048,
+        31,
+        18
+      ],
+      "conf": 0.9875621795654297,
+      "source": "ocr",
+      "meta": {}
+    },
+    {
+      "id": "t_1f7daf",
+      "role": "text",
+      "text": "SSD",
+      "bbox": [
+        541,
+        1045,
+        33,
+        22
+      ],
+      "conf": 0.9795703887939453,
+      "source": "ocr",
+      "meta": {}
+    }
+  ],
+  "timing_ms": {
+    "ocr": 8160,
+    "yolo": 100,
+    "total": 8261
+  }
+}

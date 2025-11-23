@@ -1,0 +1,24 @@
+{
+  "single-action": [
+    "`HOTKEY` 'Ctrl+Alt+T'",
+    "`WAIT` 500",
+    "`TYPING` mkdir -p ~/Documents/traffic_and_weather_data && ls -t ~/Pictures/Screenshots/*.png | head -n 2 | xargs -I{} cp \"{}\" ~/Documents/traffic_and_weather_data/",
+    "`PRESS` Enter",
+    "`WAIT` 2000",
+    "`DONE`"
+  ],
+  "grouped-action": [
+    [
+      "`HOTKEY` 'Ctrl+Alt+T'",
+      "`WAIT` 500"
+    ],
+    [
+      "`TYPING` mkdir -p ~/Documents/traffic_and_weather_data && ls -t ~/Pictures/Screenshots/*.png | head -n 2 | xargs -I{} cp \"{}\" ~/Documents/traffic_and_weather_data/",
+      "`PRESS` Enter",
+      "`WAIT` 2000"
+    ],
+    [
+      "`DONE`"
+    ]
+  ]
+}

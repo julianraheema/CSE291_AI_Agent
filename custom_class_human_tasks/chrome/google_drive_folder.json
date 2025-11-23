@@ -1,0 +1,43 @@
+{
+  "single-action": [
+    "`HOTKEY` 'Ctrl+Alt+T'",
+    "`TYPING` google-chrome https://drive.google.com/",
+    "`PRESS` Enter",
+    "`WAIT` 4000",
+    "`CLICK` //button[contains(@aria-label, 'New') or contains(., 'New')]",
+    "`WAIT` 1000",
+    "`CLICK` //div[contains(text(), 'New folder') or contains(@aria-label, 'New folder')]",
+    "`WAIT` 1000",
+    "`TYPING` AI_Agent_Files_$(date '+%Y%m%d')",
+    "`PRESS` Enter",
+    "`WAIT` 2000",
+    "`CLICK` //div[contains(@data-tooltip, 'AI_Agent_Files') or contains(., 'AI_Agent_Files')]",
+    "`WAIT` 1500",
+    "`DONE`"
+  ],
+
+  "grouped-action": [
+    [
+      "`HOTKEY` 'Ctrl+Alt+T'",
+      "`TYPING` google-chrome https://drive.google.com/",
+      "`PRESS` Enter",
+      "`WAIT` 4000"
+    ],
+    [
+      "`CLICK` //button[contains(@aria-label, 'New') or contains(., 'New')]",
+      "`WAIT` 1000",
+      "`CLICK` //div[contains(text(), 'New folder') or contains(@aria-label, 'New folder')]",
+      "`WAIT` 1000"
+    ],
+    [
+      "`TYPING` AI_Agent_Files_$(date '+%Y%m%d')",
+      "`PRESS` Enter",
+      "`WAIT` 2000"
+    ],
+    [
+      "`CLICK` //div[contains(@data-tooltip, 'AI_Agent_Files') or contains(., 'AI_Agent_Files')]",
+      "`WAIT` 1500",
+      "`DONE`"
+    ]
+  ]
+}
