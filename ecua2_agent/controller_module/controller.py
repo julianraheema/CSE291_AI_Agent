@@ -14,11 +14,9 @@ pyautogui.FAILSAFE = True
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO, format="[%(levelname)s] %(message)s")
 
-
 class ControllerError(Exception):
     """Custom exception for controller errors."""
     pass
-
 
 class Controller:
     def __init__(self, default_wait: float = 0.2):
@@ -98,10 +96,6 @@ class Controller:
 
     @staticmethod
     def _parse_button(arg: Optional[str]) -> str:
-        """
-        Map button argument to pyautogui format.
-        Defaults to 'left' if None.
-        """
         if not arg:
             return "left"
         b = arg.lower()
@@ -111,9 +105,6 @@ class Controller:
 
     @staticmethod
     def _parse_int_pair(args: List[str], offset: int = 0) -> Tuple[int, int]:
-        """
-        Parse two consecutive integers (e.g. x y) from args starting at offset.
-        """
         try:
             x = int(args[offset])
             y = int(args[offset + 1])
@@ -202,13 +193,8 @@ class Controller:
         # Drag with left button pressed
         pyautogui.dragTo(x, y, button="left")
 
+    # scroll left/righ or up/down
     def _scroll(self, args: List[str]) -> None:
-        """
-        SCROLL dx dy
-
-        dy -> vertical scroll (positive up, negative down)
-        dx -> horizontal scroll (if available)
-        """
         if len(args) != 2:
             raise ControllerError("SCROLL requires exactly 2 arguments: dx dy")
         dx, dy = self._parse_int_pair(args)
@@ -273,19 +259,6 @@ class Controller:
         else:
             seconds = self.default_wait
         time.sleep(seconds)
-
-
-# ----------- Example CLI usage ----------- #
-
-def run_script_file(path: str) -> None:
-    """
-    Run a plain text script file where each line is an action.
-    """
-    ctrl = Controller()
-    with open(path, "r", encoding="utf-8") as f:
-        lines = f.readlines()
-    status = ctrl.execute_actions(lines)
-    print(f"Script finished with status: {status}")
 
 
 if __name__ == "__main__":

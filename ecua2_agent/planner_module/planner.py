@@ -84,7 +84,7 @@ def build_prompt(task, vision_data, bbox):
     return prompt
 
 
-def generate_plan(task, vision_data, model_path, bbox, temperature=0.3, max_tokens=512):
+def generate_plan(task, vision_data, bbox, model_path, temperature=0.3, max_tokens=512):
     """
     Generate action plan using LLM.
     
@@ -158,8 +158,8 @@ def main():
     output, actions = generate_plan(
         task=task,
         vision_data=vision_data,
-        model_path=model_path,
         bbox=[0, 0, 1920, 1080],
+        model_path=model_path,
         temperature=temperature,
         max_tokens=max_tokens,
     )

@@ -1,78 +1,198 @@
+![Warning](./images/AI_Agent.png)
+
+
+# ECUA — Edge Computer Unit Agent
+
+This repository is a class project for **UCSD CSE (Fall 2025)**.  
+We developed an AI agent capable of running on edge devices.
+
+## Hardware Requirements
+- **GPU:** NVIDIA 3080 or similar  
+- **RAM:** 16 GB or more
+
+## Software Requirements
+- **Operating System:** Ubuntu Linux 22.04
+
+## Setup
+
+There are two ways to set up this repository for testing.
+
+# Option 1 — End-to-End Setup (Local or VM)
+> **Recommended:** Use a designated VM for OSWorld agent evaluation.[OSWorld](https://github.com/xlang-ai/OSWorld)
+> **Not recommended:** Running directly on your main machine.
+
+### 1. Clone Repository
+```bash
+git clone https://github.com/julianraheema/CSE291_AI_Agent.git
+cd CSE291_AI_Agent
+```
+
+### 2. Install Dependencies
+
+#### Install UV
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+#### Install Rust
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
+#### Set up virtual environment
+```bash
+uv venv .venv
+source .venv/bin/activate
+uv pip install -r requirements-uv.txt
+```
+
+## Installing LLM Models
+
+Place your chosen LLM model inside:
+
+```
+planner_module/models/
+```
+
+Then modify:
+
+```
+planner_module/planner.py
+```
+
+Set `model_path = "<path_to_your_model>"`
+
+## How to Download a Llama Model
+
+### Step 1: Install Hugging Face Hub
+```bash
+uv pip install -U "huggingface_hub"
+```
+
+### Step 2: Log in to Hugging Face
+1. Create account: https://huggingface.co  
+2. Request access: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct  
+3. Create access token: https://huggingface.co/settings/tokens  
+4. Login:
+```bash
+hf auth login
+```
+
+### Step 3: Download Model
+```bash
+mkdir -p models
+hf download meta-llama/Llama-3.2-1B-Instruct --local-dir ./models/llama-3.2-1b
+```
+
+## Running the Agent
+```bash
+cd CSE291_AI_Agent
+python run_agent.py --path osworld_tasks/ --record
+```
+
+### Results
+Outputs (screenshots, `.mp4` recordings) are saved under:
+
+```
+results/
+```
+
+# Option 2 — Using OSWorld Environment (Docker, Headless Mode)
+
+> This option requires **~15GB** of extra space (Docker + OSWorld assets).
+
+### 1. Install Prerequisites
+- Install **Docker**
+- Install **Conda**
+
+### 2. Clone OSWorld and Agent
+```bash
+git clone https://github.com/xlang-ai/OSWorld
+cd OSWorld
+git clone https://github.com/julianraheema/CSE291_AI_Agent.git
+```
+
+### 3. Install OSWorld Environment
+```bash
+conda env create -f environment.yml
+conda activate osworld
+```
+
+### 4. Model Placement
+
+Ensure LLM models are located at:
+
+```
+OSWorld/CSE291_AI_Agent/ecua2_agent/planner_module/models/
+```
+
+### 5. Run Agent Inside OSWorld
+```bash
+python ecua_run.py   --provider_name docker   --headless   --action_space computer_13   --observation_type screenshot   --sleep_after_execution 3   --max_steps 30   --result_dir ./results/test_custom_tasks_and_agent   --tasks_path ./osworld_tasks
+```
+
+### Results
+Saved under the `results/` directory.
+
+# Custom Tasks
+
+These tasks require conversion into OSWorld format.  
+Currently, they are **not** OSWorld-compatible, so we use OSWorld tasks for evaluation.
+
 # AI Agent Tasks
 
-This project includes a set of automation tasks written in JSON format. These task are used for the AI agent research. Each task performs a specific action related to collecting, organizing, and saving visual data from online sources.
-
----
+The project includes automation tasks defined in JSON format.
 
 ## 1. cli1_microphone_detection
-This task turns your microphone input into a visual display inside the terminal.  
-It uses the built in tool **arecord** and **sox** to live record, process, and generate spectrogram image.
-
----
+Uses **arecord** and **sox** to create a live terminal spectrogram.
 
 ## 2. cli2_CPU_visualizer
-
-This task transforms your terminal into a live visualization of CPU activity.  
-It uses installable tools such as **sar**, **mpstat**, and **htop** to enable system statistics, capture CPU load, and display them as numeric columns in the terminal.
-
----
+Live CPU visualization using:
+- sar
+- mpstat
+- htop
 
 ## 3. cli3_image_manipulation
-
-This CLI task is an image processing and manipulation pipeline.  
-It pulls any image (in this example a black square from wiki) and resizes, grayscales and blurs the image. Then it blends the desaturated and blurred image together for a final product.  
-It uses the **jp2a** tool to display the final product in your terminal.
-
----
+Downloads an image, processes it (resize, grayscale, blur), and displays via **jp2a**.
 
 ## 4. traffic_screenshot_sd
-
-This task opens Google Chrome and navigates to the **California QuickMap** website.  
-It enables road condition overlays (Fast, Lane Closures, Full Closures, CHP Incidents), zooms into **San Diego**, switches to full-screen mode, and uses `Alt+Print` to capture and save a live traffic snapshot in the user’s Documents directory.
-
----
+Captures San Diego traffic snapshot from California QuickMap using Chrome.
 
 ## 5. weather_screenshot_sd
-
-This task opens **Google Chrome** and navigates to the **National Weather Service San Diego** page to view live weather and radar data. After ensuring the page is fully visible, it captures a window `Alt+Print` of the weather map and saves it automatically to the user’s Documents folder for later reference.
-
----
+Captures NWS San Diego radar screenshot.
 
 ## 6. copy_to
-
-This task opens a terminal and runs a command that creates a folder at  
-`~/Documents/traffic_and_weather_data/` (if missing) and copies the **two most recent screenshots** into it.  
-It ensures both the traffic and weather images are stored together in one organized directory for analysis or documentation.
-
----
+Copies latest traffic + weather screenshots into:
+```
+~/Documents/traffic_and_weather_data/
+```
 
 ## 7. clone_trending_repo
-
-This task opens **Google Chrome**, navigates to GitHub's trending page, clones the #1 trending repository to the folder `~/Documents/trending_repos`, and then opens it in **VS Code**. 
-
----
+Clones GitHub trending #1 repo and opens in VS Code.
 
 ## 8. leetcode_daily_question
-
-This task automatically navigates to LeetCode's problem set page in **Google Chrome**, identifies and opens the daily challenge question, and captures a screenshot of the problem using **GNOME Screenshot**. The screenshots are stored in `~/Documents/leetcode_daily_challenges`. 
-
----
+Opens LeetCode Daily Challenge and screenshots it.
 
 ## 9. spotify_playlist
-
-This task opens the **Spotify** desktop application and creates a new playlist named after the current date (e.g., "October 20 2025").
-
----
+Creates a date‑named Spotify playlist.
 
 ## 10. google_drive_folder
+Creates a date‑named folder in Google Drive.
 
-This task automatically opens Google Drive in **Google Chrome**, creates a new folder with a date based name, and navigates into the newly created folder.
+## Notes
+- Designed for Linux GNOME 
+- Screenshots via `Alt+Print` 
+- For educational & research purposes only
 
----
 
-### Notes
-- All tasks are designed for **Linux systems** using GNOME desktop environment.  
-- Screenshots are taken using `Alt+Print` screenshot commands and file management is handled via standard shell utilities.  
-- These automations are intended for **educational and research use** only.
+## Notice
 
----
+This project is provided **as is** for educational and research purposes only. 
+It may contain bugs, incomplete features, or unstable behavior.
+
+
+The authors make **no guarantees or warranties** of any kind. 
+Use of this software is at **your own risk**. 
+The authors are not responsible for any damage, data loss, or issues resulting from its use.
+
+By using this project, you agree to assume all risks and responsibilities.

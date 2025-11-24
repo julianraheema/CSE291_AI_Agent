@@ -12,6 +12,9 @@ from ultralytics import YOLO
 from dataclasses import dataclass, field
 from typing import Any, Dict, Optional
 
+import argparse
+import sys
+
 # class for storing detected elements
 @dataclass
 class Element:
@@ -265,32 +268,81 @@ class ScreenParserCPU:
 
 # small test code to run standalone
 if __name__ == "__main__":
-    import base64
     import sys
+    import base64
+
+    cli = argparse.ArgumentParser(
+        description="Run ScreenParserCPU on either fullscreen or a provided image + bbox."
+    )
+    cli.add_argument(
+        "--img",
+        type=str,
+        help="Path to an existing screenshot image. If not provided, capture fullscreen.",
+    )
+    cli.add_argument(
+        "--bbox",
+        type=str,
+        help="Bounding box as 'x,y,w,h'. Used only when --img is provided. "
+             "If omitted, the bbox defaults to the full image size.",
+    )
+    args = cli.parse_args()
 
     parser = ScreenParserCPU(
         ocr_lang="en",
         ocr_conf_thresh=0.65,
         ocr_box_thresh=0.6,
         max_side_for_ocr=1600,
-        yolo_weights="yolov8n.pt",
+        yolo_weights="yolov8n.pt",   # swap yolov8s.pt if you want stronger model
         yolo_conf_thresh=0.25,
         yolo_imgsz=640,
     )
 
-    # Capture
-    vision_dict, img_bgr = parser.parse_fullscreen()
+    # --- Mode 1: use provided image + bbox (subprocess mode) ---
+    if args.img is not None:
+        img_bgr = cv2.imread(args.img)
+        if img_bgr is None:
+            print(f"ERROR: Failed to load image: {args.img}", file=sys.stderr)
+            sys.exit(1)
 
-    # Encode screenshot as PNG → base64
-    _, png_bytes = cv2.imencode(".png", img_bgr)
-    b64 = base64.b64encode(png_bytes).decode("utf-8")
+        if args.bbox is not None:
+            try:
+                # "x,y,w,h" -> (x, y, w, h)
+                x, y, w, h = map(int, args.bbox.split(","))
+                bbox = (x, y, w, h)
+            except Exception:
+                print("ERROR: --bbox must be 'x,y,w,h' with integers", file=sys.stderr)
+                sys.exit(1)
+        else:
+            # default bbox = full image
+            h, w = img_bgr.shape[:2]
+            bbox = (0, 0, w, h)
 
-    output = {
-        "vision": vision_dict,
-        "screenshot": b64
+        # parse_obs returns a dict
+        result_dict = parser.parse_obs(img_bgr, bbox)
+
+    # --- Mode 2: fallback to fullscreen capture for manual testing ---
+    else:
+        print("Capturing Screen....")
+        time.sleep(3)  # sleep 3 seconds so you can move to whatever screen you want
+
+        # parse_fullscreen returns (dict, img_bgr)
+        result_dict, img_bgr = parser.parse_fullscreen()
+
+    # Encode screenshot as PNG + base64 (so subprocess can reconstruct the image)
+    ok, png_bytes = cv2.imencode(".png", img_bgr)
+    if not ok:
+        print("ERROR: Failed to encode screenshot as PNG", file=sys.stderr)
+        sys.exit(1)
+
+    b64 = base64.b64encode(png_bytes).decode("ascii")
+
+    # This is what run_vision_subprocess expects:
+    #   data["vision"]       -> dict
+    #   data["screenshot"]   -> base64 PNG
+    payload = {
+        "vision": result_dict,
+        "screenshot": b64,
     }
 
-    # IMPORTANT: print ONLY JSON — no other prints!
-    sys.stdout.write(json.dumps(output))
-    sys.stdout.flush()
-
+    # Print JSON as a single line so the parent process can json.loads(stdout)
+    print(json.dumps(payload, ensure_ascii=False))
