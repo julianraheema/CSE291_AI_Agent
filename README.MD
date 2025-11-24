@@ -54,13 +54,6 @@ Place your chosen LLM model inside:
 planner_module/models/
 ```
 
-Then modify:
-
-```
-planner_module/planner.py
-```
-
-Set `model_path = "<path_to_your_model>"`
 
 ## How to Download a Llama Model
 
@@ -70,9 +63,9 @@ uv pip install -U "huggingface_hub"
 ```
 
 ### Step 2: Log in to Hugging Face
-1. Create account: https://huggingface.co  
-2. Request access: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct  
-3. Create access token: https://huggingface.co/settings/tokens  
+1. Create account: https://huggingface.co 
+2. Request access: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct 
+3. Create access token: https://huggingface.co/settings/tokens 
 4. Login:
 ```bash
 hf auth login
@@ -136,7 +129,7 @@ Saved under the `results/` directory.
 
 # Custom Tasks
 
-These tasks require conversion into OSWorld format.  
+These tasks require conversion into OSWorld format. 
 Currently, they are **not** OSWorld-compatible, so we use OSWorld tasks for evaluation.
 
 # AI Agent Tasks
