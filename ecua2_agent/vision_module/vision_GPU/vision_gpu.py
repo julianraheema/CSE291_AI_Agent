@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import os
 import json
 import time
 from typing import List, Dict, Any
@@ -10,8 +11,15 @@ from PIL import Image
 from doctr.models import ocr_predictor
 from ultralytics import YOLO
 
+current_directory = os.getcwd()
+
+# Print the current working directory
+print("Current Working Directory:", current_directory)
+
 # configs
-OMNI_YOLO_WEIGHTS = "weights\icon_detect\model.pt"
+OMNI_YOLO_WEIGHTS = f'{current_directory}/ecua2_agent/vision_module/vision_GPU/weights/icon_detect/model.pt'
+
+print("the full model dir is: ", OMNI_YOLO_WEIGHTS)
 
 # Seconds to wait before capturing
 COUNTDOWN_SECONDS = 2
