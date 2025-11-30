@@ -14,6 +14,7 @@ from typing import Any, Dict, Optional
 
 import argparse
 import sys
+import base64
 
 # class for storing detected elements
 @dataclass
@@ -268,8 +269,6 @@ class ScreenParserCPU:
 
 # small test code to run standalone
 if __name__ == "__main__":
-    import sys
-    import base64
 
     cli = argparse.ArgumentParser(
         description="Run ScreenParserCPU on either fullscreen or a provided image + bbox."

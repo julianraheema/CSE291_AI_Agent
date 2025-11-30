@@ -11,13 +11,18 @@ from PIL import Image
 from doctr.models import ocr_predictor
 from ultralytics import YOLO
 
+import argparse
+import sys
+import base64
+import cv2
+
 current_directory = os.getcwd()
 
 # Print the current working directory
 print("Current Working Directory:", current_directory)
 
 # configs
-OMNI_YOLO_WEIGHTS = f'{current_directory}/ecua2_agent/vision_module/vision_GPU/weights/icon_detect/model.pt'
+OMNI_YOLO_WEIGHTS = f'{current_directory}/CSE291A_AI_Agent/ecua2_agent/vision_module/vision_GPU/weights/icon_detect/model.pt'
 
 print("the full model dir is: ", OMNI_YOLO_WEIGHTS)
 
@@ -118,7 +123,7 @@ def attach_nearest_text(
 def parse_obs(img=None) -> List[Dict[str, Any]]:
     
     # no observation passed
-    if img == None:
+    if img is None:
         print(f"Capturing screen in {COUNTDOWN_SECONDS} seconds...")
         time.sleep(COUNTDOWN_SECONDS)
         img = grab_fullscreen_pil()
@@ -213,5 +218,43 @@ def parse_obs(img=None) -> List[Dict[str, Any]]:
 
 # cli
 if __name__ == "__main__":
-    elems = parse_obs()
-    print(json.dumps(elems, indent=2, ensure_ascii=False))
+    # elems = parse_obs()
+    # print(json.dumps(elems, indent=2, ensure_ascii=False))
+    ##################################
+
+    cli = argparse.ArgumentParser(
+        description="Run ScreenParser GPU on either fullscreen or a provided image"
+    )
+    cli.add_argument(
+        "--img",
+        type=str,
+        help="Path to an existing screenshot image. If not provided, capture fullscreen.",
+    )
+
+    args = cli.parse_args()
+
+    # --- Mode 1: use provided image + bbox (subprocess mode) ---
+    if args.img is not None:
+        img_bgr = cv2.imread(args.img)
+        if img_bgr is None:
+            print(f"ERROR: Failed to load image: {args.img}", file=sys.stderr)
+            sys.exit(1)
+
+        # parse_obs returns a dict
+        result_dict = parse_obs(img_bgr)
+
+    # --- Mode 2: fallback to fullscreen capture for manual testing ---
+    else:
+        print("Capturing Screen....")
+        time.sleep(3)  # sleep 3 seconds so you can move to whatever screen you want
+
+        # parse_fullscreen returns (dict, img_bgr)
+        result_dict = parse_obs()
+
+    payload = {
+        "vision": result_dict,
+    }
+
+    # Print JSON as a single line so the parent process can json.loads(stdout)
+    print(json.dumps(payload, ensure_ascii=False))
+

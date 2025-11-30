@@ -2,6 +2,7 @@ import datetime
 import json
 import logging
 import os
+import re
 import cv2
 import time
 from wrapt_timeout_decorator import *
@@ -10,7 +11,7 @@ import subprocess, json, base64
 import numpy as np 
 
 os.environ["VLLM_PLUGINS"] = "none"
-from ecua2_agent.planner_module import planner
+from CSE291A_AI_Agent.ecua2_agent.planner_module import planner
 # from ecua2_agent.controller_module.controller import Controller
 
 logger = logging.getLogger("desktopenv.experiment")
@@ -29,7 +30,53 @@ import numpy as np
 import subprocess
 import tempfile
 
-def run_vision_subprocess(screenshot_bytes: bytes,
+ALLOWED_COMMANDS = {
+    "MOVE_TO",
+    "CLICK",
+    "MOUSE_DOWN",
+    "MOUSE_UP",
+    "RIGHT_CLICK",
+    "DOUBLE_CLICK",
+    "DRAG_TO",
+    "SCROLL",
+    "TYPING",
+    "PRESS",
+    "KEY_DOWN",
+    "KEY_UP",
+    "HOTKEY",
+    "WAIT",
+    "FAIL",
+    "DONE",
+}
+
+def save_actions_to_file(actions, domain, example_id):
+    with open(f'{domain}_{example_id}.txt', "w") as f:
+        for action in actions:
+            f.write(action + "\n")
+
+def normalize_actions(action_list, domain, example_id):
+    fixed_actions = []
+    not_allowed = []
+
+    for action in action_list:
+        cmd = action.split()
+
+        cmd = action.split()[0]
+        
+        if cmd in ALLOWED_COMMANDS:
+            fixed_actions.append(action)
+        else:
+            # Replace invalid action
+            fixed_actions.append("MOVE_TO 500 500")
+            not_allowed.append(action)
+
+    if not_allowed:
+        # for debugging the not allowed actions for a task:
+        save_actions_to_file(not_allowed, domain, example_id)
+    
+    return fixed_actions
+
+def run_vision_subprocess_cpu(screenshot_bytes: bytes,
                           bbox: tuple[int, int, int, int]):
     """
     Call vision_CPU.py in a subprocess, passing it a PNG file path and bbox.
@@ -47,7 +94,7 @@ def run_vision_subprocess(screenshot_bytes: bytes,
 
     cmd = [
         "python3",
-        "ecua2_agent/vision_module/vision_CPU.py",
+        "CSE291A_AI_Agent/ecua2_agent/vision_module/vision_CPU.py",
         "--img", temp_path,
         "--bbox", bbox_str,
     ]
@@ -83,6 +130,56 @@ def run_vision_subprocess(screenshot_bytes: bytes,
 
     return vision_dict
 
+def run_vision_subprocess_gpu(screenshot_bytes: bytes):
+    """
+    Call vision_gpu.py in a subprocess, passing it a PNG file 
+    """
+
+    # 1. Save screenshot bytes to temporary PNG file for subprocess
+    with tempfile.NamedTemporaryFile(suffix=".png", delete=False) as tmp:
+        temp_path = tmp.name
+        tmp.write(screenshot_bytes)
+        tmp.flush()
+
+    # bbox_str = ",".join(str(x) for x in bbox)  # "0,0,1920,1080"
+
+    cmd = [
+        "python3",
+        "CSE291A_AI_Agent/ecua2_agent/vision_module/vision_GPU/vision_gpu.py",
+        "--img", temp_path,
+    ]
+
+    result = subprocess.run(cmd, capture_output=True, text=True)
+
+    if result.returncode != 0:
+        print("[ERROR] vision_gpu.py failed")
+        print("stderr:", result.stderr)
+        raise RuntimeError("vision_gpu.py failed")
+
+    stdout = result.stdout.strip()
+
+    # Try to find a JSON object in stdout (last JSON-looking line)
+    data = None
+    for line in reversed(stdout.splitlines()):
+        line = line.strip()
+        if not line:
+            continue
+        try:
+            data = json.loads(line)
+            break
+        except json.JSONDecodeError:
+            continue
+
+    if data is None:
+        print("[ERROR] JSON parse failed")
+        print(stdout)
+        raise RuntimeError("Invalid JSON from vision_gpu.py")
+
+    # Unpack result
+    vision_dict = data["vision"]
+
+    return vision_dict
+
 def parse_planner_action(line: str):
     """
     Convert planner output like:
@@ -103,7 +200,8 @@ def parse_planner_action(line: str):
 
     parts = line.split()
     cmd = parts[0].upper()
-    rest = parts[1:]
+    # rest = parts[1:]
+    rest = [r.replace(",", "") for r in parts[1:]]
 
     # MOVE_TO x y
     if cmd == "MOVE_TO":
@@ -143,32 +241,33 @@ def parse_planner_action(line: str):
     raise ValueError(f"Unknown action format: {line}")
 
 
-def run_single_example(agent, env, example, max_steps, instruction, args, example_result_dir, scores):
+# def run_single_example(agent, env, example, max_steps, instruction, args, example_result_dir, scores):
+def run_single_example(domain, example_id, env, example, max_steps, instruction, args, example_result_dir, scores):
     runtime_logger = setup_logger(example, example_result_dir)
 
     # Reset environment first to get fresh VM IP
     env.reset(task_config=example)
 
+    # TODO
+    # call agent reset function inside the planner
+
     # Reset agent with fresh VM IP (for snapshot reverts)
-    try:
-        agent.reset(runtime_logger, vm_ip=env.vm_ip)
-    except Exception as e:
-        agent.reset(vm_ip=env.vm_ip)
-    step_idx = 0
+    # try:
+    #     agent.reset(runtime_logger, vm_ip=env.vm_ip)
+    # except Exception as e:
+    #     agent.reset(vm_ip=env.vm_ip)
+
     time.sleep(60) # Wait for the environment to be ready
     obs = env._get_obs() # Get the initial observation
-
    
     # vision call here as subprocess
-    parsed_json = run_vision_subprocess(obs['screenshot'],(0,0,1920,1080))
-    # obs = parsed_json
-    # logger.info("parsed_json: ******** %s", parsed_json)
+    if args.v_gpu:
+        parsed_json = run_vision_subprocess_gpu(obs['screenshot'])
+    else:
+        parsed_json = run_vision_subprocess_cpu(obs['screenshot'],(0,0,1920,1080))
+    # print("the parsed json is: ***************", parsed_json)
+    # exit()
 
-    # with open(f'output{step_idx}.jpg', "wb") as f:
-    #     f.write(obs['screenshot'])
-    # send the obs['screenshot'] to vision model for text
-    # send the text and instruction to planner
-    # execute actions
 
     done = False
     step_idx = 0
@@ -180,15 +279,17 @@ def run_single_example(agent, env, example, max_steps, instruction, args, exampl
         # )
 
         #planner call here
-        response, actions = planner.generate_plan(instruction, parsed_json, (0,0,1920,1080), "ecua2_agent/planner_module/models/llama-3.2-3B-Instruct")
-        logger.info("actions: ******** %s", actions)
+        response, actions_raw = planner.generate_plan(instruction, parsed_json, (0,0,1920,1080), "CSE291A_AI_Agent/ecua2_agent/planner_module/models/llama-3.2-3B-Instruct")
+        logger.info("actions: ******** %s", actions_raw)
+
+        actions = normalize_actions(actions_raw, domain, example_id)
 
         for action_str in actions:
             # Capture the timestamp before executing the action
             action_timestamp = datetime.datetime.now().strftime("%Y%m%d@%H%M%S%f")
             parsed = parse_planner_action(action_str)
 
-            logger.info("Step %d raw: %s", step_idx + 1, action_str)
+            # logger.info("Step %d raw: %s", step_idx + 1, action_str)
             logger.info("Step %d parsed: %s", step_idx + 1, parsed)
 
             if parsed is None:

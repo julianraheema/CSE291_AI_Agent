@@ -20,7 +20,7 @@ from tqdm import tqdm
 
 import ecua_lib_run_single
 from desktop_env.desktop_env import DesktopEnv
-from mm_agents.agent import PromptAgent
+# from mm_agents.agent import PromptAgent
 
 from vllm import LLM, SamplingParams
 
@@ -104,7 +104,7 @@ def config() -> argparse.Namespace:
     )
 
     # lm config
-    parser.add_argument("--model", type=str, default="gpt-4o")
+    parser.add_argument("--model", type=str, default="Llama-3.2-1B")
     parser.add_argument("--temperature", type=float, default=1.0)
     parser.add_argument("--top_p", type=float, default=0.9)
     parser.add_argument("--max_tokens", type=int, default=1500)
@@ -130,6 +130,7 @@ def config() -> argparse.Namespace:
 
     # logging related
     parser.add_argument("--result_dir", type=str, default="./results")
+    parser.add_argument("--v_gpu", type=bool, default=False)
     args = parser.parse_args()
 
     return args
@@ -161,15 +162,15 @@ def test(args: argparse.Namespace, test_all_meta: dict) -> None:
         "result_dir": args.result_dir,
     }
 
-    agent = PromptAgent(
-        model=args.model,
-        max_tokens=args.max_tokens,
-        top_p=args.top_p,
-        temperature=args.temperature,
-        action_space=args.action_space,
-        observation_type=args.observation_type,
-        max_trajectory_length=args.max_trajectory_length,
-    )
+    # agent = PromptAgent(
+    #     model=args.model,
+    #     max_tokens=args.max_tokens,
+    #     top_p=args.top_p,
+    #     temperature=args.temperature,
+    #     action_space=args.action_space,
+    #     observation_type=args.observation_type,
+    #     max_trajectory_length=args.max_trajectory_length,
+    # )
 
     env = DesktopEnv(
         provider_name=args.provider_name,
@@ -225,7 +226,9 @@ def test(args: argparse.Namespace, test_all_meta: dict) -> None:
             # example start running
             try:
                 ecua_lib_run_single.run_single_example(
-                    agent,
+                    # agent,
+                    domain,
+                    example_id,
                     env,
                     example,
                     max_steps,

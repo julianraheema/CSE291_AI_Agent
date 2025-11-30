@@ -120,8 +120,13 @@ OSWorld/CSE291_AI_Agent/ecua2_agent/planner_module/models/
 ```
 
 ### 5. Run Agent Inside OSWorld
+Run with CPU
 ```bash
 python ecua_run.py   --provider_name docker   --headless   --action_space computer_13   --observation_type screenshot   --sleep_after_execution 3   --max_steps 30   --result_dir ./results/test_custom_tasks_and_agent   --tasks_path ./osworld_tasks
+```
+Run with GPU
+```bash
+python ecua_run.py   --provider_name docker   --headless   --action_space computer_13   --observation_type screenshot   --sleep_after_execution 3   --max_steps 30   --result_dir ./results/test_custom_tasks_and_agent   --tasks_path ./osworld_tasks --v_gpu True
 ```
 
 ### Results

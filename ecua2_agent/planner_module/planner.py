@@ -144,7 +144,7 @@ def generate_plan(task, vision_data, bbox, model_path, temperature=0.3, max_toke
 def main():
     task = "Search cat pictures in google search bar"
     vision_file = "ecua2_agent/vision_module/vision_files/cpu_vision_output.json"
-    model_path = "ecua2_agent/planner_module/models/llama-3.2-1b"
+    model_path = "ecua2_agent/planner_module/models/llama-3.2-3b"
     temperature = 0.3
     max_tokens = 512
     
