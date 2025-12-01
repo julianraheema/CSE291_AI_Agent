@@ -116,6 +116,7 @@ def parse_obs(img=None) -> List[Dict[str, Any]]:
         img = grab_fullscreen_pil()
         print("Captured.")
 
+    START_TIME = time.time()
     np_img = np.array(img)
 
     # docTR OCR
@@ -199,7 +200,9 @@ def parse_obs(img=None) -> List[Dict[str, Any]]:
                     )
 
             elements.extend(ui_elements)
-
+            
+    total_time = (time.time() - START_TIME) * 1000
+    print(f"Total time (ms): {total_time}")
     return {"window dims":(page_w, page_h), "elements": elements}
 
 

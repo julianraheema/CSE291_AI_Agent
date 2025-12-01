@@ -1,7 +1,7 @@
 import uuid
 import time
 import json
-from dataclasses import dataclass, asdict
+from dataclasses import dataclass, asdict, field
 from typing import List, Dict, Any, Tuple
 
 import numpy as np
@@ -19,7 +19,7 @@ class Element:
     bbox: List[int]     # [x, y, w, h] in screen (pixel) coords
     conf: float
     source: str         # "ocr" or "detector" (yolo)
-    meta: Dict[str, Any]
+    meta: Dict[str, Any] = field(default_factory=dict)
 
 # Parser Class
 class ScreenParserCPU:
