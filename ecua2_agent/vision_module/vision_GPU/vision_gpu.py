@@ -22,7 +22,7 @@ current_directory = os.getcwd()
 print("Current Working Directory:", current_directory)
 
 # configs
-OMNI_YOLO_WEIGHTS = f'{current_directory}/CSE291A_AI_Agent/ecua2_agent/vision_module/vision_GPU/weights/icon_detect/model.pt'
+OMNI_YOLO_WEIGHTS = f'{current_directory}/CSE291_AI_Agent/ecua2_agent/vision_module/vision_GPU/weights/icon_detect/model.pt'
 
 print("the full model dir is: ", OMNI_YOLO_WEIGHTS)
 

@@ -115,11 +115,18 @@ conda activate osworld
 
 Ensure LLM models are located at:
 
-```
-OSWorld/CSE291_AI_Agent/ecua2_agent/planner_module/models/
+```bash
+ls OSWorld/CSE291_AI_Agent/ecua2_agent/planner_module/models/
 ```
 
 ### 5. Run Agent Inside OSWorld
+Move ecua_run.py and ecua_lib_run_single.py files to osworld run path.
+
+```bash
+mv CSE291_AI_Agent/ecua-run.py .
+mv CSE291_AI_Agent/ecua_lib_run_single.py .
+```
+
 Run with CPU
 ```bash
 python ecua_run.py   --provider_name docker   --headless   --action_space computer_13   --observation_type screenshot   --sleep_after_execution 3   --max_steps 30   --result_dir ./results/test_custom_tasks_and_agent   --tasks_path ./osworld_tasks
