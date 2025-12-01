@@ -8,6 +8,7 @@ import json
 import logging
 import os
 import sys
+import time
 
 os.environ["VLLM_USE_V1"] = "0"
 os.environ["VLLM_TARGET_DEVICE"] = "cuda"
@@ -67,6 +68,28 @@ logger.addHandler(sdebug_handler)
 #  }}} Logger Configs #
 
 logger = logging.getLogger("desktopenv.experiment")
+
+
+class CustomDesktopEnv(DesktopEnv):
+    """DesktopEnv with custom reward and extra info."""
+
+    def step(self, action, pause=2):
+        # Call the original step to keep all behavior (controller, logging, etc.)
+        observation, _, done, info = super().step(action, pause)
+
+        # ---- Your custom reward logic here ----
+        # Example: reward 1 when DONE, -1 when FAIL, else 0
+        reward = 0.0
+        if info.get("fail"):
+            reward = -1.0
+        elif info.get("done"):
+            reward = 1.0
+
+        # You can also add any custom fields to info
+        info["custom_timestamp"] = time.time()
+        info["step_no"] = getattr(self, "_step_no", None)
+
+        return observation, reward, done, info
 
 
 def config() -> argparse.Namespace:
@@ -172,7 +195,7 @@ def test(args: argparse.Namespace, test_all_meta: dict) -> None:
     #     max_trajectory_length=args.max_trajectory_length,
     # )
 
-    env = DesktopEnv(
+    env = CustomDesktopEnv(
         provider_name=args.provider_name,
         path_to_vm=args.path_to_vm,
         # action_space=agent.action_space,
@@ -424,3 +447,5 @@ if __name__ == "__main__":
         test_all_meta,
     )
     test(args, test_file_list)
+
+

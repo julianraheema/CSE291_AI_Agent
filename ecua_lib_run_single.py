@@ -8,27 +8,15 @@ import time
 from wrapt_timeout_decorator import *
 from lib_results_logger import log_task_completion
 import subprocess, json, base64      
-import numpy as np 
 
 os.environ["VLLM_PLUGINS"] = "none"
 from CSE291A_AI_Agent.ecua2_agent.planner_module import planner
-# from ecua2_agent.controller_module.controller import Controller
 
 logger = logging.getLogger("desktopenv.experiment")
 
-import subprocess
-import json
-import base64
 import tempfile
-import cv2
 import numpy as np
 
-import base64
-import cv2
-import json
-import numpy as np
-import subprocess
-import tempfile
 
 ALLOWED_COMMANDS = {
     "MOVE_TO",
@@ -243,13 +231,10 @@ def parse_planner_action(line: str):
 
 # def run_single_example(agent, env, example, max_steps, instruction, args, example_result_dir, scores):
 def run_single_example(domain, example_id, env, example, max_steps, instruction, args, example_result_dir, scores):
-    runtime_logger = setup_logger(example, example_result_dir)
+    # runtime_logger = setup_logger(example, example_result_dir)
 
     # Reset environment first to get fresh VM IP
     env.reset(task_config=example)
-
-    # TODO
-    # call agent reset function inside the planner
 
     # Reset agent with fresh VM IP (for snapshot reverts)
     # try:
@@ -265,23 +250,17 @@ def run_single_example(domain, example_id, env, example, max_steps, instruction,
         parsed_json = run_vision_subprocess_gpu(obs['screenshot'])
     else:
         parsed_json = run_vision_subprocess_cpu(obs['screenshot'],(0,0,1920,1080))
-    # print("the parsed json is: ***************", parsed_json)
-    # exit()
-
 
     done = False
     step_idx = 0
     env.controller.start_recording()
     while not done and step_idx < max_steps:
-        # response, actions = agent.predict(
-        #     instruction,
-        #     obs
-        # )
 
         #planner call here
         response, actions_raw = planner.generate_plan(instruction, parsed_json, (0,0,1920,1080), "CSE291A_AI_Agent/ecua2_agent/planner_module/models/llama-3.2-3B-Instruct")
-        logger.info("actions: ******** %s", actions_raw)
+        # logger.info("actions: ******** %s", actions_raw)
 
+        # filter the action command supose to be done in planner module
         actions = normalize_actions(actions_raw, domain, example_id)
 
         for action_str in actions:
@@ -289,8 +268,10 @@ def run_single_example(domain, example_id, env, example, max_steps, instruction,
             action_timestamp = datetime.datetime.now().strftime("%Y%m%d@%H%M%S%f")
             parsed = parse_planner_action(action_str)
 
-            # logger.info("Step %d raw: %s", step_idx + 1, action_str)
-            logger.info("Step %d parsed: %s", step_idx + 1, parsed)
+            # this is important for osworld-human wes+ and wes-
+            step_idx += 1
+
+            logger.info("Step %d parsed: %s", step_idx, parsed)
 
             if parsed is None:
                 logger.warning("Could not parse action: %s", action_str)
@@ -305,14 +286,14 @@ def run_single_example(domain, example_id, env, example, max_steps, instruction,
             # Save screenshot
             screenshot_path = os.path.join(
                 example_result_dir,
-                f"step_{step_idx + 1}_{action_timestamp}.png"
+                f"step_{step_idx}_{action_timestamp}.png"
             )
             with open(screenshot_path, "wb") as f_img:
                 f_img.write(obs["screenshot"])
 
             # Save trajectory record
             traj_record = {
-                "step_num": step_idx + 1,
+                "step_num": step_idx,
                 "action_timestamp": action_timestamp,
                 "action": parsed,
                 "response": response,
@@ -328,8 +309,7 @@ def run_single_example(domain, example_id, env, example, max_steps, instruction,
             if parsed == "DONE" or done:
                 logger.info("Episode completed.")
                 break
-
-        step_idx += 1
+        # step_idx +=1
 
     time.sleep(20) # Wait for the environment to settle
     result = env.evaluate()
@@ -343,9 +323,8 @@ def run_single_example(domain, example_id, env, example, max_steps, instruction,
     
     env.controller.end_recording(os.path.join(example_result_dir, "recording.mp4"))
 
-
-def setup_logger(example, example_result_dir):
-    runtime_logger = logging.getLogger(f"desktopenv.example.{example['id']}")
-    runtime_logger.setLevel(logging.DEBUG)
-    runtime_logger.addHandler(logging.FileHandler(os.path.join(example_result_dir, "runtime.log")))
-    return runtime_logger
+# def setup_logger(example, example_result_dir):
+#     runtime_logger = logging.getLogger(f"desktopenv.example.{example['id']}")
+#     runtime_logger.setLevel(logging.DEBUG)
+#     runtime_logger.addHandler(logging.FileHandler(os.path.join(example_result_dir, "runtime.log")))
+#     return runtime_logger
