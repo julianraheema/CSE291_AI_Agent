@@ -10,7 +10,7 @@ from lib_results_logger import log_task_completion
 import subprocess, json, base64      
 
 os.environ["VLLM_PLUGINS"] = "none"
-from CSE291A_AI_Agent.ecua2_agent.planner_module import planner
+from CSE291_AI_Agent.ecua2_agent.planner_module import planner
 
 logger = logging.getLogger("desktopenv.experiment")
 
@@ -82,7 +82,7 @@ def run_vision_subprocess_cpu(screenshot_bytes: bytes,
 
     cmd = [
         "python3",
-        "CSE291A_AI_Agent/ecua2_agent/vision_module/vision_CPU.py",
+        "CSE291_AI_Agent/ecua2_agent/vision_module/vision_CPU.py",
         "--img", temp_path,
         "--bbox", bbox_str,
     ]
@@ -133,7 +133,7 @@ def run_vision_subprocess_gpu(screenshot_bytes: bytes):
 
     cmd = [
         "python3",
-        "CSE291A_AI_Agent/ecua2_agent/vision_module/vision_GPU/vision_gpu.py",
+        "CSE291_AI_Agent/ecua2_agent/vision_module/vision_GPU/vision_gpu.py",
         "--img", temp_path,
     ]
 
@@ -257,7 +257,7 @@ def run_single_example(domain, example_id, env, example, max_steps, instruction,
     while not done and step_idx < max_steps:
 
         #planner call here
-        response, actions_raw = planner.generate_plan(instruction, parsed_json, (0,0,1920,1080), "CSE291A_AI_Agent/ecua2_agent/planner_module/models/llama-3.2-3B-Instruct")
+        response, actions_raw = planner.generate_plan(instruction, parsed_json, (0,0,1920,1080), "CSE291_AI_Agent/ecua2_agent/planner_module/models/llama-3.2-3B-Instruct")
         # logger.info("actions: ******** %s", actions_raw)
 
         # filter the action command supose to be done in planner module
