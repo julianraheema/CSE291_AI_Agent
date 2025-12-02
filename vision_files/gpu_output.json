@@ -1,0 +1,324 @@
+{
+  "window dims": [
+    3840,
+    2160
+  ],
+  "elements": [
+    {
+      "type": "text",
+      "text": "CtAIMode La",
+      "confidence": 0.9559989869594574,
+      "bbox": [
+        3397,
+        71,
+        3611,
+        116
+      ]
+    },
+    {
+      "type": "text",
+      "text": "Gmail ages :",
+      "confidence": 0.9856704473495483,
+      "bbox": [
+        3525,
+        209,
+        3738,
+        251
+      ]
+    },
+    {
+      "type": "text",
+      "text": "Getatgle",
+      "confidence": 0.9599562287330627,
+      "bbox": [
+        1691,
+        307,
+        2148,
+        487
+      ]
+    },
+    {
+      "type": "text",
+      "text": "Q Search Google or type URL",
+      "confidence": 0.9999282360076904,
+      "bbox": [
+        1387,
+        592,
+        1743,
+        637
+      ]
+    },
+    {
+      "type": "text",
+      "text": "\u20ac QAIMode",
+      "confidence": 0.6155196577310562,
+      "bbox": [
+        2250,
+        592,
+        2456,
+        633
+      ]
+    },
+    {
+      "type": "text",
+      "text": "P",
+      "confidence": 0.9980224370956421,
+      "bbox": [
+        1912,
+        723,
+        1935,
+        746
+      ]
+    },
+    {
+      "type": "text",
+      "text": "258R 58 Piazza",
+      "confidence": 0.9999942580858866,
+      "bbox": [
+        1725,
+        791,
+        1968,
+        825
+      ]
+    },
+    {
+      "type": "text",
+      "text": "Q Search",
+      "confidence": 0.9997831583023071,
+      "bbox": [
+        101,
+        2103,
+        210,
+        2141
+      ]
+    },
+    {
+      "type": "text",
+      "text": "PED",
+      "confidence": 0.7523826956748962,
+      "bbox": [
+        345,
+        2107,
+        412,
+        2141
+      ]
+    },
+    {
+      "type": "text",
+      "text": "4:28PM",
+      "confidence": 0.9999699592590332,
+      "bbox": [
+        3746,
+        2096,
+        3817,
+        2126
+      ]
+    },
+    {
+      "type": "text",
+      "text": "12/1/2025",
+      "confidence": 0.9999995827674866,
+      "bbox": [
+        3723,
+        2118,
+        3821,
+        2156
+      ]
+    },
+    {
+      "type": "ui",
+      "ui_class": "icon",
+      "text": "Getatgle",
+      "det_confidence": 0.9419211745262146,
+      "text_match_score": 0.5736881747426563,
+      "bbox": [
+        1639,
+        272,
+        2208,
+        524
+      ]
+    },
+    {
+      "type": "ui",
+      "ui_class": "icon",
+      "text": "\u20ac QAIMode",
+      "det_confidence": 0.8224973678588867,
+      "text_match_score": 0.48611442667303256,
+      "bbox": [
+        2307,
+        579,
+        2472,
+        641
+      ]
+    },
+    {
+      "type": "ui",
+      "ui_class": "icon",
+      "text": "258R 58 Piazza",
+      "det_confidence": 0.7530956864356995,
+      "text_match_score": 0.1193505923650724,
+      "bbox": [
+        1693,
+        687,
+        1805,
+        841
+      ]
+    },
+    {
+      "type": "ui",
+      "ui_class": "icon",
+      "text": "258R 58 Piazza",
+      "det_confidence": 0.7290741205215454,
+      "text_match_score": 0.13668918918918918,
+      "bbox": [
+        1849,
+        685,
+        2016,
+        837
+      ]
+    },
+    {
+      "type": "ui",
+      "ui_class": "icon",
+      "text": "PED",
+      "det_confidence": 0.712652325630188,
+      "text_match_score": 0.48727272727272725,
+      "bbox": [
+        331,
+        2093,
+        416,
+        2148
+      ]
+    },
+    {
+      "type": "ui",
+      "ui_class": "icon",
+      "text": "\u20ac QAIMode",
+      "det_confidence": 0.6888800859451294,
+      "text_match_score": 0.19459347915806852,
+      "bbox": [
+        2242,
+        581,
+        2296,
+        639
+      ]
+    },
+    {
+      "type": "ui",
+      "ui_class": "icon",
+      "text": "CtAIMode La",
+      "det_confidence": 0.6871240139007568,
+      "text_match_score": 0.20574534161490685,
+      "bbox": [
+        3558,
+        59,
+        3627,
+        122
+      ]
+    },
+    {
+      "type": "ui",
+      "ui_class": "icon",
+      "text": "Gmail ages :",
+      "det_confidence": 0.658929169178009,
+      "text_match_score": 0.20019723865877712,
+      "bbox": [
+        3680,
+        189,
+        3749,
+        271
+      ]
+    },
+    {
+      "type": "ui",
+      "ui_class": "icon",
+      "text": "Q Search",
+      "det_confidence": 0.649154782295227,
+      "text_match_score": 0.24520523391288762,
+      "bbox": [
+        86,
+        2094,
+        137,
+        2149
+      ]
+    },
+    {
+      "type": "ui",
+      "ui_class": "icon",
+      "text": "Q Search",
+      "det_confidence": 0.6372437477111816,
+      "text_match_score": 0.0,
+      "bbox": [
+        13,
+        2088,
+        78,
+        2153
+      ]
+    },
+    {
+      "type": "ui",
+      "ui_class": "icon",
+      "text": "CtAIMode La",
+      "det_confidence": 0.6196553707122803,
+      "text_match_score": 0.6059421422986708,
+      "bbox": [
+        3388,
+        65,
+        3552,
+        119
+      ]
+    },
+    {
+      "type": "ui",
+      "ui_class": "icon",
+      "text": "PED",
+      "det_confidence": 0.6019678115844727,
+      "text_match_score": 0.0,
+      "bbox": [
+        422,
+        2087,
+        483,
+        2150
+      ]
+    },
+    {
+      "type": "ui",
+      "ui_class": "icon",
+      "text": "4:28PM",
+      "det_confidence": 0.3571511507034302,
+      "text_match_score": 0.0,
+      "bbox": [
+        3742,
+        2005,
+        3837,
+        2090
+      ]
+    },
+    {
+      "type": "ui",
+      "ui_class": "icon",
+      "text": "Q Search",
+      "det_confidence": 0.32014214992523193,
+      "text_match_score": 0.2848705134029986,
+      "bbox": [
+        111,
+        2095,
+        353,
+        2148
+      ]
+    },
+    {
+      "type": "ui",
+      "ui_class": "icon",
+      "text": "Q Search Google or type URL",
+      "det_confidence": 0.2819715738296509,
+      "text_match_score": 0.10954576060496193,
+      "bbox": [
+        1361,
+        574,
+        1434,
+        648
+      ]
+    }
+  ]
+}

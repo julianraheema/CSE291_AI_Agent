@@ -40,7 +40,7 @@ def build_prompt(task, vision_data, bbox):
     
     # Format UI elements - only show elements with text
     ui_elements = []
-    for el in elements[:50]:  # Limit to first 50 elements
+    for el in elements:  # Limit to first 50 elements?
         text = el.get("text", "").strip()
         el_bbox = el.get("bbox", [0, 0, 0, 0])
         
@@ -51,35 +51,54 @@ def build_prompt(task, vision_data, bbox):
     
     # Build focused prompt with strict examples
     prompt = f"""Convert the task into computer actions using ONLY these actions:
-        MOVE_TO x y - move cursor
-        CLICK - click mouse
-        TYPING "text" - type text
-        HOTKEY keys - keyboard shortcut
-        DONE - finish
+MOVE_TO x y - move cursor
+CLICK - click mouse
+TYPING "text" - type text
+HOTKEY keys - keyboard shortcut
+DONE - finish
 
-        Screen elements:
-        {ui_context}
+Screen elements:
+{ui_context}
 
-        Examples:
+Examples:
 
-        Task: Click on Gmail
-        MOVE_TO 3523 213
-        CLICK
-        DONE
+Task: Click on Gmail
+MOVE_TO 3523 213
+CLICK
+DONE
 
-        Task: Search for python
-        MOVE_TO 1380 588
-        CLICK
-        TYPING "python"
-        DONE
+Task: Search for python
+MOVE_TO 1380 588
+CLICK
+TYPING "python"
+DONE
 
-        Task: Open terminal
-        HOTKEY ctrl+alt+t
-        DONE
+Task: Open terminal
+HOTKEY ctrl+alt+t
+DONE
 
-        Task: {task}
-    """
+Task: {task}
+"""
     return prompt
+
+
+def is_valid_action(line):
+    """Check if a line is a valid action command."""
+    line = line.strip()
+    if not line:
+        return False
+    
+    # List of valid action prefixes
+    valid_actions = [
+        "MOVE_TO", "CLICK", "MOUSE_DOWN", "MOUSE_UP", 
+        "RIGHT_CLICK", "DOUBLE_CLICK", "DRAG_TO", 
+        "SCROLL", "TYPING", "PRESS", "KEY_DOWN", 
+        "KEY_UP", "HOTKEY", "WAIT", "FAIL", "DONE"
+    ]
+    
+    # Check if line starts with any valid action
+    first_word = line.split()[0] if line.split() else ""
+    return first_word in valid_actions
 
 
 def generate_plan(task, vision_data, model_path, bbox, temperature=0.3, max_tokens=512):
@@ -129,19 +148,19 @@ def generate_plan(task, vision_data, model_path, bbox, temperature=0.3, max_toke
     if stop_reason and stop_reason in ["DONE", "FAIL"]:
         output += f"\n{stop_reason}"
     
-    # Parse output into action list
+    # Parse output into action list - filter to valid actions only
     actions = []
     for line in output.split('\n'):
         line = line.strip()
-        if line:  # Skip empty lines
+        if is_valid_action(line):
             actions.append(line)
     
     return output, actions
 
 
 def main():
-    task = "Search cat pictures in google search bar"
-    vision_file = "./vision_files/gpu_omni_output.json"
+    task = "Open the command prompt and navigate to the Documents folder"
+    vision_file = "./vision_files/gpu_output.json"
     model_path = "planner_module/models/llama-3.2-1b"
     temperature = 0.3
     max_tokens = 512
@@ -157,7 +176,7 @@ def main():
         task=task,
         vision_data=vision_data,
         model_path=model_path,
-        bbox=[0, 0, 1920, 1080],
+        bbox=[0, 0, 3840, 2160],
         temperature=temperature,
         max_tokens=max_tokens,
     )
