@@ -31,45 +31,83 @@ def load_vision_json(vision_path):
         return json.load(f)
 
 
-def build_prompt(task, vision_data, bbox):
-    """Build the prompt for the LLM."""
-    # Extract screen context
-    elements = vision_data.get("elements", [])
-    window = vision_data.get("window", {})
-    bbox = window.get("bbox", bbox)
+def create_som_elements(vision_data):
+    """
+    Create Set-of-Marks (SoM) abstraction from vision data.
+    Assigns unique IDs to each UI element for easier LLM interaction.
     
-    # Format UI elements - only show elements with text
-    ui_elements = []
-    for el in elements:  # Limit to first 50 elements?
-        text = el.get("text", "").strip()
-        el_bbox = el.get("bbox", [0, 0, 0, 0])
+    Args:
+        vision_data: Vision output dictionary
         
-        if text and len(text) > 1:  # Only include meaningful text
-            ui_elements.append(f'"{text}" at ({el_bbox[0]}, {el_bbox[1]})')
+    Returns:
+        Dictionary mapping element IDs to element data with coordinates
+    """
+    som_elements = {}
+    elements = vision_data.get("elements", [])
+    
+    element_id = 1
+    for el in elements:
+        text = el.get("text", "").strip()
+        bbox = el.get("bbox", [0, 0, 0, 0])
+        el_type = el.get("type", "unknown")
+        
+        # Only include elements with meaningful text
+        if text and len(text) > 1:
+            # Calculate center coordinates for easier clicking
+            center_x = (bbox[0] + bbox[2]) // 2
+            center_y = (bbox[1] + bbox[3]) // 2
+            
+            som_elements[element_id] = {
+                "id": element_id,
+                "text": text,
+                "type": el_type,
+                "bbox": bbox,
+                "center": (center_x, center_y),
+                "confidence": el.get("confidence", 0.0)
+            }
+            element_id += 1
+    
+    return som_elements
+
+
+def build_prompt(task, vision_data, bbox, som_elements):
+    """Build the prompt for the LLM using Set-of-Marks abstraction."""
+    
+    # Format UI elements using SoM - show ID and text
+    ui_elements = []
+    for elem_id, elem_data in sorted(som_elements.items()):
+        text = elem_data["text"]
+        elem_type = elem_data["type"]
+        ui_elements.append(f'[{elem_id}] "{text}" ({elem_type})')
     
     ui_context = "\n".join(ui_elements)
     
-    # Build focused prompt with strict examples
-    prompt = f"""Convert the task into computer actions using ONLY these actions:
-MOVE_TO x y - move cursor
-CLICK - click mouse
-TYPING "text" - type text
-HOTKEY keys - keyboard shortcut
-DONE - finish
+    # Build prompt with SoM instructions
+    prompt = f"""You are a computer control assistant. You have access to UI elements identified by IDs.
 
-Screen elements:
+Available UI Elements (use ID numbers):
 {ui_context}
+
+Available Actions:
+CLICK_ELEMENT <id> - click on element by ID
+TYPING "text" - type text
+HOTKEY keys - keyboard shortcut (e.g., ctrl+alt+t)
+DONE - finish task
+
+Instructions:
+- Use CLICK_ELEMENT with the ID number to interact with UI elements
+- Use TYPING to enter text after clicking input fields
+- Use HOTKEY for keyboard shortcuts
+- End with DONE when task is complete
 
 Examples:
 
 Task: Click on Gmail
-MOVE_TO 3523 213
-CLICK
+CLICK_ELEMENT 2
 DONE
 
 Task: Search for python
-MOVE_TO 1380 588
-CLICK
+CLICK_ELEMENT 4
 TYPING "python"
 DONE
 
@@ -88,12 +126,13 @@ def is_valid_action(line):
     if not line:
         return False
     
-    # List of valid action prefixes
+    # List of valid action prefixes (including new SoM actions)
     valid_actions = [
         "MOVE_TO", "CLICK", "MOUSE_DOWN", "MOUSE_UP", 
         "RIGHT_CLICK", "DOUBLE_CLICK", "DRAG_TO", 
         "SCROLL", "TYPING", "PRESS", "KEY_DOWN", 
-        "KEY_UP", "HOTKEY", "WAIT", "FAIL", "DONE"
+        "KEY_UP", "HOTKEY", "WAIT", "FAIL", "DONE",
+        "CLICK_ELEMENT"  # New SoM action
     ]
     
     # Check if line starts with any valid action
@@ -101,9 +140,54 @@ def is_valid_action(line):
     return first_word in valid_actions
 
 
+def translate_som_to_coordinates(actions, som_elements):
+    """
+    Translate SoM actions (using IDs) to coordinate-based actions.
+    
+    Args:
+        actions: List of action strings (may include CLICK_ELEMENT commands)
+        som_elements: Dictionary mapping element IDs to element data
+        
+    Returns:
+        List of translated actions with coordinates instead of IDs
+    """
+    translated_actions = []
+    
+    for action in actions:
+        parts = action.strip().split(maxsplit=1)
+        if not parts:
+            continue
+            
+        action_type = parts[0]
+        
+        if action_type == "CLICK_ELEMENT":
+            # Extract element ID and translate to coordinates
+            if len(parts) > 1:
+                try:
+                    elem_id = int(parts[1])
+                    if elem_id in som_elements:
+                        elem = som_elements[elem_id]
+                        center_x, center_y = elem["center"]
+                        # Translate to MOVE_TO + CLICK
+                        translated_actions.append(f"MOVE_TO {center_x} {center_y}")
+                        translated_actions.append("CLICK")
+                    else:
+                        # Invalid ID - skip or log warning
+                        print(f"Warning: Element ID {elem_id} not found")
+                except ValueError:
+                    print(f"Warning: Invalid element ID in action: {action}")
+            else:
+                print(f"Warning: CLICK_ELEMENT missing ID: {action}")
+        else:
+            # Pass through other actions unchanged
+            translated_actions.append(action)
+    
+    return translated_actions
+
+
 def generate_plan(task, vision_data, model_path, bbox, temperature=0.3, max_tokens=512):
     """
-    Generate action plan using LLM.
+    Generate action plan using LLM with Set-of-Marks abstraction.
     
     Args:
         task: Task description
@@ -114,11 +198,18 @@ def generate_plan(task, vision_data, model_path, bbox, temperature=0.3, max_toke
         max_tokens: Max tokens to generate
         
     Returns:
-        output (raw string) and actions (list of action strings)
+        tuple: (raw_output, som_actions, coordinate_actions, som_elements)
+            - raw_output: Raw LLM output string
+            - som_actions: Actions using element IDs
+            - coordinate_actions: Actions translated to coordinates
+            - som_elements: SoM element mapping for reference
     """
     
-    # Build prompt
-    prompt = build_prompt(task, vision_data, bbox)
+    # Create SoM abstraction
+    som_elements = create_som_elements(vision_data)
+    
+    # Build prompt with SoM
+    prompt = build_prompt(task, vision_data, bbox, som_elements)
     print("=== Prompt ===")
     print(prompt)
     
@@ -149,17 +240,26 @@ def generate_plan(task, vision_data, model_path, bbox, temperature=0.3, max_toke
         output += f"\n{stop_reason}"
     
     # Parse output into action list - filter to valid actions only
-    actions = []
+    som_actions = []
     for line in output.split('\n'):
         line = line.strip()
         if is_valid_action(line):
-            actions.append(line)
+            som_actions.append(line)
     
-    return output, actions
+    # Translate SoM actions to coordinate-based actions
+    coordinate_actions = translate_som_to_coordinates(som_actions, som_elements)
+
+    print("\nSOM ACTIONS (Element IDs):")
+    print("="*80)
+    for action in som_actions:
+        print(action)
+    print("="*80)
+    
+    return output, coordinate_actions
 
 
 def main():
-    task = "Open the command prompt and navigate to the Documents folder"
+    task = "Go to the command prompt and go the the documents folder which has the path C:\\Users\\User\\Documents"
     vision_file = "./vision_files/gpu_output.json"
     model_path = "planner_module/models/llama-3.2-1b"
     temperature = 0.3
@@ -167,12 +267,12 @@ def main():
     
     print(f"Task: {task}")
     print(f"Vision file: {vision_file}")
-    print("\nGenerating plan...\n")
+    print("\nGenerating plan with Set-of-Marks abstraction...\n")
 
     # Load vision data
     vision_data = load_vision_json(vision_file)
     
-    output, actions = generate_plan(
+    output, coordinate_actions = generate_plan(
         task=task,
         vision_data=vision_data,
         model_path=model_path,
@@ -182,14 +282,15 @@ def main():
     )
     
     print("="*80)
-    print("LLM OUTPUT:")
+    print("LLM OUTPUT (Raw):")
     print("="*80)
     print(output)
     print("="*80)
     
-    print("\nACTIONS LIST:")
+    print("\nTRANSLATED ACTIONS (Coordinates):")
     print("="*80)
-    print(actions)
+    for action in coordinate_actions:
+        print(action)
     print("="*80)
 
 
