@@ -1,0 +1,78 @@
+{
+  "id": "cli-microphone-ascii-visualizer",
+  "snapshot": "os",
+  "instruction": "Turn live microphone audio into an ASCII visualizer in the terminal using Linux CLI tools.",
+  "source": "user",
+
+  "config": [
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "bash",
+          "-c",
+          "echo 'Launching terminal for audio processing...'"
+        ]
+      }
+    }
+  ],
+
+  "trajectory": "trajectories/cli-microphone-ascii-visualizer",
+
+  "related_apps": [
+    "os",
+    "terminal"
+  ],
+
+  "evaluator": {
+    "func": "infeasible"
+  },
+
+  "human-ground-truth": {
+    "single-action": [
+      "`HOTKEY` 'Ctrl+Alt+T'",
+      "`CLICK` terminal prompt",
+      "`TYPING` sudo apt install sox ffmpeg",
+      "`PRESS` Enter",
+      "`TYPING` arecord -l",
+      "`PRESS` Enter",
+      "`TYPING` arecord -f cd -t wav mic.wav",
+      "`PRESS` Enter",
+      "`TYPING` sox mic.wav -c 1 -r 8000 mono.wav",
+      "`PRESS` Enter",
+      "`TYPING` sox mono.wav -n stat",
+      "`PRESS` Enter",
+      "`TYPING` sox mono.wav -n spectrogram -o spectrogram.png",
+      "`PRESS` Enter",
+      "`TYPING` jp2a spectrogram.png --width=80",
+      "`PRESS` Enter",
+      "`DONE`"
+    ],
+
+    "grouped-action": [
+      [
+        "`HOTKEY` 'Ctrl+Alt+T'"
+      ],
+      [
+        "`CLICK` terminal prompt"
+      ],
+      [
+        "`TYPING` sudo apt install sox ffmpeg",
+        "`PRESS` Enter",
+        "`TYPING` arecord -l",
+        "`PRESS` Enter",
+        "`TYPING` arecord -f cd -t wav mic.wav",
+        "`PRESS` Enter",
+        "`TYPING` sox mic.wav -c 1 -r 8000 mono.wav",
+        "`PRESS` Enter",
+        "`TYPING` sox mono.wav -n stat",
+        "`PRESS` Enter",
+        "`TYPING` sox mono.wav -n spectrogram -o spectrogram.png",
+        "`PRESS` Enter",
+        "`TYPING` jp2a spectrogram.png --width=80",
+        "`PRESS` Enter",
+        "`DONE`"
+      ]
+    ]
+  }
+}

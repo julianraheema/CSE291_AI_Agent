@@ -1,0 +1,86 @@
+{
+  "id": "leetcode-daily-challenge-screenshot",
+  "snapshot": "chrome",
+  "instruction": "Open LeetCode, navigate to the daily challenge problem, scroll, and save a window screenshot into ~/Documents/leetcode_daily_challenges.",
+  "source": "user",
+
+  "config": [
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "google-chrome",
+          "--remote-debugging-port=1337",
+          "https://leetcode.com/problemset"
+        ]
+      }
+    }
+  ],
+
+  "trajectory": "trajectories/leetcode-daily-challenge-screenshot",
+
+  "related_apps": [
+    "chrome",
+    "os",
+    "terminal",
+    "gnome"
+  ],
+
+  "evaluator": {
+    "func": "infeasible"
+  },
+
+  "human-ground-truth": {
+    "single-action": [
+      "`HOTKEY` 'Ctrl+Alt+T'",
+      "`TYPING` mkdir -p ~/Documents/leetcode_daily_challenges",
+      "`PRESS` Enter",
+      "`WAIT` 500",
+      "`TYPING` google-chrome https://leetcode.com/problemset",
+      "`PRESS` Enter",
+      "`WAIT` 4000",
+      "`CLICK` (//a[contains(@href, '/problems/') and (contains(@class, 'daily') or contains(., 'Daily'))])[1]",
+      "`WAIT` 3000",
+      "`SCROLL` down 300",
+      "`WAIT` 1000",
+      "`HOTKEY` 'Alt+Print'",
+      "`WAIT` 500",
+      "`HOTKEY` 'Ctrl+Alt+T'",
+      "`TYPING` gnome-screenshot -w -f ~/Documents/leetcode_daily_challenges/daily_challenge_$(date +%Y%m%d).png",
+      "`PRESS` Enter",
+      "`WAIT` 1000",
+      "`DONE`"
+    ],
+
+    "grouped-action": [
+      [
+        "`HOTKEY` 'Ctrl+Alt+T'",
+        "`TYPING` mkdir -p ~/Documents/leetcode_daily_challenges",
+        "`PRESS` Enter",
+        "`WAIT` 500"
+      ],
+      [
+        "`TYPING` google-chrome https://leetcode.com/problemset",
+        "`PRESS` Enter",
+        "`WAIT` 4000"
+      ],
+      [
+        "`CLICK` (//a[contains(@href, '/problems/') and (contains(@class, 'daily') or contains(., 'Daily'))])[1]",
+        "`WAIT` 3000"
+      ],
+      [
+        "`SCROLL` down 300",
+        "`WAIT` 1000",
+        "`HOTKEY` 'Alt+Print'",
+        "`WAIT` 500"
+      ],
+      [
+        "`HOTKEY` 'Ctrl+Alt+T'",
+        "`TYPING` gnome-screenshot -w -f ~/Documents/leetcode_daily_challenges/daily_challenge_$(date +%Y%m%d).png",
+        "`PRESS` Enter",
+        "`WAIT` 1000",
+        "`DONE`"
+      ]
+    ]
+  }
+}

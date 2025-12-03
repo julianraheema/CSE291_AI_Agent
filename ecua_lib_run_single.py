@@ -64,12 +64,11 @@ def normalize_actions(action_list, domain, example_id):
     
     return fixed_actions
 
+
 def run_vision_subprocess_cpu(screenshot_bytes: bytes,
                           bbox: tuple[int, int, int, int]):
     """
     Call vision_CPU.py in a subprocess, passing it a PNG file path and bbox.
-    screenshot_bytes: raw PNG bytes from env._get_obs()['screenshot'].
-    bbox: (x, y, w, h)
     """
 
     # 1. Save screenshot bytes to temporary PNG file for subprocess
@@ -129,8 +128,6 @@ def run_vision_subprocess_gpu(screenshot_bytes: bytes):
         tmp.write(screenshot_bytes)
         tmp.flush()
 
-    # bbox_str = ",".join(str(x) for x in bbox)  # "0,0,1920,1080"
-
     cmd = [
         "python3",
         "CSE291_AI_Agent/ecua2_agent/vision_module/vision_GPU/vision_gpu.py",
@@ -170,12 +167,7 @@ def run_vision_subprocess_gpu(screenshot_bytes: bytes):
 
 def parse_planner_action(line: str):
     """
-    Convert planner output like:
-      'HOTKEY win+E'
-      'MOVE_TO 400 600'
-      'CLICK'
-      'TYPING "hello"'
-      'DONE'
+    Convert planner output like:'HOTKEY win+E' or'MOVE_TO 400 600'
     into OSWorld's required format.
     """
     if not line:
@@ -229,9 +221,13 @@ def parse_planner_action(line: str):
     raise ValueError(f"Unknown action format: {line}")
 
 
-# def run_single_example(agent, env, example, max_steps, instruction, args, example_result_dir, scores):
-def run_single_example(domain, example_id, env, example, max_steps, instruction, args, example_result_dir, scores):
+def run_single_example(domain, example_id, env, example, max_steps, instruction, args, example_result_dir):
     # runtime_logger = setup_logger(example, example_result_dir)
+
+    if hasattr(env, "set_max_steps_budget"):
+        env.set_max_steps_budget(max_steps)
+    elif hasattr(env, "max_steps_budget"):
+        env.max_steps_budget = max_steps
 
     # Reset environment first to get fresh VM IP
     env.reset(task_config=example)
@@ -267,6 +263,11 @@ def run_single_example(domain, example_id, env, example, max_steps, instruction,
             # Capture the timestamp before executing the action
             action_timestamp = datetime.datetime.now().strftime("%Y%m%d@%H%M%S%f")
             parsed = parse_planner_action(action_str)
+
+            if step_idx >= max_steps:
+                logger.info("Reached max_steps=%d, stopping further actions.", max_steps)
+                done = True
+                break
 
             # this is important for osworld-human wes+ and wes-
             step_idx += 1
@@ -309,22 +310,24 @@ def run_single_example(domain, example_id, env, example, max_steps, instruction,
             if parsed == "DONE" or done:
                 logger.info("Episode completed.")
                 break
-        # step_idx +=1
 
     time.sleep(20) # Wait for the environment to settle
     result = env.evaluate()
-    logger.info("Result: %.2f", result)
-    scores.append(result)
+    logger.info("Result (OSWorld metric): %.2f", result)
+
+    # get WES+ and WES-
+    wes_plus = getattr(env, "wes_plus", None)
+    wes_minus = getattr(env, "wes_minus", None)
+
+    if wes_plus is not None and wes_minus is not None:
+        logger.info("WES+ = %.4f, WES- = %.4f", wes_plus, wes_minus)
+
     with open(os.path.join(example_result_dir, "result.txt"), "w", encoding="utf-8") as f:
         f.write(f"{result}\n")
+        if wes_plus is not None and wes_minus is not None:
+            f.write(f"WES_PLUS={wes_plus}\n")
+            f.write(f"WES_MINUS={wes_minus}\n")
     
-    # Log task completion to results.json
     log_task_completion(example, result, example_result_dir, args)
-    
-    env.controller.end_recording(os.path.join(example_result_dir, "recording.mp4"))
 
-# def setup_logger(example, example_result_dir):
-#     runtime_logger = logging.getLogger(f"desktopenv.example.{example['id']}")
-#     runtime_logger.setLevel(logging.DEBUG)
-#     runtime_logger.addHandler(logging.FileHandler(os.path.join(example_result_dir, "runtime.log")))
-#     return runtime_logger
+    env.controller.end_recording(os.path.join(example_result_dir, "recording.mp4"))

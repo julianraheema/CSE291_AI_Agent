@@ -64,7 +64,7 @@ uv pip install -U "huggingface_hub"
 
 ### Step 2: Log in to Hugging Face
 1. Create account: https://huggingface.co 
-2. Request access: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct 
+2. Request access: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 3. Create access token: https://huggingface.co/settings/tokens 
 4. Login:
 ```bash
@@ -74,7 +74,7 @@ hf auth login
 ### Step 3: Download Model
 ```bash
 mkdir -p models
-hf download meta-llama/Llama-3.2-1B-Instruct --local-dir ./models/llama-3.2-1b
+hf download meta-llama/Llama-3.2-3B-Instruct --local-dir ./models/llama-3.2-3b
 ```
 
 ## Running the Agent
@@ -120,11 +120,12 @@ ls OSWorld/CSE291_AI_Agent/ecua2_agent/planner_module/models/
 ```
 
 ### 5. Run Agent Inside OSWorld
-Move ecua_run.py and ecua_lib_run_single.py to OSWorld
+Move ecua_run.py and ecua_lib_run_single.py to OSWorld. Fee free to change the --max_steps to 100 for better results.
 
 ```bash
 mv CSE291_AI_Agent/ecua_run.py .
 mv CSE291_AI_Agent/ecua_lib_run_single.py .
+mv CSE291_AI_Agent/ecua_score.py .
 ```
 Run with CPU
 ```bash
@@ -132,11 +133,28 @@ python ecua_run.py   --provider_name docker   --headless   --action_space comput
 ```
 Run with GPU
 ```bash
-python ecua_run.py   --provider_name docker   --headless   --action_space computer_13   --observation_type screenshot   --sleep_after_execution 3   --max_steps 30   --result_dir ./results/test_custom_tasks_and_agent   --tasks_path ./osworld_tasks --v_gpu True
+python ecua_run.py   --provider_name docker   --headless   --action_space computer_13   --observation_type screenshot   --sleep_after_execution 3   --max_steps 30   --result_dir ./results/osworld-human-os-tasks   --tasks_path ./osworld-human/os --v_gpu True
+```
+
+Results:
+```bash
+ OSWorld-Human metrics summary
+------------------------------------
+Number of Tasks : 24
+Success Rate    : 4.17%
+Avg Result      : 0.0417
+WES+ (mean)     : 0.0056 (0.56%)
+WES- (mean)     : -0.2875 (-28.75%)
 ```
 
 ### Results
 Saved under the `results/` directory.
+
+### Evaluation
+Runs this command to get the WES+/WES- evalution
+```bash
+python ecua_score.py --results-dir ./results/osworld-human-os-tasks/computer_13/screenshot/Llama-3.2-1B/custom/
+```
 
 # Custom Tasks
 

@@ -1,7 +1,3 @@
-"""Script to run end-to-end evaluation on the benchmark.
-Utils and basic architecture credit to https://github.com/web-arena-x/webarena/blob/main/run.py.
-"""
-
 import argparse
 import datetime
 import json
@@ -21,9 +17,6 @@ from tqdm import tqdm
 
 import ecua_lib_run_single
 from desktop_env.desktop_env import DesktopEnv
-# from mm_agents.agent import PromptAgent
-
-from vllm import LLM, SamplingParams
 
 
 # Almost deprecated since it's not multi-env, use run_multienv_*.py instead
@@ -71,25 +64,95 @@ logger = logging.getLogger("desktopenv.experiment")
 
 
 class CustomDesktopEnv(DesktopEnv):
-    """DesktopEnv with custom reward and extra info."""
+    """Inherts from DesktopEnv with custom reward, extra info, and WES+ / WES- computation."""
+
+    def __init__(self, *args, max_steps_budget: int | None = None, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.max_steps_budget = max_steps_budget # S (can be set/overridden later)
+        self._episode_step_count = 0             # t_agent
+        self._t_human = None                     # t_human (per task)
+        self.wes_plus = None                     # WES+
+        self.wes_minus = None                    # WES-
+
+    def set_max_steps_budget(self, S: int):
+        self.max_steps_budget = S
+
+    def reset(self, task_config=None, seed=None, options=None):
+        # Reset counters for a new episode
+        self._episode_step_count = 0
+        self.wes_plus = None
+        self.wes_minus = None
+
+        # Extract human step count from OSWorld-human JSON if present
+        self._t_human = None
+        if task_config is not None:
+            hg = task_config.get("human-ground-truth", {})
+            # OSWorld-Human often uses grouped-action length as human step count
+            grouped = hg.get("grouped-action")
+            if isinstance(grouped, list):
+                self._t_human = len(grouped)
+            else:
+                # fallback: single-action length, or None
+                single = hg.get("single-action")
+                if isinstance(single, list):
+                    self._t_human = len(single)
+
+        return super().reset(task_config=task_config, seed=seed, options=options)
+
 
     def step(self, action, pause=2):
         # Call the original step to keep all behavior (controller, logging, etc.)
         observation, _, done, info = super().step(action, pause)
 
-        # ---- Your custom reward logic here ----
-        # Example: reward 1 when DONE, -1 when FAIL, else 0
+        # count agent steps for WES
+        self._episode_step_count += 1
+
         reward = 0.0
         if info.get("fail"):
             reward = -1.0
         elif info.get("done"):
             reward = 1.0
 
-        # You can also add any custom fields to info
+        # Extra info
         info["custom_timestamp"] = time.time()
         info["step_no"] = getattr(self, "_step_no", None)
+        info["episode_step_count"] = self._episode_step_count  # helpful for debugging
 
         return observation, reward, done, info
+
+
+    def evaluate(self):
+        """
+        Run the original OSWorld evaluator and compute WES+/WES- for each task.
+        """
+        base_score = super().evaluate() 
+        success = base_score >= (1.0 - 1e-6)
+
+        # compute WES+-
+        t_agent = self._episode_step_count 
+        S = self.max_steps_budget or t_agent
+        t_agent = min(t_agent, S)
+
+        # prevent devide by zero
+        if S <= 0:
+            S = t_agent if t_agent > 0 else 1
+
+        # if we couldn't read human steps, assume 1 to avoid div-by-zero
+        t_human = self._t_human if self._t_human and self._t_human > 0 else 1
+
+        if success:
+            # WES+ = t_human / t_agent, WES- = 0
+            self.wes_plus = t_human / max(t_agent, 1)
+            self.wes_minus = 0.0
+        else:
+            # WES+ = 0, WES- = - t_agent / S
+            self.wes_plus = 0.0
+            self.wes_minus = - float(t_agent) / float(S)
+
+        logger.info(f"WES+ = {self.wes_plus:.4f}, WES- = {self.wes_minus:.4f}")
+
+        # Return the original metric
+        return base_score
 
 
 def config() -> argparse.Namespace:
@@ -127,7 +190,7 @@ def config() -> argparse.Namespace:
     )
 
     # lm config
-    parser.add_argument("--model", type=str, default="Llama-3.2-1B")
+    parser.add_argument("--model", type=str, default="Llama-3.2-3B")
     parser.add_argument("--temperature", type=float, default=1.0)
     parser.add_argument("--top_p", type=float, default=0.9)
     parser.add_argument("--max_tokens", type=int, default=1500)
@@ -138,7 +201,7 @@ def config() -> argparse.Namespace:
     parser.add_argument(
         "--test_all_meta_path", type=str, default="evaluation_examples/test_all.json"
     )
-    # NEW: allow running tasks directly from a directory or single .json file
+    # allow running tasks directly from a directory or single .json file
     parser.add_argument(
         "--tasks_path",
         type=str,
@@ -146,8 +209,6 @@ def config() -> argparse.Namespace:
         help=(
             "Path to task .json(s). "
             "If a directory, all .json files under it (recursively) are used. "
-            "If a single .json file, only that task is run. "
-            "If set, test_all_meta_path and domain are ignored."
         ),
     )
 
@@ -184,16 +245,6 @@ def test(args: argparse.Namespace, test_all_meta: dict) -> None:
         "stop_token": args.stop_token,
         "result_dir": args.result_dir,
     }
-
-    # agent = PromptAgent(
-    #     model=args.model,
-    #     max_tokens=args.max_tokens,
-    #     top_p=args.top_p,
-    #     temperature=args.temperature,
-    #     action_space=args.action_space,
-    #     observation_type=args.observation_type,
-    #     max_trajectory_length=args.max_trajectory_length,
-    # )
 
     env = CustomDesktopEnv(
         provider_name=args.provider_name,
@@ -235,7 +286,6 @@ def test(args: argparse.Namespace, test_all_meta: dict) -> None:
             cfg_args["start_time"] = datetime.datetime.now().strftime(
                 "%Y:%m:%d-%H:%M:%S"
             )
-            # run.config.update(cfg_args)
 
             example_result_dir = os.path.join(
                 args.result_dir,
@@ -249,7 +299,6 @@ def test(args: argparse.Namespace, test_all_meta: dict) -> None:
             # example start running
             try:
                 ecua_lib_run_single.run_single_example(
-                    # agent,
                     domain,
                     example_id,
                     env,
@@ -258,7 +307,6 @@ def test(args: argparse.Namespace, test_all_meta: dict) -> None:
                     instruction,
                     args,
                     example_result_dir,
-                    scores,
                 )
             except Exception as e:
                 logger.error(f"Exception in {domain}/{example_id}: {e}")
@@ -276,7 +324,6 @@ def test(args: argparse.Namespace, test_all_meta: dict) -> None:
                     f.write("\n")
 
     env.close()
-    logger.info(f"Average score: {sum(scores) / len(scores) if scores else 0}")
 
 
 def get_unfinished(

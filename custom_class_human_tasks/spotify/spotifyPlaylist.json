@@ -1,0 +1,59 @@
+{
+  "id": "spotify-create-dated-playlist",
+  "snapshot": "spotify",
+  "instruction": "Open Spotify, create a new playlist, and name it with today's date.",
+  "source": "user",
+
+  "config": [
+    {
+      "type": "launch",
+      "parameters": {
+        "command": ["spotify"]
+      }
+    }
+  ],
+
+  "trajectory": "trajectories/spotify-create-dated-playlist",
+
+  "related_apps": [
+    "spotify",
+    "os",
+    "terminal"
+  ],
+
+  "evaluator": {
+    "func": "infeasible"
+  },
+
+  "human-ground-truth": {
+    "single-action": [
+      "`HOTKEY` 'Ctrl+Alt+T'",
+      "`TYPING` spotify",
+      "`PRESS` Enter",
+      "`WAIT` 5000",
+      "`CLICK` //button[contains(., 'Create playlist') or contains(@aria-label, 'Create playlist')]",
+      "`WAIT` 1000",
+      "`TYPING` $(date '+%B %d %Y')",
+      "`PRESS` Enter",
+      "`WAIT` 1500",
+      "`DONE`"
+    ],
+
+    "grouped-action": [
+      [
+        "`HOTKEY` 'Ctrl+Alt+T'",
+        "`TYPING` spotify",
+        "`PRESS` Enter",
+        "`WAIT` 5000"
+      ],
+      [
+        "`CLICK` //button[contains(., 'Create playlist') or contains(@aria-label, 'Create playlist')]",
+        "`WAIT` 1000",
+        "`TYPING` $(date '+%B %d %Y')",
+        "`PRESS` Enter",
+        "`WAIT` 1500",
+        "`DONE`"
+      ]
+    ]
+  }
+}

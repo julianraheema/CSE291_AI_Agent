@@ -1,0 +1,100 @@
+{
+  "id": "quickmap-california-roadconditions-screenshot",
+  "snapshot": "chrome",
+  "instruction": "Open Caltrans QuickMap using the browser, go to Options button then Road Conditions then checkbox Fast, Lane Closures, Full Closures, CHP Incidents. Click Road Conditions to close. Then click on Zoom to button and click on San Diego then click on Zoom to button to close. Press F11 for fullscreen then wait 5 seconds then capture a screenshot by pressing Alt+Print keyboard buttons. and save it to save it to ~/Pictures/san_diego_traffic.png",
+  "source": "user",
+
+  "config": [
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "google-chrome",
+          "--remote-debugging-port=1337",
+          "https://quickmap.dot.ca.gov/"
+        ]
+      }
+    }
+  ],
+
+  "trajectory": "trajectories/quickmap-california-roadconditions-screenshot",
+
+  "related_apps": [
+    "chrome",
+    "os",
+    "terminal",
+    "gnome"
+  ],
+
+  "evaluator": {
+    "func": "infeasible"
+  },
+
+  "human-ground-truth": {
+    "single-action": [
+      "`HOTKEY` 'Ctrl+Alt+T'",
+      "`TYPING` google-chrome https://quickmap.dot.ca.gov/",
+      "`PRESS` Enter",
+      "`WAIT` 2500",
+
+      "`CLICK` 'Options'",
+      "`CLICK` 'Road Conditions'",
+
+      "`CLICK` 'Fast' checkbox",
+      "`WAIT` 200",
+      "`CLICK` 'Lane closures' checkbox",
+      "`WAIT` 200",
+      "`CLICK` 'Full Closures' checkbox",
+      "`WAIT` 200",
+      "`CLICK` 'CHP Incidents' checkbox",
+      "`WAIT` 300",
+
+      "`CLICK` 'Zoom to'",
+      "`CLICK` 'San Diego'",
+      "`WAIT` 2000",
+
+      "`HOTKEY` 'F11'",
+      "`WAIT` 1000",
+
+      "`HOTKEY` 'Alt+Print'",
+      "`WAIT` 1000",
+
+      "`DONE`"
+    ],
+
+    "grouped-action": [
+      [
+        "`HOTKEY` 'Ctrl+Alt+T'",
+        "`TYPING` google-chrome https://quickmap.dot.ca.gov/",
+        "`PRESS` Enter",
+        "`WAIT` 2500"
+      ],
+      [
+        "`CLICK` 'Options'",
+        "`CLICK` 'Road Conditions'"
+      ],
+      [
+        "`CLICK` 'Fast' checkbox",
+        "`WAIT` 200",
+        "`CLICK` 'Lane closures' checkbox",
+        "`WAIT` 200",
+        "`CLICK` 'Full Closures' checkbox",
+        "`WAIT` 200",
+        "`CLICK` 'CHP Incidents' checkbox",
+        "`WAIT` 300"
+      ],
+      [
+        "`CLICK` 'Zoom to'",
+        "`CLICK` 'San Diego'",
+        "`WAIT` 2000"
+      ],
+      [
+        "`HOTKEY` 'F11'",
+        "`WAIT` 1000",
+        "`HOTKEY` 'Alt+Print'",
+        "`WAIT` 1000",
+        "`DONE`"
+      ]
+    ]
+  }
+}
