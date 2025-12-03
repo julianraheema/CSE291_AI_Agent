@@ -168,9 +168,8 @@ def translate_som_to_coordinates(actions, som_elements):
                     if elem_id in som_elements:
                         elem = som_elements[elem_id]
                         center_x, center_y = elem["center"]
-                        # Translate to MOVE_TO + CLICK
-                        translated_actions.append(f"MOVE_TO {center_x} {center_y}")
-                        translated_actions.append("CLICK")
+                        # Translate to CLICK at coordinates
+                        translated_actions.append(f"CLICK {center_x} {center_y}")
                     else:
                         # Invalid ID - skip or log warning
                         print(f"Warning: Element ID {elem_id} not found")
@@ -259,7 +258,7 @@ def generate_plan(task, vision_data, model_path, bbox, temperature=0.3, max_toke
 
 
 def main():
-    task = "Go to the command prompt and go the the documents folder which has the path C:\\Users\\User\\Documents"
+    task = "Open Gmail and search for 'meeting notes'"
     vision_file = "./vision_files/gpu_output.json"
     model_path = "planner_module/models/llama-3.2-1b"
     temperature = 0.3
