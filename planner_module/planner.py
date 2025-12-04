@@ -502,10 +502,9 @@ def generate_step(task, vision_data, model_path, bbox, previous_actions=None, te
         max_tokens: Max tokens to generate (kept low since we only need 1 action)
         
     Returns:
-        tuple: (raw_action, coordinate_action, is_done)
+        tuple: (raw_action, coordinate_action)
             - raw_action: Raw LLM output string (single action)
             - coordinate_action: Action translated to coordinates (or None if DONE/FAIL)
-            - is_done: Boolean indicating if task is complete (DONE) or failed (FAIL)
     """
     
     # Create SoM abstraction
