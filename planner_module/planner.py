@@ -399,6 +399,173 @@ def translate_som_to_coordinates(actions, som_elements):
     return translated_actions
 
 
+def build_step_prompt(task, som_elements, previous_actions=None):
+    """
+    Build a specialized prompt for single-step action generation.
+    This prompt is optimized for generating one valid action at a time.
+    
+    Args:
+        task: Task description
+        som_elements: Dictionary of SoM elements
+        previous_actions: List of previously executed actions (for context)
+        
+    Returns:
+        String containing the formatted prompt
+    """
+    # Format UI elements in a compact list (no hierarchy for simplicity)
+    ui_elements = []
+    for elem_id, elem_data in sorted(som_elements.items()):
+        text = elem_data["text"]
+        elem_type = elem_data["type"]
+        ui_class = elem_data.get("ui_class", "")
+        ui_class_str = f" ({ui_class})" if ui_class else ""
+        ui_elements.append(f"  [{elem_id}] {text} - {elem_type}{ui_class_str}")
+    
+    ui_context = "\n".join(ui_elements)
+    
+    # Build action history context
+    history_context = ""
+    if previous_actions and len(previous_actions) > 0:
+        history_context = "\nPrevious actions:\n" + "\n".join([f"  {i+1}. {action}" for i, action in enumerate(previous_actions)])
+    else:
+        history_context = "\nThis is the first action."
+    
+    # Build the specialized prompt for single action generation
+    prompt = f"""You are controlling a computer to complete a task. You must think step-by-step and perform ONE action at a time.
+
+TASK: {task}
+{history_context}
+
+SCREEN ELEMENTS AVAILABLE:
+{ui_context}
+
+AVAILABLE ACTIONS:
+- CLICK_ELEMENT <id>  : Click on a UI element by its ID number
+- TYPING "text"       : Type text (use after clicking input field)
+- HOTKEY <keys>       : Press keyboard shortcut (e.g., ctrl+c, ctrl+v)
+- DONE                : Task is complete
+- FAIL                : Task cannot be completed
+
+INSTRUCTIONS:
+1. Read the TASK carefully
+2. Look at what actions have been completed (if any)
+3. Determine what the NEXT STEP should be to make progress on the task
+4. Find the appropriate UI element from the list above (if needed)
+5. Output EXACTLY ONE action in the correct format
+
+EXAMPLES:
+
+Example 1:
+TASK: Click on Gmail
+Elements: [1] Google - ui, [2] Gmail - ui (icon), [3] Search - ui
+Previous actions: (none)
+Reasoning: Need to click Gmail to open it. Gmail is element [2].
+Action: CLICK_ELEMENT 2
+
+Example 2:
+TASK: Search for python tutorial
+Elements: [1] Google - ui, [2] Search - ui, [3] Settings - ui
+Previous actions: 1. CLICK_ELEMENT 2
+Reasoning: Clicked search box, now need to type the search query.
+Action: TYPING "python tutorial"
+
+Example 3:
+TASK: Copy text
+Elements: [1] File - ui, [2] Edit - ui, [3] Document - text
+Previous actions: 1. CLICK_ELEMENT 3
+Reasoning: Selected document, now copy it with keyboard shortcut.
+Action: HOTKEY ctrl+c
+
+Now complete YOUR task:
+
+TASK: {task}
+{history_context}
+
+Think about what needs to be done next, then output EXACTLY ONE action.
+Action:"""
+    
+    return prompt
+
+
+def generate_step(task, vision_data, model_path, bbox, previous_actions=None, temperature=0.3, max_tokens=128):
+    """
+    Generate a single action step using LLM with Set-of-Marks abstraction.
+    The LLM will output DONE when it believes the task is complete.
+    
+    Args:
+        task: Task description
+        vision_data: Vision output dictionary
+        model_path: Path to LLM model
+        bbox: Bounding box [x, y, width, height]
+        previous_actions: List of previously executed actions (for context)
+        temperature: Sampling temperature
+        max_tokens: Max tokens to generate (kept low since we only need 1 action)
+        
+    Returns:
+        tuple: (raw_action, coordinate_action, is_done)
+            - raw_action: Raw LLM output string (single action)
+            - coordinate_action: Action translated to coordinates (or None if DONE/FAIL)
+            - is_done: Boolean indicating if task is complete (DONE) or failed (FAIL)
+    """
+    
+    # Create SoM abstraction
+    som_elements = create_som_elements(vision_data)
+    
+    # Build specialized single-step prompt
+    prompt = build_step_prompt(task, som_elements, previous_actions)
+    
+    print("=== Step Generation Prompt ===")
+    print(prompt)
+    
+    # Load and run LLM
+    llm = LLM(
+        model=model_path,
+        dtype="float16",
+        gpu_memory_utilization=0.75,
+        max_model_len=2048,
+        max_num_seqs=1,
+        max_num_batched_tokens=512,
+        enforce_eager=True,
+    )
+    
+    sampling_params = SamplingParams(
+        temperature=temperature, 
+        max_tokens=max_tokens,
+        stop=["\n", "Action:", "TASK:"]  # Stop at newline or if it tries to restart
+    )
+    outputs = llm.generate([prompt], sampling_params)
+    
+    # Get single action output and clean it
+    raw_action = outputs[0].outputs[0].text.strip()
+    
+    # Remove any leading/trailing quotes or extra whitespace
+    raw_action = raw_action.strip('"\'').strip()
+    
+    print(f"\n=== LLM Generated Action ===")
+    print(raw_action)
+    print("="*80)
+    
+    # Validate that it's a proper action
+    if not is_valid_action(raw_action):
+        print(f"Warning: Invalid action format: '{raw_action}'")
+        # Try to extract the first valid-looking action
+        for word in raw_action.split():
+            if word.upper() in ["DONE", "FAIL"]:
+                raw_action = word.upper()
+                break
+    
+    # Check if task is done or failed
+    is_done = raw_action.upper() in ["DONE", "FAIL"]
+    
+    # Translate to coordinates if it's a valid action
+    coordinate_action = None
+    if is_valid_action(raw_action) and not is_done:
+        coordinate_actions = translate_som_to_coordinates([raw_action], som_elements)
+        coordinate_action = coordinate_actions[0] if coordinate_actions else None
+    
+    return raw_action, coordinate_action
+
+
 def generate_plan(task, vision_data, model_path, bbox, temperature=0.3, max_tokens=512):
     """
     Generate action plan using LLM with Set-of-Marks abstraction.
@@ -471,7 +638,7 @@ def generate_plan(task, vision_data, model_path, bbox, temperature=0.3, max_toke
 
 
 def main():
-    task = "Open Gmail and search for 'meeting notes'"
+    task = "Search for cat pictures on Google Images"
     vision_file = "./vision_files/gpu_output.json"
     model_path = "planner_module/models/llama-3.2-1b"
     temperature = 0.3
@@ -484,7 +651,7 @@ def main():
     # Load vision data
     vision_data = load_vision_json(vision_file)
     
-    output, coordinate_actions = generate_plan(
+    output, action = generate_step(
         task=task,
         vision_data=vision_data,
         model_path=model_path,
@@ -501,8 +668,7 @@ def main():
     
     print("\nTRANSLATED ACTIONS (Coordinates):")
     print("="*80)
-    for action in coordinate_actions:
-        print(action)
+    print(action)
     print("="*80)
 
 
