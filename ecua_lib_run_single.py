@@ -180,7 +180,6 @@ def parse_planner_action(line: str):
 
     parts = line.split()
     cmd = parts[0].upper()
-    # rest = parts[1:]
     rest = [r.replace(",", "") for r in parts[1:]]
 
     # MOVE_TO x y
@@ -207,7 +206,6 @@ def parse_planner_action(line: str):
             "parameters": {"keys": keys}
         }
 
-    # TYPING "hello world"
     if cmd == "TYPING":
         # Everything after TYPING is text
         text = line[len("TYPING"):].strip()
@@ -223,6 +221,7 @@ def parse_planner_action(line: str):
 
 def run_single_example(domain, example_id, env, example, max_steps, instruction, args, example_result_dir):
     # runtime_logger = setup_logger(example, example_result_dir)
+    global parsed_json, actions_raw, response
 
     if hasattr(env, "set_max_steps_budget"):
         env.set_max_steps_budget(max_steps)
@@ -232,11 +231,7 @@ def run_single_example(domain, example_id, env, example, max_steps, instruction,
     # Reset environment first to get fresh VM IP
     env.reset(task_config=example)
 
-    # Reset agent with fresh VM IP (for snapshot reverts)
-    # try:
-    #     agent.reset(runtime_logger, vm_ip=env.vm_ip)
-    # except Exception as e:
-    #     agent.reset(vm_ip=env.vm_ip)
+    # TODO Reset agent call here
 
     time.sleep(60) # Wait for the environment to be ready
     obs = env._get_obs() # Get the initial observation
@@ -247,16 +242,30 @@ def run_single_example(domain, example_id, env, example, max_steps, instruction,
     else:
         parsed_json = run_vision_subprocess_cpu(obs['screenshot'],(0,0,1920,1080))
 
+    response, actions_raw = planner.generate_plan(instruction, parsed_json, (0,0,1920,1080), "CSE291_AI_Agent/ecua2_agent/planner_module/models/llama-3.2-3B-Instruct")
+    actions = normalize_actions(actions_raw, domain, example_id)
+
     done = False
     step_idx = 0
     env.controller.start_recording()
     while not done and step_idx < max_steps:
 
         #planner call here
-        response, actions_raw = planner.generate_plan(instruction, parsed_json, (0,0,1920,1080), "CSE291_AI_Agent/ecua2_agent/planner_module/models/llama-3.2-3B-Instruct")
-        # logger.info("actions: ******** %s", actions_raw)
-
-        # filter the action command supose to be done in planner module
+        if args.single_shot_planner:
+            response, actions_raw = planner.generate_plan(instruction, parsed_json, (0,0,1920,1080), "CSE291_AI_Agent/ecua2_agent/planner_module/models/llama-3.2-3B-Instruct")
+        else:
+            # print("****** I am in vision and planner iterative call ***********")
+            # step_idx +=1
+            obs = env._get_obs() 
+            if args.v_gpu:
+                parsed_json = run_vision_subprocess_gpu(obs['screenshot'])
+            else:
+                parsed_json = run_vision_subprocess_cpu(obs['screenshot'],(0,0,1920,1080))
+                # call one action planner
+            response, actions_raw = planner.generate_plan(instruction, parsed_json, (0,0,1920,1080), "CSE291_AI_Agent/ecua2_agent/planner_module/models/llama-3.2-3B-Instruct")
+            
+        # filter the action command to only accept computer_13 but 
+        # we log the not allowed command to study the agent output
         actions = normalize_actions(actions_raw, domain, example_id)
 
         for action_str in actions:

@@ -214,7 +214,8 @@ def config() -> argparse.Namespace:
 
     # logging related
     parser.add_argument("--result_dir", type=str, default="./results")
-    parser.add_argument("--v_gpu", type=bool, default=False)
+    parser.add_argument("--v_gpu", type=bool, default=True)
+    parser.add_argument("--single_shot_planner", type=bool, default=True)
     args = parser.parse_args()
 
     return args
@@ -256,6 +257,7 @@ def test(args: argparse.Namespace, test_all_meta: dict) -> None:
         os_type="Ubuntu",
         require_a11y_tree=args.observation_type
         in ["a11y_tree", "screenshot_a11y_tree", "som"],
+        client_password="password",
     )
 
     # optional mapping from (domain, example_id) -> config file path
@@ -318,7 +320,7 @@ def test(args: argparse.Namespace, test_all_meta: dict) -> None:
                 with open(os.path.join(example_result_dir, "traj.jsonl"), "a") as f:
                     f.write(
                         json.dumps(
-                            {"Error": f"Time limit exceeded in {domain}/{example_id}"}
+                            {"Error": f"Exception in {domain}/{example_id}: {repr(e)}"}
                         )
                     )
                     f.write("\n")

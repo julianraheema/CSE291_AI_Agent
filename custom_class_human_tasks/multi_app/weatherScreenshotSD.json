@@ -1,7 +1,7 @@
 {
   "id": "weather-san-diego-screenshot",
   "snapshot": "chrome",
-  "instruction": "Open internet browser and visit weather.gov/sgx/ site. Press F11 in keyboard button to switch to fullscreen, then take a screenshot by pressing Alt+Print keyboard, and save it to ~/Pictures/san_diego_weather.png.",
+  "instruction": "Open the terminal by pressing Ctrl+Alt+T, then run google-chrome https://www.weather.gov/sgx/ and press HOTKEY ENTER. Wait for the page to load, press F11 to enter fullscreen, wait briefly, then press Alt+Print to capture the screen. Next, run gnome-screenshot -w -f ~/Documents/san_diego_weather.png and press HOTKEY ENTER, wait for the screenshot to save, and complete the task.",
   "source": "user",
 
   "config": [

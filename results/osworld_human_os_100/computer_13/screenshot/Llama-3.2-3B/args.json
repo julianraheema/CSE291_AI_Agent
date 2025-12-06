@@ -1,0 +1,23 @@
+{
+    "path_to_vm": null,
+    "provider_name": "docker",
+    "headless": true,
+    "action_space": "computer_13",
+    "observation_type": "screenshot",
+    "screen_width": 1920,
+    "screen_height": 1080,
+    "sleep_after_execution": 3.0,
+    "max_steps": 100,
+    "max_trajectory_length": 3,
+    "test_config_base_dir": "evaluation_examples",
+    "model": "Llama-3.2-3B",
+    "temperature": 1.0,
+    "top_p": 0.9,
+    "max_tokens": 1500,
+    "stop_token": null,
+    "domain": "all",
+    "test_all_meta_path": "evaluation_examples/test_all.json",
+    "tasks_path": "../osworld-human/os/",
+    "result_dir": "./results/osworld_human_os_100",
+    "v_gpu": true
+}

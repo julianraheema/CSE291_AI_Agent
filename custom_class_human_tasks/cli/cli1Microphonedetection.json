@@ -1,7 +1,7 @@
 {
   "id": "cli-microphone-ascii-visualizer",
   "snapshot": "os",
-  "instruction": "Turn live microphone audio into an ASCII visualizer in the terminal using Linux CLI tools.",
+  "instruction": "press HOTKEY ctrl+alt+t to open a terminal, then install the required tools and turn live microphone audio into an ASCII visualizer: first type sudo apt install sox ffmpeg jp2a -y then press HOTKEY ENTER then type password then HOTKEY ENTER to install the CLI programs, then type arecord -l and press HOTKEY ENTER to inspect the available audio capture devices, then type arecord -f cd -t wav mic.wav then press HOTKEY ENTER to record a short sample from the default microphone into a WAV file, then type sox mic.wav -c 1 -r 8000 mono.wav and press HOTKEY ENTER to convert it to a mono, 8 kHz WAV file, then type sox mono.wav -n spectrogram -o spectrogram.png and press HOTKEY ENTER to generate a spectrogram image, and finally type jp2a spectrogram.png --width=80 and press HOTKEY ENTER to render that spectrogram as an ASCII visualization directly in the terminal.",
   "source": "user",
 
   "config": [

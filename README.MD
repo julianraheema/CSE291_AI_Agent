@@ -44,7 +44,30 @@ conda activate osworld
 Ensure LLM models are located at:
 
 ```bash
-ls OSWorld/CSE291_AI_Agent/ecua2_agent/planner_module/models/
+ls CSE291_AI_Agent/ecua2_agent/planner_module/models/
+```
+
+If no model exist, please install using these instructions:
+
+
+#### Step 1: Install Hugging Face Hub
+```bash
+pip install -U "huggingface_hub"
+```
+
+#### Step 2: Log in to Hugging Face
+1. Create account: https://huggingface.co 
+2. Request access: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
+3. Create access token: https://huggingface.co/settings/tokens 
+4. Login:
+```bash
+hf auth login
+```
+
+#### Step 3: Download Model
+```bash
+mkdir -p models
+hf download meta-llama/Llama-3.2-3B-Instruct --local-dir ./CSE291_AI_Agent/ecua2_agent/planner_module/models/llama-3.2-3b
 ```
 
 ### 5. Run Agent Inside OSWorld
@@ -81,6 +104,17 @@ Success Rate    : 4.17%
 Avg Result      : 0.0417
 WES+ (mean)     : 0.0056 (0.56%)
 WES- (mean)     : -0.2875 (-28.75%)
+```
+
+For custom tasks:
+```bash
+OSWorld-Human custom metrics summary
+------------------------------------
+Number of Tasks : 10
+Success Rate    : 20.00%
+Avg Result      : 0.2000
+WES+ (mean)     : 0.0100 (1.00%)
+WES- (mean)     : -0.0870 (-8.70%)
 ```
 
 

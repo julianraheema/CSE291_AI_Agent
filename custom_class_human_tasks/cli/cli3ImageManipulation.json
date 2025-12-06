@@ -1,7 +1,7 @@
 {
   "id": "cli-image-blur-blend-ascii",
   "snapshot": "os",
-  "instruction": "Download a black image from the internet, apply grayscale and blur effects, blend versions together, display ASCII output, and clean up temporary files.",
+  "instruction": "Open the terminal using HOTKEY ctrl+alt+t, then TYPE: sudo apt install imagemagick jp2a -y and press HOTKEY ENTER, then type password then HOTKEY ENTER then TYPE curl -s -L -o sample.jpg https://upload.wikimedia.org/wikipedia/commons/9/99/Black_square.jpg and press HOTKEY ENTER, then run convert sample.jpg -resize 200x200 resized.jpg and press HOTKEY ENTER, then TYPE convert resized.jpg -colorspace Gray gray.jpg and press HOTKEY ENTER, TYPE run convert gray.jpg -blur 0x6 blur.jpg and press HOTKEY ENTER, then TYPE convert gray.jpg blur.jpg -compose blend -define compose:args=50,50 -composite blend.jpg and press HOTKEY ENTER, then TYPE jp2a blend.jpg --width=80 --colors and press HOTKEY ENTER, then TYPE display blend.jpg and press HOTKEY ENTER, then delete temporary files by running rm resized.jpg gray.jpg blur.jpg sample.jpg and pressing HOTKEY ENTER, then TYPE rm blend.jpg and press HOTKEY ENTER to finish.",
   "source": "user",
 
   "config": [
