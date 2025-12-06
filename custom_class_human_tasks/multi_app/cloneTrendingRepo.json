@@ -1,0 +1,102 @@
+{
+  "id": "github-trending-clone-top",
+  "snapshot": "chrome",
+  "instruction": "Open the terminal using HOTKEY ctrl+alt+t, then type google-chrome https://github.com/trending and press HOTKEY ENTER. After the page loads, click the first trending repository title, then click the “Code” button, select “HTTPS,” and click the copy icon to copy the clone URL. Open a new terminal with Ctrl+Alt+T and run mkdir -p ~/Documents/trending_repos && cd ~/Documents/trending_repos, then press HOTKEY ENTER. Next, run git clone $(xclip -o -selection clipboard) and press HOTKEY ENTER, wait for the clone to finish, then HOTKEY ENTER the newly created repository directory using cd $(ls -t | head -1) and press HOTKEY ENTER. Finally, launch the project in VS Code by typing code ., press HOTKEY ENTER, wait for it to load, and complete the task.",
+  "source": "user",
+
+  "config": [
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "google-chrome",
+          "--remote-debugging-port=1337",
+          "https://github.com/trending"
+        ]
+      }
+    }
+  ],
+
+  "trajectory": "trajectories/github-trending-clone-top",
+
+  "related_apps": [
+    "chrome",
+    "os",
+    "terminal",
+    "vscode"
+  ],
+
+  "evaluator": {
+    "func": "infeasible"
+  },
+
+  "human-ground-truth": {
+    "single-action": [
+      "`HOTKEY` 'Ctrl+Alt+T'",
+      "`TYPING` google-chrome https://github.com/trending",
+      "`PRESS` Enter",
+      "`WAIT` 3000",
+      "`CLICK` //article[1]//h2/a",
+      "`WAIT` 2000",
+      "`CLICK` //button[contains(@aria-label, 'Code')]",
+      "`WAIT` 500",
+      "`CLICK` //button[contains(text(), 'HTTPS')]",
+      "`WAIT` 300",
+      "`CLICK` //button[@aria-label='Copy']",
+      "`WAIT` 500",
+      "`HOTKEY` 'Ctrl+Alt+T'",
+      "`TYPING` mkdir -p ~/Documents/trending_repos && cd ~/Documents/trending_repos",
+      "`PRESS` Enter",
+      "`WAIT` 500",
+      "`TYPING` git clone $(xclip -o -selection clipboard)",
+      "`PRESS` Enter",
+      "`WAIT` 5000",
+      "`TYPING` cd $(ls -t | head -1)",
+      "`PRESS` Enter",
+      "`WAIT` 500",
+      "`TYPING` code .",
+      "`PRESS` Enter",
+      "`WAIT` 3000",
+      "`DONE`"
+    ],
+
+    "grouped-action": [
+      [
+        "`HOTKEY` 'Ctrl+Alt+T'",
+        "`TYPING` google-chrome https://github.com/trending",
+        "`PRESS` Enter",
+        "`WAIT` 3000"
+      ],
+      [
+        "`CLICK` //article[1]//h2/a",
+        "`WAIT` 2000",
+        "`CLICK` //button[contains(@aria-label, 'Code')]",
+        "`WAIT` 500",
+        "`CLICK` //button[contains(text(), 'HTTPS')]",
+        "`WAIT` 300",
+        "`CLICK` //button[@aria-label='Copy']",
+        "`WAIT` 500"
+      ],
+      [
+        "`HOTKEY` 'Ctrl+Alt+T'",
+        "`TYPING` mkdir -p ~/Documents/trending_repos && cd ~/Documents/trending_repos",
+        "`PRESS` Enter",
+        "`WAIT` 500"
+      ],
+      [
+        "`TYPING` git clone $(xclip -o -selection clipboard)",
+        "`PRESS` Enter",
+        "`WAIT` 5000"
+      ],
+      [
+        "`TYPING` cd $(ls -t | head -1)",
+        "`PRESS` Enter",
+        "`WAIT` 500",
+        "`TYPING` code .",
+        "`PRESS` Enter",
+        "`WAIT` 3000",
+        "`DONE`"
+      ]
+    ]
+  }
+}

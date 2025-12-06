@@ -1,0 +1,65 @@
+[
+  {
+    "application": "custom",
+    "task_id": "cli-microphone-ascii-visualizer",
+    "status": "success",
+    "score": 0,
+    "timestamp": "2025-12-05 13:51:13"
+  },
+  {
+    "application": "custom",
+    "task_id": "cli-cpu-heatmap",
+    "status": "success",
+    "score": 0,
+    "timestamp": "2025-12-05 13:54:15"
+  },
+  {
+    "application": "custom",
+    "task_id": "cli-image-blur-blend-ascii",
+    "status": "success",
+    "score": 0,
+    "timestamp": "2025-12-05 13:57:36"
+  },
+  {
+    "application": "custom",
+    "task_id": "open-terminal-run-top",
+    "status": "success",
+    "score": 0,
+    "timestamp": "2025-12-05 13:59:55"
+  },
+  {
+    "application": "custom",
+    "task_id": "8b4e6aaf-0b14-4c17-b469-908f1b61aaf2",
+    "status": "success",
+    "score": 0,
+    "timestamp": "2025-12-05 14:02:12"
+  },
+  {
+    "application": "custom",
+    "task_id": "github-trending-clone-top",
+    "status": "success",
+    "score": 0,
+    "timestamp": "2025-12-05 14:04:23"
+  },
+  {
+    "application": "custom",
+    "task_id": "leetcode-daily-challenge-screenshot",
+    "status": "success",
+    "score": 0,
+    "timestamp": "2025-12-05 14:07:01"
+  },
+  {
+    "application": "custom",
+    "task_id": "quickmap-california-roadconditions-screenshot",
+    "status": "success",
+    "score": 0,
+    "timestamp": "2025-12-05 14:10:21"
+  },
+  {
+    "application": "custom",
+    "task_id": "spotify-create-dated-playlist",
+    "status": "success",
+    "score": 0,
+    "timestamp": "2025-12-05 14:14:26"
+  }
+]

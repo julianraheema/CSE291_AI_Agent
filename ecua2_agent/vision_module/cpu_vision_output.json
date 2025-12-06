@@ -1,0 +1,2780 @@
+{
+   "window": {
+      "bbox": [
+         0,
+         0,
+         1920,
+         1080
+      ],
+      "scale": 1.0
+   },
+   "elements": [
+      {
+         "id": "t_852ae1",
+         "role": "text",
+         "text": "Activities",
+         "bbox": [
+            14,
+            6,
+            82,
+            20
+         ],
+         "conf": 0.9999629259109497,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_8da727",
+         "role": "text",
+         "text": "A Visual Studio Code",
+         "bbox": [
+            128,
+            6,
+            182,
+            20
+         ],
+         "conf": 0.9576680064201355,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_b169c5",
+         "role": "text",
+         "text": "Nov 2210:46",
+         "bbox": [
+            902,
+            4,
+            148,
+            20
+         ],
+         "conf": 0.982961118221283,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_f0f552",
+         "role": "text",
+         "text": "Edit Selection",
+         "bbox": [
+            92,
+            43,
+            133,
+            20
+         ],
+         "conf": 0.9902835488319397,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_ef0b4d",
+         "role": "text",
+         "text": "View",
+         "bbox": [
+            217,
+            43,
+            61,
+            20
+         ],
+         "conf": 0.9982805252075195,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_889e35",
+         "role": "text",
+         "text": "Go",
+         "bbox": [
+            290,
+            44,
+            27,
+            18
+         ],
+         "conf": 0.999774158000946,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_1fd62a",
+         "role": "text",
+         "text": "Run",
+         "bbox": [
+            331,
+            44,
+            36,
+            18
+         ],
+         "conf": 0.9992830157279968,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_d2f811",
+         "role": "text",
+         "text": "Terminal",
+         "bbox": [
+            379,
+            43,
+            74,
+            20
+         ],
+         "conf": 0.9999774694442749,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_728e5f",
+         "role": "text",
+         "text": "Help",
+         "bbox": [
+            462,
+            43,
+            43,
+            21
+         ],
+         "conf": 0.9999346137046814,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_f1e568",
+         "role": "text",
+         "text": "K",
+         "bbox": [
+            531,
+            43,
+            20,
+            21
+         ],
+         "conf": 0.8431107401847839,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_b9b93c",
+         "role": "text",
+         "text": "7",
+         "bbox": [
+            566,
+            43,
+            20,
+            21
+         ],
+         "conf": 0.9262282252311707,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_03cbd5",
+         "role": "text",
+         "text": "Repo",
+         "bbox": [
+            932,
+            39,
+            73,
+            28
+         ],
+         "conf": 0.9997905492782593,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_657b6a",
+         "role": "text",
+         "text": "EXPLORER",
+         "bbox": [
+            81,
+            90,
+            72,
+            15
+         ],
+         "conf": 0.9999225735664368,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_4ab9dd",
+         "role": "text",
+         "text": "2",
+         "bbox": [
+            378,
+            90,
+            15,
+            15
+         ],
+         "conf": 0.9975274205207825,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_84a61e",
+         "role": "text",
+         "text": "controller.py u",
+         "bbox": [
+            397,
+            84,
+            118,
+            27
+         ],
+         "conf": 0.9926060438156128,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_803f2a",
+         "role": "text",
+         "text": "README.MD ../planner_module U",
+         "bbox": [
+            580,
+            85,
+            258,
+            25
+         ],
+         "conf": 0.9815904498100281,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_0cd5af",
+         "role": "text",
+         "text": "README.MD .../vision_module U",
+         "bbox": [
+            902,
+            86,
+            245,
+            21
+         ],
+         "conf": 0.9620680212974548,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_67301e",
+         "role": "text",
+         "text": "2",
+         "bbox": [
+            1200,
+            90,
+            15,
+            14
+         ],
+         "conf": 0.9971920847892761,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_4555d4",
+         "role": "text",
+         "text": "vision_CPU.py 2, u X",
+         "bbox": [
+            1220,
+            86,
+            165,
+            24
+         ],
+         "conf": 0.9561260342597961,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_95aa24",
+         "role": "text",
+         "text": "2",
+         "bbox": [
+            1411,
+            90,
+            15,
+            15
+         ],
+         "conf": 0.9987823367118835,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_7b2b2a",
+         "role": "text",
+         "text": "planner.py 1, U",
+         "bbox": [
+            1430,
+            86,
+            116,
+            24
+         ],
+         "conf": 0.9876304864883423,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_4bf471",
+         "role": "text",
+         "text": "REPO",
+         "bbox": [
+            79,
+            124,
+            44,
+            17
+         ],
+         "conf": 0.9997674822807312,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_1f680e",
+         "role": "text",
+         "text": "CSE291_Al_Agent > ecua-2_agent > vision_module >",
+         "bbox": [
+            380,
+            123,
+            402,
+            21
+         ],
+         "conf": 0.9706591963768005,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_65a300",
+         "role": "text",
+         "text": "2",
+         "bbox": [
+            782,
+            126,
+            19,
+            15
+         ],
+         "conf": 0.9945433139801025,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_b1baa3",
+         "role": "text",
+         "text": "vision_CPU.py > ..",
+         "bbox": [
+            794,
+            123,
+            146,
+            21
+         ],
+         "conf": 0.9454297423362732,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_4a00d1",
+         "role": "text",
+         "text": "> .venv",
+         "bbox": [
+            81,
+            153,
+            61,
+            16
+         ],
+         "conf": 0.9905489683151245,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_8d2829",
+         "role": "text",
+         "text": "10",
+         "bbox": [
+            392,
+            151,
+            28,
+            24
+         ],
+         "conf": 0.9998936057090759,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_59636d",
+         "role": "text",
+         "text": "from",
+         "bbox": [
+            448,
+            152,
+            48,
+            21
+         ],
+         "conf": 0.9999899864196777,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_0e03b6",
+         "role": "text",
+         "text": "paddleocr",
+         "bbox": [
+            499,
+            153,
+            105,
+            20
+         ],
+         "conf": 0.9999352693557739,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_7eee74",
+         "role": "text",
+         "text": "import PaddleOCR",
+         "bbox": [
+            602,
+            153,
+            176,
+            20
+         ],
+         "conf": 0.9802001714706421,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_e8cf79",
+         "role": "text",
+         "text": "execute_script",
+         "bbox": [
+            1272,
+            154,
+            114,
+            20
+         ],
+         "conf": 0.9998793005943298,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_8ec2e5",
+         "role": "text",
+         "text": "Aa ab, .*",
+         "bbox": [
+            1462,
+            158,
+            75,
+            20
+         ],
+         "conf": 0.9392898082733154,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_fe8d31",
+         "role": "text",
+         "text": "No results",
+         "bbox": [
+            1548,
+            159,
+            74,
+            16
+         ],
+         "conf": 0.995660662651062,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_25e497",
+         "role": "text",
+         "text": "> .vscode",
+         "bbox": [
+            79,
+            175,
+            80,
+            24
+         ],
+         "conf": 0.9790107011795044,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_2d764d",
+         "role": "text",
+         "text": "11",
+         "bbox": [
+            394,
+            177,
+            24,
+            19
+         ],
+         "conf": 0.9457346200942993,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_00256c",
+         "role": "text",
+         "text": "from",
+         "bbox": [
+            447,
+            176,
+            48,
+            21
+         ],
+         "conf": 0.9999916553497314,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_43f1d6",
+         "role": "text",
+         "text": "ultytics",
+         "bbox": [
+            496,
+            172,
+            126,
+            28
+         ],
+         "conf": 0.8202790021896362,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_94ebaa",
+         "role": "text",
+         "text": "import",
+         "bbox": [
+            625,
+            176,
+            73,
+            23
+         ],
+         "conf": 0.9999813437461853,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_e8eb57",
+         "role": "text",
+         "text": "YOLO",
+         "bbox": [
+            693,
+            176,
+            52,
+            21
+         ],
+         "conf": 0.9944077730178833,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_e33de0",
+         "role": "text",
+         "text": "> code",
+         "bbox": [
+            79,
+            204,
+            61,
+            22
+         ],
+         "conf": 0.9838910698890686,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_17265d",
+         "role": "text",
+         "text": "12",
+         "bbox": [
+            393,
+            199,
+            27,
+            24
+         ],
+         "conf": 0.9987614750862122,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_5b87ac",
+         "role": "text",
+         "text": "from",
+         "bbox": [
+            447,
+            200,
+            48,
+            21
+         ],
+         "conf": 0.9999932050704956,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_54741a",
+         "role": "text",
+         "text": "dataclasses",
+         "bbox": [
+            499,
+            201,
+            121,
+            20
+         ],
+         "conf": 0.9623905420303345,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_9401dd",
+         "role": "text",
+         "text": "import",
+         "bbox": [
+            626,
+            201,
+            68,
+            20
+         ],
+         "conf": 0.9999799728393555,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_453f5a",
+         "role": "text",
+         "text": "dataclass, field",
+         "bbox": [
+            697,
+            198,
+            177,
+            25
+         ],
+         "conf": 0.9993466734886169,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_efb732",
+         "role": "text",
+         "text": "154",
+         "bbox": [
+            22,
+            230,
+            25,
+            14
+         ],
+         "conf": 0.9999801516532898,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_960b89",
+         "role": "text",
+         "text": "13",
+         "bbox": [
+            394,
+            223,
+            25,
+            20
+         ],
+         "conf": 0.9998519420623779,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_60dfda",
+         "role": "text",
+         "text": "from",
+         "bbox": [
+            447,
+            223,
+            48,
+            21
+         ],
+         "conf": 0.9999949336051941,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_b0984b",
+         "role": "text",
+         "text": "typing",
+         "bbox": [
+            498,
+            220,
+            69,
+            27
+         ],
+         "conf": 0.9999838471412659,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_05d312",
+         "role": "text",
+         "text": "> code_sample_design_code_goo.",
+         "bbox": [
+            81,
+            234,
+            256,
+            20
+         ],
+         "conf": 0.960444986820221,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_7e0cbb",
+         "role": "text",
+         "text": "import",
+         "bbox": [
+            573,
+            224,
+            69,
+            20
+         ],
+         "conf": 0.9999837875366211,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_174740",
+         "role": "text",
+         "text": ": Any,",
+         "bbox": [
+            634,
+            224,
+            57,
+            21
+         ],
+         "conf": 0.9113070964813232,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_1c362e",
+         "role": "text",
+         "text": "Dict,",
+         "bbox": [
+            698,
+            223,
+            57,
+            21
+         ],
+         "conf": 0.9998971223831177,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_57b720",
+         "role": "text",
+         "text": "Optional",
+         "bbox": [
+            758,
+            222,
+            91,
+            22
+         ],
+         "conf": 0.9997518062591553,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_2e1ab7",
+         "role": "text",
+         "text": "14",
+         "bbox": [
+            394,
+            247,
+            25,
+            20
+         ],
+         "conf": 0.9996815919876099,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_3c9e2d",
+         "role": "text",
+         "text": "CSE291_AI_Agent",
+         "bbox": [
+            98,
+            261,
+            135,
+            19
+         ],
+         "conf": 0.960396945476532,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_6dce51",
+         "role": "text",
+         "text": "15",
+         "bbox": [
+            393,
+            271,
+            26,
+            20
+         ],
+         "conf": 0.999826192855835,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_fa3b28",
+         "role": "text",
+         "text": "#",
+         "bbox": [
+            450,
+            274,
+            10,
+            13
+         ],
+         "conf": 0.9999289512634277,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_0710d7",
+         "role": "text",
+         "text": "class",
+         "bbox": [
+            468,
+            272,
+            58,
+            20
+         ],
+         "conf": 0.9999127388000488,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_cec18d",
+         "role": "text",
+         "text": "for",
+         "bbox": [
+            524,
+            271,
+            46,
+            21
+         ],
+         "conf": 0.9999830722808838,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_7c70da",
+         "role": "text",
+         "text": "storing",
+         "bbox": [
+            571,
+            271,
+            81,
+            24
+         ],
+         "conf": 0.9993699193000793,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_c10cd0",
+         "role": "text",
+         "text": "detected",
+         "bbox": [
+            657,
+            272,
+            91,
+            20
+         ],
+         "conf": 0.9999863505363464,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_880b58",
+         "role": "text",
+         "text": "d elements",
+         "bbox": [
+            739,
+            272,
+            100,
+            20
+         ],
+         "conf": 0.9699299931526184,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_480835",
+         "role": "text",
+         "text": "custom_osworld_human",
+         "bbox": [
+            99,
+            289,
+            193,
+            19
+         ],
+         "conf": 0.9643076658248901,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_bb1d3a",
+         "role": "text",
+         "text": "16",
+         "bbox": [
+            394,
+            295,
+            25,
+            20
+         ],
+         "conf": 0.9999356269836426,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_aba48b",
+         "role": "text",
+         "text": "@dataclass",
+         "bbox": [
+            446,
+            296,
+            110,
+            20
+         ],
+         "conf": 0.9985445141792297,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_6ecb3f",
+         "role": "text",
+         "text": "v ecua-2_agent",
+         "bbox": [
+            88,
+            314,
+            124,
+            22
+         ],
+         "conf": 0.9627043604850769,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_877659",
+         "role": "text",
+         "text": "17",
+         "bbox": [
+            393,
+            318,
+            25,
+            20
+         ],
+         "conf": 0.9997988939285278,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_673b5b",
+         "role": "text",
+         "text": "class",
+         "bbox": [
+            447,
+            318,
+            57,
+            21
+         ],
+         "conf": 0.9999706149101257,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_0433f9",
+         "role": "text",
+         "text": "Element:",
+         "bbox": [
+            508,
+            318,
+            87,
+            20
+         ],
+         "conf": 0.999935507774353,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_9b5e13",
+         "role": "text",
+         "text": "> controller",
+         "bbox": [
+            100,
+            343,
+            95,
+            20
+         ],
+         "conf": 0.9628491997718811,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_501bb5",
+         "role": "text",
+         "text": "18",
+         "bbox": [
+            393,
+            342,
+            26,
+            20
+         ],
+         "conf": 0.9999341368675232,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_d18bd6",
+         "role": "text",
+         "text": "id: str",
+         "bbox": [
+            488,
+            340,
+            80,
+            24
+         ],
+         "conf": 0.9967655539512634,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_d7739e",
+         "role": "text",
+         "text": "> planner_module",
+         "bbox": [
+            100,
+            370,
+            142,
+            20
+         ],
+         "conf": 0.9445971250534058,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_00220b",
+         "role": "text",
+         "text": "19",
+         "bbox": [
+            394,
+            366,
+            25,
+            20
+         ],
+         "conf": 0.9999441504478455,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_4b5dcd",
+         "role": "text",
+         "text": "role: str",
+         "bbox": [
+            489,
+            364,
+            100,
+            23
+         ],
+         "conf": 0.9998123645782471,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_0cd58a",
+         "role": "text",
+         "text": "#",
+         "bbox": [
+            702,
+            368,
+            16,
+            15
+         ],
+         "conf": 0.9991864562034607,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_a4f1e5",
+         "role": "text",
+         "text": "\"button\",",
+         "bbox": [
+            717,
+            366,
+            98,
+            20
+         ],
+         "conf": 0.9453152418136597,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_9ad620",
+         "role": "text",
+         "text": "\"textbox\",",
+         "bbox": [
+            824,
+            364,
+            108,
+            23
+         ],
+         "conf": 0.9999327659606934,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_fe1d6b",
+         "role": "text",
+         "text": "\"icon\", \"text\", etc.",
+         "bbox": [
+            939,
+            364,
+            213,
+            22
+         ],
+         "conf": 0.9808788299560547,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_d7a463",
+         "role": "text",
+         "text": "text: str",
+         "bbox": [
+            488,
+            388,
+            102,
+            25
+         ],
+         "conf": 0.9942779541015625,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_99fe26",
+         "role": "text",
+         "text": "# label or",
+         "bbox": [
+            698,
+            388,
+            112,
+            21
+         ],
+         "conf": 0.9987875819206238,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_efa6de",
+         "role": "text",
+         "text": "for pure icons",
+         "bbox": [
+            844,
+            387,
+            156,
+            27
+         ],
+         "conf": 0.9971922039985657,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_8c7f20",
+         "role": "text",
+         "text": "v vision_module",
+         "bbox": [
+            98,
+            397,
+            132,
+            21
+         ],
+         "conf": 0.9916054606437683,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_2abaca",
+         "role": "text",
+         "text": "20",
+         "bbox": [
+            394,
+            390,
+            25,
+            21
+         ],
+         "conf": 0.9999015927314758,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_6132a2",
+         "role": "text",
+         "text": "IIII",
+         "bbox": [
+            817,
+            391,
+            22,
+            15
+         ],
+         "conf": 0.710827112197876,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_238eb4",
+         "role": "text",
+         "text": "21",
+         "bbox": [
+            393,
+            414,
+            25,
+            20
+         ],
+         "conf": 0.9996247291564941,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_7da8ee",
+         "role": "text",
+         "text": "bbox:",
+         "bbox": [
+            489,
+            414,
+            57,
+            20
+         ],
+         "conf": 0.9998124241828918,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_5f5a1b",
+         "role": "text",
+         "text": "List[int]",
+         "bbox": [
+            550,
+            412,
+            98,
+            24
+         ],
+         "conf": 0.9999232888221741,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_3e4899",
+         "role": "text",
+         "text": "#",
+         "bbox": [
+            702,
+            416,
+            16,
+            15
+         ],
+         "conf": 0.9996020197868347,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_0c395f",
+         "role": "text",
+         "text": "[x, y, w, h] in screen (pixel) coords",
+         "bbox": [
+            714,
+            414,
+            402,
+            24
+         ],
+         "conf": 0.9829615950584412,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_c612b0",
+         "role": "text",
+         "text": "v vision_files",
+         "bbox": [
+            108,
+            426,
+            108,
+            20
+         ],
+         "conf": 0.982161819934845,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_b05391",
+         "role": "text",
+         "text": "22",
+         "bbox": [
+            393,
+            438,
+            26,
+            20
+         ],
+         "conf": 0.9991306066513062,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_90e8aa",
+         "role": "text",
+         "text": "conf: float",
+         "bbox": [
+            488,
+            436,
+            122,
+            24
+         ],
+         "conf": 0.9902438521385193,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_fa6cf0",
+         "role": "text",
+         "text": "{}cpu_vision_output.json",
+         "bbox": [
+            116,
+            454,
+            196,
+            19
+         ],
+         "conf": 0.9842206835746765,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_014804",
+         "role": "text",
+         "text": "23",
+         "bbox": [
+            392,
+            459,
+            28,
+            24
+         ],
+         "conf": 0.9998571872711182,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_965019",
+         "role": "text",
+         "text": "source: str",
+         "bbox": [
+            489,
+            463,
+            121,
+            19
+         ],
+         "conf": 0.9996286034584045,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_3bfe31",
+         "role": "text",
+         "text": "# \"ocr\"",
+         "bbox": [
+            698,
+            462,
+            80,
+            20
+         ],
+         "conf": 0.9723615646362305,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_cb18cc",
+         "role": "text",
+         "text": "or \"detector\"",
+         "bbox": [
+            780,
+            462,
+            145,
+            20
+         ],
+         "conf": 0.9997254014015198,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_4ea89e",
+         "role": "text",
+         "text": "(yolo)",
+         "bbox": [
+            933,
+            462,
+            62,
+            21
+         ],
+         "conf": 0.9998285174369812,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_3cfc5a",
+         "role": "text",
+         "text": "{}",
+         "bbox": [
+            120,
+            483,
+            18,
+            14
+         ],
+         "conf": 0.8979587554931641,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_a7eb36",
+         "role": "text",
+         "text": "gpu_omni_output.json",
+         "bbox": [
+            134,
+            480,
+            175,
+            21
+         ],
+         "conf": 0.9691252708435059,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_890642",
+         "role": "text",
+         "text": "24",
+         "bbox": [
+            393,
+            484,
+            26,
+            20
+         ],
+         "conf": 0.9998817443847656,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_7d19ee",
+         "role": "text",
+         "text": "#_meta: Dict[str. Anvl",
+         "bbox": [
+            488,
+            486,
+            234,
+            20
+         ],
+         "conf": 0.9417463541030884,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_38d3a2",
+         "role": "text",
+         "text": "> vision_GPU",
+         "bbox": [
+            112,
+            510,
+            103,
+            16
+         ],
+         "conf": 0.9690380096435547,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_7341ec",
+         "role": "text",
+         "text": "PROBLEMS",
+         "bbox": [
+            384,
+            514,
+            76,
+            16
+         ],
+         "conf": 0.9999048113822937,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_0af954",
+         "role": "text",
+         "text": "OUTPUT",
+         "bbox": [
+            507,
+            514,
+            58,
+            16
+         ],
+         "conf": 0.9991336464881897,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_427a76",
+         "role": "text",
+         "text": "DEBUG CONSOLE",
+         "bbox": [
+            591,
+            514,
+            114,
+            16
+         ],
+         "conf": 0.9940930604934692,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_2de780",
+         "role": "text",
+         "text": "TERMINAL",
+         "bbox": [
+            732,
+            514,
+            69,
+            16
+         ],
+         "conf": 0.9995837211608887,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_82e7ec",
+         "role": "text",
+         "text": "PORTS",
+         "bbox": [
+            826,
+            514,
+            48,
+            16
+         ],
+         "conf": 0.9998175501823425,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_31bb65",
+         "role": "text",
+         "text": "GITLENS",
+         "bbox": [
+            900,
+            514,
+            57,
+            16
+         ],
+         "conf": 0.9998982548713684,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_308f62",
+         "role": "text",
+         "text": "python - vision_module",
+         "bbox": [
+            1503,
+            516,
+            181,
+            19
+         ],
+         "conf": 0.9758102893829346,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_a3a5be",
+         "role": "text",
+         "text": "+ v",
+         "bbox": [
+            1683,
+            518,
+            43,
+            13
+         ],
+         "conf": 0.9286094307899475,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_71bfa1",
+         "role": "text",
+         "text": "X",
+         "bbox": [
+            1884,
+            518,
+            13,
+            10
+         ],
+         "conf": 0.8942812085151672,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_7bcc5a",
+         "role": "text",
+         "text": "cpu_vision_output.json",
+         "bbox": [
+            122,
+            536,
+            181,
+            19
+         ],
+         "conf": 0.969504714012146,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_04cacb",
+         "role": "text",
+         "text": "U",
+         "bbox": [
+            330,
+            541,
+            10,
+            12
+         ],
+         "conf": 0.9903662204742432,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_e87be6",
+         "role": "text",
+         "text": "README.MD",
+         "bbox": [
+            128,
+            565,
+            99,
+            16
+         ],
+         "conf": 0.9998547434806824,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_8b8d32",
+         "role": "text",
+         "text": "1",
+         "bbox": [
+            387,
+            554,
+            8,
+            18
+         ],
+         "conf": 0.9399714469909668,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_5e3ff2",
+         "role": "text",
+         "text": "U",
+         "bbox": [
+            330,
+            568,
+            10,
+            13
+         ],
+         "conf": 0.9965481162071228,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_8bbe11",
+         "role": "text",
+         "text": "(Repo)_jraheema@lportal:~/CSE291A_AI_Agents_and_Systems/Repo/CSE291_AI_Agent/ecua-2_agent/vision_module(integration_standalone)$",
+         "bbox": [
+            387,
+            573,
+            1285,
+            24
+         ],
+         "conf": 0.9924590587615967,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_b6c411",
+         "role": "text",
+         "text": "python vision_CPU.py",
+         "bbox": [
+            1672,
+            574,
+            207,
+            24
+         ],
+         "conf": 0.9991282224655151,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_db80db",
+         "role": "text",
+         "text": "vision_CPU.py",
+         "bbox": [
+            124,
+            589,
+            111,
+            22
+         ],
+         "conf": 0.9968588352203369,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_26542f",
+         "role": "text",
+         "text": "2, U",
+         "bbox": [
+            310,
+            590,
+            33,
+            22
+         ],
+         "conf": 0.9965031147003174,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_81d365",
+         "role": "text",
+         "text": "/home/jraheema/CSE291A_AI_Agents_and_Systems/Repo/CSE291_AI_Agent/ecua-2_agent/vision_module/vision_CPU.py:43: DeprecationWarning:",
+         "bbox": [
+            385,
+            594,
+            1304,
+            25
+         ],
+         "conf": 0.9930264949798584,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_eda535",
+         "role": "text",
+         "text": "The",
+         "bbox": [
+            1694,
+            598,
+            37,
+            18
+         ],
+         "conf": 0.9999745488166809,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_53c07e",
+         "role": "text",
+         "text": "parameter",
+         "bbox": [
+            1734,
+            600,
+            97,
+            15
+         ],
+         "conf": 0.9999682307243347,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_88766d",
+         "role": "text",
+         "text": "det",
+         "bbox": [
+            1843,
+            598,
+            38,
+            16
+         ],
+         "conf": 0.9996477961540222,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_846a1c",
+         "role": "text",
+         "text": "yolov8n.pt",
+         "bbox": [
+            106,
+            618,
+            104,
+            20
+         ],
+         "conf": 0.9995692372322083,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_9c9667",
+         "role": "text",
+         "text": "U",
+         "bbox": [
+            330,
+            622,
+            10,
+            13
+         ],
+         "conf": 0.9875989556312561,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_875d29",
+         "role": "text",
+         "text": "b thresh'",
+         "bbox": [
+            385,
+            618,
+            94,
+            20
+         ],
+         "conf": 0.9899085164070129,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_8c7563",
+         "role": "text",
+         "text": "has been deprecated and will be removed in the future. Please use 'text_det_thresh instead.",
+         "bbox": [
+            478,
+            615,
+            928,
+            25
+         ],
+         "conf": 0.9594026207923889,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_e93e5b",
+         "role": "text",
+         "text": "yolov8s.pt",
+         "bbox": [
+            108,
+            645,
+            103,
+            20
+         ],
+         "conf": 0.9996399879455566,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_546339",
+         "role": "text",
+         "text": "U",
+         "bbox": [
+            327,
+            649,
+            14,
+            15
+         ],
+         "conf": 0.9986509680747986,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_8e8608",
+         "role": "text",
+         "text": "self.ocr = PaddleOCR(",
+         "bbox": [
+            404,
+            639,
+            211,
+            20
+         ],
+         "conf": 0.9554551243782043,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_5a1ab6",
+         "role": "text",
+         "text": "/home/jraheema/CSE291A_AI_Agents_and_Systems/Repo/.venv/lib/python3.12/site-packages/paddle/utils/cpp_extension/extension_utils.py:718:UserWarning: No",
+         "bbox": [
+            385,
+            661,
+            1514,
+            24
+         ],
+         "conf": 0.9836073517799377,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_417f5f",
+         "role": "text",
+         "text": "osworld_tasks",
+         "bbox": [
+            108,
+            673,
+            110,
+            21
+         ],
+         "conf": 0.9999459385871887,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_4eec0e",
+         "role": "text",
+         "text": "ccache found. Please be aware that recompiling all source files may be required. You can download and install ccache from: https://github.com/ccache/c",
+         "bbox": [
+            393,
+            682,
+            1507,
+            25
+         ],
+         "conf": 0.9910078048706055,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_a72fd4",
+         "role": "text",
+         "text": ".gitignore",
+         "bbox": [
+            110,
+            702,
+            75,
+            20
+         ],
+         "conf": 0.9997577667236328,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_a76c10",
+         "role": "text",
+         "text": "cache/blob/master/doc/INSTALL.md",
+         "bbox": [
+            385,
+            708,
+            323,
+            19
+         ],
+         "conf": 0.992467999458313,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_422453",
+         "role": "text",
+         "text": "README.MD",
+         "bbox": [
+            110,
+            730,
+            97,
+            15
+         ],
+         "conf": 0.9997317790985107,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_af8964",
+         "role": "text",
+         "text": "warnings.warn(warning_message)",
+         "bbox": [
+            404,
+            730,
+            302,
+            20
+         ],
+         "conf": 0.9889594912528992,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_d69fb4",
+         "role": "text",
+         "text": "for-dev-needed-for-projet",
+         "bbox": [
+            97,
+            756,
+            195,
+            20
+         ],
+         "conf": 0.9997451901435852,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_e4b95c",
+         "role": "text",
+         "text": "Creating model:",
+         "bbox": [
+            385,
+            751,
+            155,
+            20
+         ],
+         "conf": 0.9988895654678345,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_5c38ac",
+         "role": "text",
+         "text": "('PP-LCNet_xl_0_textline_ori',",
+         "bbox": [
+            543,
+            751,
+            303,
+            20
+         ],
+         "conf": 0.9403799772262573,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_644994",
+         "role": "text",
+         "text": "None)",
+         "bbox": [
+            853,
+            751,
+            52,
+            21
+         ],
+         "conf": 0.9990044832229614,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_e45b3d",
+         "role": "text",
+         "text": "Model files",
+         "bbox": [
+            384,
+            772,
+            120,
+            20
+         ],
+         "conf": 0.987508237361908,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_31c68f",
+         "role": "text",
+         "text": "; already exist. Using",
+         "bbox": [
+            493,
+            774,
+            217,
+            20
+         ],
+         "conf": 0.9846686720848083,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_f4a278",
+         "role": "text",
+         "text": "cached",
+         "bbox": [
+            715,
+            775,
+            64,
+            16
+         ],
+         "conf": 0.9999770522117615,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_c59483",
+         "role": "text",
+         "text": "files. To redownload, please delete the directory manually:",
+         "bbox": [
+            783,
+            770,
+            600,
+            25
+         ],
+         "conf": 0.9871286749839783,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_9fc6ce",
+         "role": "text",
+         "text": "OSWorld",
+         "bbox": [
+            99,
+            784,
+            68,
+            16
+         ],
+         "conf": 0.9718531966209412,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_6f2326",
+         "role": "text",
+         "text": "\"/home/jraheema/.paddlex/official_models/PP-LCNet_x",
+         "bbox": [
+            1386,
+            774,
+            513,
+            19
+         ],
+         "conf": 0.9733296632766724,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_5d820b",
+         "role": "text",
+         "text": ">",
+         "bbox": [
+            86,
+            789,
+            7,
+            9
+         ],
+         "conf": 0.962374210357666,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_fb492d",
+         "role": "text",
+         "text": "1_0_textline_ori",
+         "bbox": [
+            384,
+            795,
+            166,
+            20
+         ],
+         "conf": 0.9984923601150513,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_e86065",
+         "role": "text",
+         "text": "Creating model:",
+         "bbox": [
+            385,
+            816,
+            157,
+            20
+         ],
+         "conf": 0.9970976114273071,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_28ce73",
+         "role": "text",
+         "text": "( 'PP-OCRv5_server_det',",
+         "bbox": [
+            546,
+            817,
+            229,
+            20
+         ],
+         "conf": 0.9523956179618835,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_74d151",
+         "role": "text",
+         "text": "None)",
+         "bbox": [
+            782,
+            817,
+            54,
+            20
+         ],
+         "conf": 0.999282956123352,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_126f38",
+         "role": "text",
+         "text": "Model",
+         "bbox": [
+            385,
+            840,
+            64,
+            16
+         ],
+         "conf": 0.999309241771698,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_d43cdd",
+         "role": "text",
+         "text": "files",
+         "bbox": [
+            442,
+            838,
+            57,
+            20
+         ],
+         "conf": 0.9999914169311523,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_049d30",
+         "role": "text",
+         "text": "already",
+         "bbox": [
+            500,
+            837,
+            80,
+            24
+         ],
+         "conf": 0.9940690994262695,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_64b16a",
+         "role": "text",
+         "text": "exist.",
+         "bbox": [
+            583,
+            838,
+            64,
+            20
+         ],
+         "conf": 0.9998884797096252,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_ca6c8e",
+         "role": "text",
+         "text": "Using",
+         "bbox": [
+            652,
+            838,
+            57,
+            21
+         ],
+         "conf": 0.999961256980896,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_2da9ea",
+         "role": "text",
+         "text": "cached",
+         "bbox": [
+            714,
+            838,
+            67,
+            20
+         ],
+         "conf": 0.9999826550483704,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_030fa6",
+         "role": "text",
+         "text": "files. To redownload, please delete the directory manually:",
+         "bbox": [
+            783,
+            836,
+            596,
+            25
+         ],
+         "conf": 0.9901573061943054,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_8fe3ca",
+         "role": "text",
+         "text": "k/home/jraheema/.paddlex/official_models/PP-OCRv5_s",
+         "bbox": [
+            1384,
+            838,
+            514,
+            22
+         ],
+         "conf": 0.963687002658844,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_eda9cc",
+         "role": "text",
+         "text": "erver",
+         "bbox": [
+            384,
+            861,
+            58,
+            20
+         ],
+         "conf": 0.9999610185623169,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_73947a",
+         "role": "text",
+         "text": "det'",
+         "bbox": [
+            446,
+            861,
+            42,
+            18
+         ],
+         "conf": 0.941268801689148,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_8884ed",
+         "role": "text",
+         "text": "Creating model:",
+         "bbox": [
+            385,
+            883,
+            163,
+            20
+         ],
+         "conf": 0.994745671749115,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_4ecf50",
+         "role": "text",
+         "text": "( 'en",
+         "bbox": [
+            544,
+            883,
+            48,
+            20
+         ],
+         "conf": 0.9644540548324585,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_b95347",
+         "role": "text",
+         "text": "_PP-0CRv5_mobile_rec',",
+         "bbox": [
+            584,
+            883,
+            222,
+            20
+         ],
+         "conf": 0.9773826599121094,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_885fe0",
+         "role": "text",
+         "text": "None)",
+         "bbox": [
+            813,
+            883,
+            52,
+            20
+         ],
+         "conf": 0.9989363551139832,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_edc180",
+         "role": "text",
+         "text": "Model",
+         "bbox": [
+            385,
+            906,
+            55,
+            16
+         ],
+         "conf": 0.9999324679374695,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_afa023",
+         "role": "text",
+         "text": "files already",
+         "bbox": [
+            442,
+            904,
+            139,
+            20
+         ],
+         "conf": 0.9999236464500427,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_9a28b0",
+         "role": "text",
+         "text": "exist.",
+         "bbox": [
+            582,
+            903,
+            69,
+            20
+         ],
+         "conf": 0.9999547600746155,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_dbdb70",
+         "role": "text",
+         "text": "Using",
+         "bbox": [
+            651,
+            904,
+            58,
+            21
+         ],
+         "conf": 0.9999768137931824,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_20fa99",
+         "role": "text",
+         "text": "cached",
+         "bbox": [
+            714,
+            904,
+            67,
+            20
+         ],
+         "conf": 0.9999824166297913,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_e3f294",
+         "role": "text",
+         "text": "files. To redownload, please delete the directory manually:",
+         "bbox": [
+            783,
+            902,
+            594,
+            22
+         ],
+         "conf": 0.9898112416267395,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_c2125f",
+         "role": "text",
+         "text": "OUTLINE",
+         "bbox": [
+            81,
+            915,
+            64,
+            16
+         ],
+         "conf": 0.9991785883903503,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_2a0459",
+         "role": "text",
+         "text": "/home/jraheema/.paddlex/official_models/en_PP-ocRv",
+         "bbox": [
+            1386,
+            906,
+            512,
+            19
+         ],
+         "conf": 0.9778712391853333,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_d1e95d",
+         "role": "text",
+         "text": "5_mobile_rec'",
+         "bbox": [
+            384,
+            926,
+            133,
+            21
+         ],
+         "conf": 0.9782639145851135,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_7ce197",
+         "role": "text",
+         "text": "TIMELINE",
+         "bbox": [
+            81,
+            943,
+            68,
+            18
+         ],
+         "conf": 0.9997289776802063,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_c2ab76",
+         "role": "text",
+         "text": "Capturing",
+         "bbox": [
+            385,
+            950,
+            94,
+            20
+         ],
+         "conf": 0.9999749064445496,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_bb814a",
+         "role": "text",
+         "text": "Screen",
+         "bbox": [
+            484,
+            950,
+            66,
+            20
+         ],
+         "conf": 0.9999619126319885,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_45735f",
+         "role": "text",
+         "text": "VSIX VIEWER",
+         "bbox": [
+            80,
+            972,
+            93,
+            15
+         ],
+         "conf": 0.9989416599273682,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_6e6e93",
+         "role": "text",
+         "text": "CSE291_AI_Agent",
+         "bbox": [
+            70,
+            996,
+            125,
+            21
+         ],
+         "conf": 0.9690008163452148,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_3e8ff6",
+         "role": "text",
+         "text": "\u2022integration_standalone*",
+         "bbox": [
+            220,
+            999,
+            173,
+            15
+         ],
+         "conf": 0.9955112934112549,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_ebc23b",
+         "role": "text",
+         "text": "Launchpad",
+         "bbox": [
+            519,
+            997,
+            80,
+            20
+         ],
+         "conf": 0.9999508261680603,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_0b9b84",
+         "role": "text",
+         "text": "X ROS2.humble",
+         "bbox": [
+            618,
+            998,
+            118,
+            18
+         ],
+         "conf": 0.9706780314445496,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_90e4cb",
+         "role": "text",
+         "text": "x",
+         "bbox": [
+            753,
+            999,
+            19,
+            14
+         ],
+         "conf": 0.80961674451828,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_fee022",
+         "role": "text",
+         "text": "03",
+         "bbox": [
+            771,
+            997,
+            51,
+            20
+         ],
+         "conf": 0.9069899320602417,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_f2ac33",
+         "role": "text",
+         "text": "Ln 10, Col 32 Spaces: 4",
+         "bbox": [
+            1310,
+            998,
+            177,
+            19
+         ],
+         "conf": 0.9737682938575745,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_8f072d",
+         "role": "text",
+         "text": "UTF-8 LF { Python",
+         "bbox": [
+            1495,
+            998,
+            183,
+            20
+         ],
+         "conf": 0.9413604736328125,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_f5493f",
+         "role": "text",
+         "text": "88 Finish Setup",
+         "bbox": [
+            1688,
+            996,
+            115,
+            22
+         ],
+         "conf": 0.8829767107963562,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_56ea42",
+         "role": "text",
+         "text": "3.10.12",
+         "bbox": [
+            1815,
+            997,
+            57,
+            20
+         ],
+         "conf": 0.9999551773071289,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_7670bd",
+         "role": "text",
+         "text": "SSD",
+         "bbox": [
+            484,
+            1048,
+            30,
+            18
+         ],
+         "conf": 0.9928033947944641,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "t_1b0488",
+         "role": "text",
+         "text": "SSD",
+         "bbox": [
+            542,
+            1048,
+            31,
+            19
+         ],
+         "conf": 0.9984042644500732,
+         "source": "ocr",
+         "meta": {}
+      },
+      {
+         "id": "d_d4229f",
+         "role": "icon",
+         "text": "laptop",
+         "bbox": [
+            1,
+            0,
+            1897,
+            1080
+         ],
+         "conf": 0.4481642246246338,
+         "source": "detector",
+         "meta": {
+            "class_id": 63
+         }
+      },
+      {
+         "id": "d_24a52c",
+         "role": "icon",
+         "text": "tv",
+         "bbox": [
+            4,
+            1,
+            1886,
+            1069
+         ],
+         "conf": 0.2999657988548279,
+         "source": "detector",
+         "meta": {
+            "class_id": 62
+         }
+      }
+   ],
+   "timing_ms": {
+      "ocr": 13776,
+      "yolo": 76,
+      "total": 13852
+   }
+}

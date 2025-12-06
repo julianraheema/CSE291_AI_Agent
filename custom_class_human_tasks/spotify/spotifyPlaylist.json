@@ -1,0 +1,59 @@
+{
+  "id": "spotify-create-dated-playlist",
+  "snapshot": "spotify",
+  "instruction": "Open the terminal using Ctrl+Alt+T, run the spotify command to launch the Spotify app, wait for it to finish loading, click the “Create playlist” button, wait briefly, type the current date using the format $(date '+%B %d %Y'), press HOTKEY ENTER to save the new playlist name, wait a moment for confirmation, and complete the task.",
+  "source": "user",
+
+  "config": [
+    {
+      "type": "launch",
+      "parameters": {
+        "command": ["spotify"]
+      }
+    }
+  ],
+
+  "trajectory": "trajectories/spotify-create-dated-playlist",
+
+  "related_apps": [
+    "spotify",
+    "os",
+    "terminal"
+  ],
+
+  "evaluator": {
+    "func": "infeasible"
+  },
+
+  "human-ground-truth": {
+    "single-action": [
+      "`HOTKEY` 'Ctrl+Alt+T'",
+      "`TYPING` spotify",
+      "`PRESS` Enter",
+      "`WAIT` 5000",
+      "`CLICK` //button[contains(., 'Create playlist') or contains(@aria-label, 'Create playlist')]",
+      "`WAIT` 1000",
+      "`TYPING` $(date '+%B %d %Y')",
+      "`PRESS` Enter",
+      "`WAIT` 1500",
+      "`DONE`"
+    ],
+
+    "grouped-action": [
+      [
+        "`HOTKEY` 'Ctrl+Alt+T'",
+        "`TYPING` spotify",
+        "`PRESS` Enter",
+        "`WAIT` 5000"
+      ],
+      [
+        "`CLICK` //button[contains(., 'Create playlist') or contains(@aria-label, 'Create playlist')]",
+        "`WAIT` 1000",
+        "`TYPING` $(date '+%B %d %Y')",
+        "`PRESS` Enter",
+        "`WAIT` 1500",
+        "`DONE`"
+      ]
+    ]
+  }
+}

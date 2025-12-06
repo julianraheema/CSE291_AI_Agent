@@ -1,0 +1,86 @@
+{
+  "id": "leetcode-daily-challenge-screenshot",
+  "snapshot": "chrome",
+  "instruction": "Open the terminal by pressing Ctrl+Alt+T, then create the directory ~/Documents/leetcode_daily_challenges by typing mkdir -p ~/Documents/leetcode_daily_challenges and pressing HOTKEY ENTER, wait briefly, then type google-chrome https://leetcode.com/problemset and press HOTKEY ENTER to open the LeetCode Problemset page. After the page loads, click the first daily challenge link, wait for it to finish loading, scroll down about 300 pixels, wait a moment, then capture a screenshot of the window by press HOTKEY Alt+Print. Next, open a new terminal with HOTKEY Ctrl+Alt+T and TYPE gnome-screenshot -w -f ~/Documents/leetcode_daily_challenges/daily_challenge_$(date +%Y%m%d).png, press HOTKEY ENTER, wait for the screenshot to save, and complete the task.",
+  "source": "user",
+
+  "config": [
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "google-chrome",
+          "--remote-debugging-port=1337",
+          "https://leetcode.com/problemset"
+        ]
+      }
+    }
+  ],
+
+  "trajectory": "trajectories/leetcode-daily-challenge-screenshot",
+
+  "related_apps": [
+    "chrome",
+    "os",
+    "terminal",
+    "gnome"
+  ],
+
+  "evaluator": {
+    "func": "infeasible"
+  },
+
+  "human-ground-truth": {
+    "single-action": [
+      "`HOTKEY` 'Ctrl+Alt+T'",
+      "`TYPING` mkdir -p ~/Documents/leetcode_daily_challenges",
+      "`PRESS` Enter",
+      "`WAIT` 500",
+      "`TYPING` google-chrome https://leetcode.com/problemset",
+      "`PRESS` Enter",
+      "`WAIT` 4000",
+      "`CLICK` (//a[contains(@href, '/problems/') and (contains(@class, 'daily') or contains(., 'Daily'))])[1]",
+      "`WAIT` 3000",
+      "`SCROLL` down 300",
+      "`WAIT` 1000",
+      "`HOTKEY` 'Alt+Print'",
+      "`WAIT` 500",
+      "`HOTKEY` 'Ctrl+Alt+T'",
+      "`TYPING` gnome-screenshot -w -f ~/Documents/leetcode_daily_challenges/daily_challenge_$(date +%Y%m%d).png",
+      "`PRESS` Enter",
+      "`WAIT` 1000",
+      "`DONE`"
+    ],
+
+    "grouped-action": [
+      [
+        "`HOTKEY` 'Ctrl+Alt+T'",
+        "`TYPING` mkdir -p ~/Documents/leetcode_daily_challenges",
+        "`PRESS` Enter",
+        "`WAIT` 500"
+      ],
+      [
+        "`TYPING` google-chrome https://leetcode.com/problemset",
+        "`PRESS` Enter",
+        "`WAIT` 4000"
+      ],
+      [
+        "`CLICK` (//a[contains(@href, '/problems/') and (contains(@class, 'daily') or contains(., 'Daily'))])[1]",
+        "`WAIT` 3000"
+      ],
+      [
+        "`SCROLL` down 300",
+        "`WAIT` 1000",
+        "`HOTKEY` 'Alt+Print'",
+        "`WAIT` 500"
+      ],
+      [
+        "`HOTKEY` 'Ctrl+Alt+T'",
+        "`TYPING` gnome-screenshot -w -f ~/Documents/leetcode_daily_challenges/daily_challenge_$(date +%Y%m%d).png",
+        "`PRESS` Enter",
+        "`WAIT` 1000",
+        "`DONE`"
+      ]
+    ]
+  }
+}

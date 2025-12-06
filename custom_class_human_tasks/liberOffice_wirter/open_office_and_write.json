@@ -1,0 +1,42 @@
+{
+  "id": "8b4e6aaf-0b14-4c17-b469-908f1b61aaf2",
+  "snapshot": "os",
+  "instruction": "Please open LibreOffice Writer using HOTKEY Alt+F2 then type libreoffice --writer then press HOTKEY ENTER. Once the app is open type the text \"A+\" into a new blank document.",
+  "source": "https://www.libreoffice.org/discover/writer/",
+  "config": [
+    {
+      "type": "execute",
+      "parameters": {
+        "command": [
+          "python",
+          "-c",
+          "import pyautogui; import time; pyautogui.click(960, 540); time.sleep(0.5);"
+        ]
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "os",
+    "libreoffice_writer"
+  ],
+  "evaluator": {
+    "func": "infeasible"
+  },
+  "human-ground-truth": {
+    "single-action": [
+      "`CLICK` LibreOffice Writer icon on the left Dock",
+      "`CLICK` inside the blank document editing area once Writer has opened",
+      "`TYPING` A+"
+    ],
+    "grouped-action": [
+      [
+        "`CLICK` LibreOffice Writer icon on the left Dock"
+      ],
+      [
+        "`CLICK` inside the blank document editing area once Writer has opened",
+        "`TYPING` A+"
+      ]
+    ]
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "id": "cli-cpu-heatmap",
+  "snapshot": "os",
+  "instruction": "Press HOTKEY Ctrl+Alt+T to open the terminal, TYPE sudo apt install sysstat htop -y, press HOTKEY ENTER, then TYPE password then HOTKEY ENTER then TYPE systemctl enable --now sysstat and press HOTKEY ENTER. Next execute sar -u 1 10 > cpu_usage.log, press HOTKEY ENTER, then run sar -u -f /var/log/sysstat/$(date +%d) > cpu_summary.txt and press HOTKEY ENTER. After that, run the awk command: awk '{if(NR>3) printf \"%s %s %s %s %s %s %s\\n\", $1, $2, $3, $4, $5, $6, $8}' cpu_usage.log | column -t and press HOTKEY ENTER to format the output. Finally, run htop, press HOTKEY ENTER, and complete the task.",
+  "source": "user",
+
+  "config": [
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "bash",
+          "-c",
+          "echo 'Opening terminal for CPU monitoring...'"
+        ]
+      }
+    }
+  ],
+
+  "trajectory": "trajectories/cli-cpu-heatmap",
+
+  "related_apps": [
+    "os",
+    "terminal"
+  ],
+
+  "evaluator": {
+    "func": "infeasible"
+  },
+
+  "human-ground-truth": {
+    "single-action": [
+      "`HOTKEY` 'Ctrl+Alt+T'",
+      "`CLICK` terminal prompt",
+      "`TYPING` sudo apt install sysstat htop -y",
+      "`PRESS` Enter",
+      "`TYPING` sudo systemctl enable --now sysstat",
+      "`PRESS` Enter",
+      "`TYPING` sar -u 1 10 > cpu_usage.log",
+      "`PRESS` Enter",
+      "`TYPING` sar -u -f /var/log/sysstat/$(date +%d) > cpu_summary.txt",
+      "`PRESS` Enter",
+      "`TYPING` awk '{if(NR>3) printf \"%s %s %s %s %s %s %s\\n\", $1, $2, $3, $4, $5, $6, $8}' cpu_usage.log | column -t",
+      "`PRESS` Enter",
+      "`TYPING` htop",
+      "`PRESS` Enter",
+      "`DONE`"
+    ],
+
+    "grouped-action": [
+      [
+        "`HOTKEY` 'Ctrl+Alt+T'"
+      ],
+      [
+        "`CLICK` terminal prompt"
+      ],
+      [
+        "`TYPING` sudo apt install sysstat htop -y",
+        "`PRESS` Enter",
+        "`TYPING` sudo systemctl enable --now sysstat",
+        "`PRESS` Enter",
+        "`TYPING` sar -u 1 10 > cpu_usage.log",
+        "`PRESS` Enter",
+        "`TYPING` sar -u -f /var/log/sysstat/$(date +%d) > cpu_summary.txt",
+        "`PRESS` Enter",
+        "`TYPING` awk '{if(NR>3) printf \"%s %s %s %s %s %s %s\\n\", $1, $2, $3, $4, $5, $6, $8}' cpu_usage.log | column -t",
+        "`PRESS` Enter",
+        "`TYPING` htop",
+        "`PRESS` Enter",
+        "`DONE`"
+      ]
+    ]
+  }
+}

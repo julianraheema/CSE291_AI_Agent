@@ -1,0 +1,68 @@
+{
+  "id": "weather-san-diego-screenshot",
+  "snapshot": "chrome",
+  "instruction": "Open the terminal by pressing Ctrl+Alt+T, then run google-chrome https://www.weather.gov/sgx/ and press HOTKEY ENTER. Wait for the page to load, press F11 to enter fullscreen, wait briefly, then press Alt+Print to capture the screen. Next, run gnome-screenshot -w -f ~/Documents/san_diego_weather.png and press HOTKEY ENTER, wait for the screenshot to save, and complete the task.",
+  "source": "user",
+
+  "config": [
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "google-chrome",
+          "--remote-debugging-port=1337",
+          "https://www.weather.gov/sgx/"
+        ]
+      }
+    }
+  ],
+
+  "trajectory": "trajectories/weather-san-diego-screenshot",
+
+  "related_apps": [
+    "chrome",
+    "os",
+    "terminal",
+    "gnome"
+  ],
+
+  "evaluator": {
+    "func": "infeasible"
+  },
+
+  "human-ground-truth": {
+    "single-action": [
+      "`HOTKEY` 'Ctrl+Alt+T'",
+      "`TYPING` google-chrome https://www.weather.gov/sgx/",
+      "`PRESS` Enter",
+      "`WAIT` 2500",
+      "`HOTKEY` 'F11'",
+      "`WAIT` 1000",
+      "`HOTKEY` 'Alt+Print'",
+      "`WAIT` 1000",
+      "`TYPING` gnome-screenshot -w -f ~/Documents/san_diego_weather.png",
+      "`PRESS` Enter",
+      "`WAIT` 1000",
+      "`DONE`"
+    ],
+
+    "grouped-action": [
+      [
+        "`HOTKEY` 'Ctrl+Alt+T'",
+        "`TYPING` google-chrome https://www.weather.gov/sgx/",
+        "`PRESS` Enter",
+        "`WAIT` 2500"
+      ],
+      [
+        "`HOTKEY` 'F11'",
+        "`WAIT` 1000",
+        "`HOTKEY` 'Alt+Print'",
+        "`WAIT` 1000",
+        "`TYPING` gnome-screenshot -w -f ~/Documents/san_diego_weather.png",
+        "`PRESS` Enter",
+        "`WAIT` 1000",
+        "`DONE`"
+      ]
+    ]
+  }
+}
