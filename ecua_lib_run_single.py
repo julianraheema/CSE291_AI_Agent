@@ -245,7 +245,6 @@ def run_single_example(domain, example_id, env, example, max_steps, instruction,
     response, actions_raw = planner.generate_plan(instruction, parsed_json, (0,0,1920,1080), "CSE291_AI_Agent/ecua2_agent/planner_module/models/llama-3.2-3B-Instruct")
     actions = normalize_actions(actions_raw, domain, example_id)
     print("**************** actions %s", actions)
-    exit()
 
     done = False
     step_idx = 0
