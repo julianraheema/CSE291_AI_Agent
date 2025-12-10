@@ -3,24 +3,25 @@
 
 # ECUA — Edge Computer Unit Agent
 
-This repository is a class project for **UCSD CSE (Fall 2025)**.  
+This repository is a class project for **UCSD CSE291A Systems for LLM and AI Agents (Fall 2025)**.  
 We developed an AI agent capable of running on edge devices.
 
 ## Hardware Requirements
 - **GPU:** NVIDIA 3080 or similar  
 - **RAM:** 16 GB or more
 
-## Software Requirements
+## OS Requirements
 - **Operating System:** Ubuntu Linux 22.04
 
-## Setup
 
-There are two ways to set up this repository for testing.
+## Development Setup
+
+To setup and run this repository for development, please follow the instructions bellow. 
 
 
 # Using OSWorld Environment (Docker, Headless Mode)
 
-> This option requires **~15GB** of extra space (Docker + OSWorld assets).
+> This option requires **~25GB** of extra storage (Docker + OSWorld assets + Llama3.2-3B).
 
 ### 1. Install Prerequisites
 - Install **Docker**
@@ -78,11 +79,11 @@ mv CSE291_AI_Agent/ecua_run.py .
 mv CSE291_AI_Agent/ecua_lib_run_single.py .
 mv CSE291_AI_Agent/ecua_score.py .
 ```
-Run with CPU
+Run with CPU vision
 ```bash
 python ecua_run.py   --provider_name docker   --headless   --action_space computer_13   --observation_type screenshot   --sleep_after_execution 3   --max_steps 30   --result_dir ./results/test_custom_tasks_and_agent   --tasks_path ./osworld_tasks
 ```
-Run with GPU
+Run with GPU vision for faster and more accurate results
 ```bash
 python ecua_run.py   --provider_name docker   --headless   --action_space computer_13   --observation_type screenshot   --sleep_after_execution 3   --max_steps 30   --result_dir ./results/osworld-human-os-tasks   --tasks_path ./osworld-human/os --v_gpu True
 ```
@@ -117,6 +118,8 @@ WES+ (mean)     : 0.0100 (1.00%)
 WES- (mean)     : -0.0870 (-8.70%)
 ```
 
+# Notes
+If an error occurs during execution, I recommend running each module (vision, planner, control) as a standalone and verifying that it runs as expected. In each module, there is a README file that can help you set up and run it as a standalone. Most of the challenges we faced were related to dependencies and the model path. Therefore, we include our conda environment to avoid all the pain with Python dependencies.
 
 # Future work:
 ## End-to-End Setup (In Progress)
@@ -193,59 +196,54 @@ results/
 ```
 
 # Our Custom osworld-human Tasks
-You can find our custom tasks in the directory custom_class_human_tasks grouped into 4 groups: chrome, cli, multi_app, and spotify. 
+You can find our custom tasks in the directory custom_class_human_tasks grouped into 4 groups: cli, LiberOffice_writer, multi_app, and spotify. 
 
 # AI Agent Tasks
 
 The project includes automation tasks defined in JSON format.
 
-## 1. cli1_microphone_detection
+## 1. cli1MicrophoneDetection
 Uses **arecord** and **sox** to create a live terminal spectrogram.
 
-## 2. cli2_CPU_visualizer
+## 2. cli2CPUVisualizer
 Live CPU visualization using:
 - sar
 - mpstat
 - htop
 
-## 3. cli3_image_manipulation
+## 3. cli3ImageManipulation
 Downloads an image, processes it (resize, grayscale, blur), and displays via **jp2a**.
 
-## 4. traffic_screenshot_sd
+## 4. cliOpenTerminalAndType
+This task opens Terminal and type Linux `top` command.
+
+## 5. trafficScreenshotSD
 Captures San Diego traffic snapshot from California QuickMap using Chrome.
 
-## 5. weather_screenshot_sd
+## 6. weatherScreenshotSD
 Captures NWS San Diego radar screenshot.
 
-## 6. copy_to
-Copies latest traffic + weather screenshots into:
-```
-~/Documents/traffic_and_weather_data/
-```
-
-## 7. clone_trending_repo
+## 7. cloneTrendingRepo
 Clones GitHub trending #1 repo and opens in VS Code.
 
-## 8. leetcode_daily_question
+## 8. leetcodeDailyQuestion
 Opens LeetCode Daily Challenge and screenshots it.
 
-## 9. spotify_playlist
+## 9. spotifyPlaylist
 Creates a date‑named Spotify playlist.
 
-## 10. google_drive_folder
-Creates a date‑named folder in Google Drive.
+## 10. openOfficeAndWrite
+Opens LiberOffice_writer app in linux and type A+
 
 ## Notes
-- Designed for Linux GNOME 
+- Agent and tasks are designed for Linux GNOME 
 - Screenshots via `Alt+Print` 
 - For educational & research purposes only
 
 
 ## Notice
-
 This project is provided **as is** for educational and research purposes only. 
 It may contain bugs, incomplete features, or unstable behavior.
-
 
 The authors make **no guarantees or warranties** of any kind. 
 Use of this software is at **your own risk**. 
