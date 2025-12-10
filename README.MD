@@ -42,21 +42,23 @@ conda activate osworld
 
 ### 4. Model Placement
 
-Ensure LLM models are located at:
+#### Planner Model
+
+Ensure LLM models for planner are located at:
 
 ```bash
 ls CSE291_AI_Agent/ecua2_agent/planner_module/models/
 ```
 
-If no model exist, please install using these instructions:
+If no model exist, please download using these instructions:
 
 
-#### Step 1: Install Hugging Face Hub
+##### Step 1: Install Hugging Face Hub
 ```bash
 pip install -U "huggingface_hub"
 ```
 
-#### Step 2: Log in to Hugging Face
+##### Step 2: Log in to Hugging Face
 1. Create account: https://huggingface.co 
 2. Request access: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 3. Create access token: https://huggingface.co/settings/tokens 
@@ -65,14 +67,27 @@ pip install -U "huggingface_hub"
 hf auth login
 ```
 
-#### Step 3: Download Model
+##### Step 3: Download Model
 ```bash
 mkdir -p models
 hf download meta-llama/Llama-3.2-3B-Instruct --local-dir ./CSE291_AI_Agent/ecua2_agent/planner_module/models/llama-3.2-3b
 ```
 
+#### GPU Vision Model
+Make sure the GPU vision model is located at
+
+```bash
+ls CSE291_AI_Agent/ecua2_agent/vision_module/vision_GPU/weights
+```
+if not, please download using this command:
+
+```bash
+huggingface-cli download microsoft/OmniParser-v2.0 icon_detect/train_args.yaml icon_detect/model.pt icon_detect/model.yaml --local-dir CSE291_AI_Agent/ecua2_agent/vision_module/vision_GPU/weights/
+```
+
+
 ### 5. Run Agent Inside OSWorld
-Move ecua_run.py and ecua_lib_run_single.py to OSWorld. Fee free to change the --max_steps to 100 for better results.
+Move these files to OSWorld main directory which you suppose are already in if you follow these insturctions. Feel free to change the --max_steps to 100 for better results.
 
 ```bash
 mv CSE291_AI_Agent/ecua_run.py .
@@ -119,7 +134,8 @@ WES- (mean)     : -0.0870 (-8.70%)
 ```
 
 # Notes
-If an error occurs during execution, I recommend running each module (vision, planner, control) as a standalone and verifying that it runs as expected. In each module, there is a README file that can help you set up and run it as a standalone. Most of the challenges we faced were related to dependencies and the model path. Therefore, we include our conda environment to avoid all the pain with Python dependencies.
+If an error occurs during setup or execution, I recommend running each module (vision, planner, control) as a standalone and verifying that it runs as expected. In each module, there is a README file that can help you set up and run it as a standalone for debugging. Most of the challenges we faced were related to dependencies and the model paths. Therefore, we include our conda environment to avoid all the pain with Python dependencies.
+
 
 # Future work:
 ## End-to-End Setup (In Progress)
